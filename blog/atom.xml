@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jamfdev.github.io/blog</id>
-    <title>Programación Multimedia y Dispositivos Móviles Blog</title>
+    <title>Apuntes de Informática. Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jamfdev.github.io/blog"/>
-    <subtitle>Programación Multimedia y Dispositivos Móviles Blog</subtitle>
+    <subtitle>Apuntes de Informática. Blog</subtitle>
     <icon>https://jamfdev.github.io/img/logo-PMDM.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>

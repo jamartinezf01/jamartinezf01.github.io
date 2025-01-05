@@ -1,0 +1,105 @@
+<svg
+  width="256"
+  height="256"
+  viewBox="0 0 256 256"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Definimos un gradiente para el círculo de fondo -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3ECF8E" />
+      <stop offset="100%" stop-color="#1E7E52" />
+    </linearGradient>
+  </defs>
+
+  <!-- Círculo de fondo con gradiente -->
+  <circle
+    cx="128"
+    cy="128"
+    r="100"
+    fill="url(#bgGradient)"
+  />
+
+  <!-- Sombra detrás de la "ventana" -->
+  <!-- La ventana mide 136px x 108px, por ello la centramos en (128,128) -->
+  <!-- (128 - 136/2, 128 - 108/2) = (60, 74) -->
+  <rect
+    x="60"
+    y="74"
+    width="136"
+    height="108"
+    rx="8"
+    fill="rgba(0, 0, 0, 0.2)"
+    filter="blur(2px)"
+  />
+
+  <!-- Contenedor principal de la "ventana del navegador" -->
+  <g transform="translate(0, 0)">
+    <!-- Rectángulo blanco que representa la ventana -->
+    <rect
+      x="60"
+      y="74"
+      width="136"
+      height="108"
+      rx="8"
+      fill="#ffffff"
+    />
+
+    <!-- Barra superior -->
+    <rect
+      x="60"
+      y="74"
+      width="136"
+      height="20"
+      rx="8"
+      fill="#5fc99e"
+    />
+
+    <!-- "Botones" de la barra (simples círculos) -->
+    <circle
+      cx="70"
+      cy="84"
+      r="3"
+      fill="#ffffff"
+    />
+    <circle
+      cx="80"
+      cy="84"
+      r="3"
+      fill="#ffffff"
+    />
+    <circle
+      cx="90"
+      cy="84"
+      r="3"
+      fill="#ffffff"
+    />
+
+    <!-- Líneas de "texto" dentro de la ventana -->
+    <!-- Ajustamos la posición para mantener la misma separación desde la parte superior -->
+    <rect
+      x="70"
+      y="104"
+      width="90"
+      height="8"
+      rx="4"
+      fill="#c2c2c2"
+    />
+    <rect
+      x="70"
+      y="122"
+      width="60"
+      height="8"
+      rx="4"
+      fill="#c2c2c2"
+    />
+    <rect
+      x="70"
+      y="140"
+      width="40"
+      height="8"
+      rx="4"
+      fill="#c2c2c2"
+    />
+  </g>
+</svg>
