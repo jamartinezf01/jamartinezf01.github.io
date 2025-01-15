@@ -1,0 +1,179 @@
+<svg
+  width="256"
+  height="256"
+  viewBox="0 0 256 256"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- ====== DEFs (Gradiente y Sombra) ====== -->
+  <defs>
+    <!-- Gradiente para el círculo de fondo -->
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3ECF8E" />
+      <stop offset="100%" stop-color="#1E7E52" />
+    </linearGradient>
+
+    <!-- Sombra suave -->
+    <filter id="shadowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow
+        dx="0"
+        dy="2"
+        stdDeviation="4"
+        flood-color="rgba(0, 0, 0, 0.2)"
+      />
+    </filter>
+  </defs>
+
+  <!-- ====== CÍRCULO DE FONDO ====== -->
+  <circle
+    cx="128"
+    cy="128"
+    r="100"
+    fill="url(#bgGradient)"
+  />
+
+  <!-- ====== SOMBRA DEL TELÉFONO ====== -->
+  <!-- El teléfono mide 72×120; se centra en (128,128): (128-72/2, 128-120/2) = (92, 68) -->
+  <rect
+    x="92"
+    y="68"
+    width="72"
+    height="120"
+    rx="16"
+    fill="rgba(0, 0, 0, 0.2)"
+    filter="url(#shadowFilter)"
+  />
+
+  <!-- ====== TELÉFONO ====== -->
+  <g>
+    <!-- Cuerpo del teléfono -->
+    <rect
+      x="92"
+      y="68"
+      width="76"
+      height="120"
+      rx="16"
+      fill="#ffffff"
+    />
+
+    <!-- Pantalla del teléfono en modo oscuro (Drácula) -->
+    <!-- (100,84) con 56×88, centrada dentro del cuerpo con cierto margen -->
+    <rect
+      x="100"
+      y="84"
+      width="60"
+      height="95"
+      rx="6"
+      fill="#282a36"  
+    />
+
+    <!-- Altavoz en la parte superior -->
+    <rect
+      x="112"
+      y="78"
+      width="32"
+      height="3"
+      rx="1.5"
+      fill="#888888"
+    />
+
+    <!-- Cámara frontal (pequeño círculo) -->
+    <circle
+      cx="150"
+      cy="79"
+      r="2"
+      fill="#888888"
+    />
+
+    <!-- Botón de “inicio” (Home) en la parte inferior -->
+    <circle
+      cx="128"
+      cy="171"
+      r="4"
+      fill="#cccccc"
+    />
+
+    <!-- ====== LÍNEAS QUE SIMULAN CÓDIGO ====== -->
+    <!-- Cada rect simula una “línea de código”. Se distribuyen en vertical. -->
+    <!-- Ajustes: 
+         - x="104" para dejar 4px de margen lateral (pantalla: 100→156).
+         - Distancia vertical de 10px entre líneas (height=4, +6px de espacio).
+         - Usamos los colores comunes del tema Dracula para simular resaltado. -->
+
+    <!-- Paleta de colores Dracula (ejemplo) -->
+    <!--   #ff79c6 (rosa), #bd93f9 (lila), #50fa7b (verde), #8be9fd (celeste),
+          #ffb86c (naranja), #ff5555 (rojo), #f1fa8c (amarillo), #f8f8f2 (blanco suave) -->
+
+    <!-- Línea 1 -->
+    <rect
+      x="104"
+      y="90"
+      width="50"
+      height="4"
+      rx="2"
+      fill="#ff79c6"
+    />
+    <!-- Línea 2 -->
+    <rect
+      x="104"
+      y="100"
+      width="44"
+      height="4"
+      rx="2"
+      fill="#bd93f9"
+    />
+    <!-- Línea 3 -->
+    <rect
+      x="104"
+      y="110"
+      width="52"
+      height="4"
+      rx="2"
+      fill="#50fa7b"
+    />
+    <!-- Línea 4 -->
+    <rect
+      x="104"
+      y="120"
+      width="35"
+      height="4"
+      rx="2"
+      fill="#8be9fd"
+    />
+    <!-- Línea 5 -->
+    <rect
+      x="104"
+      y="130"
+      width="48"
+      height="4"
+      rx="2"
+      fill="#ffb86c"
+    />
+    <!-- Línea 6 -->
+    <rect
+      x="104"
+      y="140"
+      width="52"
+      height="4"
+      rx="2"
+      fill="#ff5555"
+    />
+    <!-- Línea 7 -->
+    <rect
+      x="104"
+      y="150"
+      width="38"
+      height="4"
+      rx="2"
+      fill="#f1fa8c"
+    />
+    <!-- Línea 8 -->
+    <rect
+      x="104"
+      y="160"
+      width="46"
+      height="4"
+      rx="2"
+      fill="#f8f8f2"
+    />
+  </g>
+</svg>
