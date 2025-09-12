@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tienda>
+
+  <!-- Catálogo mágico -->
+  <catalogo>
+    <producto id="pr01">
+      <nombre>Polvos de cuerno de unicornio</nombre>
+      <categoria>Ingredientes raros</categoria>
+      <precio>120.00</precio>
+    </producto>
+    <producto id="pr02">
+      <nombre>Patas de culebra albina</nombre>
+      <categoria>Reptiles</categoria>
+      <precio>45.00</precio>
+    </producto>
+    <producto id="pr03">
+      <nombre>Raíz de mandrágora</nombre>
+      <categoria>Plantas mágicas</categoria>
+      <precio>85.00</precio>
+    </producto>
+    <producto id="pr04">
+      <nombre>Escamas de dragón rojo</nombre>
+      <categoria>Criaturas míticas</categoria>
+      <precio>300.00</precio>
+    </producto>
+    <producto id="pr05">
+      <nombre>Esencia de luna llena</nombre>
+      <categoria>Esencias</categoria>
+      <precio>150.00</precio>
+    </producto>
+    <producto id="pr06">
+      <nombre>Huesos de grifo molido</nombre>
+      <categoria>Minerales mágicos</categoria>
+      <precio>95.00</precio>
+    </producto>
+    <producto id="pr07">
+      <nombre>Flor de fuego nocturno</nombre>
+      <categoria>Plantas mágicas</categoria>
+      <precio>60.00</precio>
+    </producto>
+    <producto id="pr08">
+      <nombre>Agua bendita del lago helado</nombre>
+      <categoria>Líquidos místicos</categoria>
+      <precio>35.00</precio>
+    </producto>
+    <producto id="pr09">
+      <nombre>Colmillos de basilisco</nombre>
+      <categoria>Criaturas míticas</categoria>
+      <precio>250.00</precio>
+    </producto>
+    <producto id="pr10">
+      <nombre>Viento embotellado del norte</nombre>
+      <categoria>Esencias</categoria>
+      <precio>70.00</precio>
+    </producto>
+    <producto id="pr11">
+      <nombre>Cristal de visión arcana</nombre>
+      <categoria>Objetos mágicos</categoria>
+      <precio>180.00</precio>
+    </producto>
+  </catalogo>
+
+  <!-- Clientes brujiles -->
+  <clientes>
+    <cliente id="c001"><nombre>Morgana la Verde</nombre><correo>morgana@bosqueoscuro.org</correo></cliente>
+    <cliente id="c002"><nombre>El Mago Elías</nombre><correo>elias@torreblanca.org</correo></cliente>
+    <cliente id="c003"><nombre>Bruja Circe</nombre><correo>circe@encantamientos.net</correo></cliente>
+    <cliente id="c004"><nombre>Hechicero Baruk</nombre><correo>baruk@realmmistico.com</correo></cliente>
+    <cliente id="c005"><nombre>Alquimista Zaira</nombre><correo>zaira@laboratoriomagico.org</correo></cliente>
+    <cliente id="c006"><nombre>Enano Durgan</nombre><correo>durgan@cuevadeldiamante.net</correo></cliente>
+    <cliente id="c007"><nombre>Elfa Lyra</nombre><correo>lyra@claraluz.org</correo></cliente>
+    <cliente id="c008"><nombre>Dragona Elenyr</nombre><correo>elenyr@cieloesmeralda.org</correo></cliente>
+  </clientes>
+
+  <!-- Pedidos mágicos (15) -->
+  <pedidos>
+    <pedido id="p001" cliente="c001" fecha="2025-02-15" estado="enviado">
+      <linea producto="pr01" cantidad="1"/>
+      <linea producto="pr02" cantidad="2"/>
+    </pedido>
+    <pedido id="p002" cliente="c002" fecha="2025-03-05" estado="entregado">
+      <linea producto="pr04" cantidad="1"/>
+    </pedido>
+    <pedido id="p003" cliente="c002" fecha="2025-03-18" estado="pendiente">
+      <linea producto="pr01" cantidad="1"/>
+      <linea producto="pr05" cantidad="2"/>
+    </pedido>
+    <pedido id="p004" cliente="c003" fecha="2025-03-01" estado="entregado">
+      <linea producto="pr07" cantidad="1"/>
+      <linea producto="pr08" cantidad="1"/>
+    </pedido>
+    <pedido id="p005" cliente="c004" fecha="2025-03-10" estado="entregado">
+      <linea producto="pr10" cantidad="1"/>
+      <linea producto="pr02" cantidad="1"/>
+    </pedido>
+    <pedido id="p006" cliente="c005" fecha="2025-02-28" estado="enviado">
+      <linea producto="pr11" cantidad="1"/>
+      <linea producto="pr05" cantidad="1"/>
+    </pedido>
+    <pedido id="p007" cliente="c006" fecha="2025-03-20" estado="pendiente">
+      <linea producto="pr06" cantidad="1"/>
+    </pedido>
+    <pedido id="p008" cliente="c007" fecha="2025-03-17" estado="entregado">
+      <linea producto="pr09" cantidad="2"/>
+      <linea producto="pr01" cantidad="1"/>
+    </pedido>
+    <pedido id="p009" cliente="c008" fecha="2025-03-03" estado="enviado">
+      <linea producto="pr04" cantidad="1"/>
+      <linea producto="pr02" cantidad="1"/>
+      <linea producto="pr08" cantidad="2"/>
+    </pedido>
+    <pedido id="p010" cliente="c001" fecha="2025-03-22" estado="pendiente">
+      <linea producto="pr03" cantidad="1"/>
+    </pedido>
+    <pedido id="p011" cliente="c005" fecha="2025-03-23" estado="enviado">
+      <linea producto="pr01" cantidad="1"/>
+      <linea producto="pr02" cantidad="1"/>
+      <linea producto="pr06" cantidad="1"/>
+    </pedido>
+    <pedido id="p012" cliente="c004" fecha="2025-03-19" estado="entregado">
+      <linea producto="pr05" cantidad="2"/>
+      <linea producto="pr09" cantidad="1"/>
+    </pedido>
+    <pedido id="p013" cliente="c006" fecha="2025-03-21" estado="pendiente">
+      <linea producto="pr01" cantidad="1"/>
+      <linea producto="pr03" cantidad="1"/>
+    </pedido>
+    <pedido id="p014" cliente="c007" fecha="2025-03-25" estado="entregado">
+      <linea producto="pr10" cantidad="1"/>
+      <linea producto="pr08" cantidad="1"/>
+    </pedido>
+    <pedido id="p015" cliente="c008" fecha="2025-03-26" estado="entregado">
+      <linea producto="pr11" cantidad="1"/>
+      <linea producto="pr01" cantidad="1"/>
+    </pedido>
+  </pedidos>
+
+</tienda>
