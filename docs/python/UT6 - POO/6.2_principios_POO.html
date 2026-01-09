@@ -8,7 +8,7 @@
 <meta httpequiv="Expires" content="0">
 
 <script src="/version.js"></script><link rel="stylesheet" href="/assets/css/styles.e40d5c09.css">
-<script src="/assets/js/runtime~main.b80da2e4.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.9dd0e47f.js" defer="defer"></script>
 <script src="/assets/js/main.bb548907.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -64,8 +64,8 @@
 </blockquote>
 <div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">class</span><span class="token plain"> </span><span class="token class-name">Jugador</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">__init__</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">self</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> nombre</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> nivel</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        self</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">nombre </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> nombre</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        self</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">_experiencia </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token plain">   </span><span class="token comment" style="color:#999988;font-style:italic"># uso interno</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">anadir_experiencia</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">self</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> cantidad</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        self</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">_experiencia </span><span class="token operator" style="color:#393A34">+=</span><span class="token plain"> cantidad</span><br></span></code></pre></div></div>
 <ul>
-<li>Técnico: <strong>no hay protección real</strong>; se puede hacer <code>jugador._experiencia</code> desde fuera.</li>
-<li>Práctico: es una <strong>señal para otros desarrolladores</strong> (y para ti mismo en el futuro) de que ese atributo forma parte de los detalles internos de la clase.</li>
+<li>Consecuencia técnica: <strong>no hay protección real</strong>. Se puede hacer <code>jugador._experiencia</code> desde fuera.</li>
+<li>Consecuencia Práctica: es una <strong>señal para otros desarrolladores</strong> (y para ti mismo en el futuro) de que ese atributo forma parte de los detalles internos de la clase.</li>
 </ul>
 <p>Además, hay un pequeño efecto extra:</p>
 <ul>
@@ -107,8 +107,7 @@ Se usa menos en el día a día y puede complicar un poco la depuración, pero es
 <p>Ventajas de usar getters y setters:</p>
 <ul>
 <li>Se pueden añadir <strong>validaciones</strong> (por ejemplo, no aceptar saldos negativos).</li>
-<li>Se puede cambiar la forma de guardar el dato sin cambiar el resto del código.
-Perfecto, vamos a darle una vuelta para que quede más “de libro” y se entienda muy bien <strong>que hace <code>@property</code>, por que se usa y que ventaja real tiene</strong>.</li>
+<li>Se puede cambiar la forma de guardar el dato sin cambiar el resto del código.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="-propiedades-property">🟨 Propiedades (<code>@property</code>)<a href="#-propiedades-property" class="hash-link" aria-label="Enlace directo al -propiedades-property" title="Enlace directo al -propiedades-property">​</a></h3>
 <p>En Python es muy habitual usar el decorador <code>@property</code> para crear <strong>propiedades</strong>.<br>
@@ -159,7 +158,7 @@ se sigue escribiendo <code>p.edad</code> y <code>p.edad = valor</code>, pero aho
 <p>La <strong>herencia</strong> es un mecanismo que permite crear una clase <strong>nueva</strong> (clase hija o subclase) basada en otra clase <strong>existente</strong> (clase padre o superclase).
 La subclase <strong>hereda</strong> atributos y métodos de la clase padre y puede:</p>
 <ul>
-<li>Añadir nuevos atributos y métodos.</li>
+<li>Añadir nuevos atributos y m étodos.</li>
 <li>Modificar (sobrescribir) el comportamiento heredado.</li>
 </ul>
 <p>La herencia se usa para <strong>reutilizar código</strong> y <strong>organizar mejor</strong> las clases que comparten características comunes.</p>
