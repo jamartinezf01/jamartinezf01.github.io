@@ -8,8 +8,8 @@
 <meta httpequiv="Expires" content="0">
 
 <script src="/version.js"></script><link rel="stylesheet" href="/assets/css/styles.e40d5c09.css">
-<script src="/assets/js/runtime~main.c8799024.js" defer="defer"></script>
-<script src="/assets/js/main.bb548907.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.077e697f.js" defer="defer"></script>
+<script src="/assets/js/main.9149737b.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -149,7 +149,118 @@
 </ul>
 </li>
 </ol></div></div>
-<hr></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/lenguajes-de-marcas/3 Java Script/3.2 Variables tipos y operadores"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">3.2 Variables, Tipos y Operadores</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/lenguajes-de-marcas/3 Java Script/3.4 Funciones"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">3.4 Funciones en JavaScript</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1️⃣-estructuras-condicionales" class="table-of-contents__link toc-highlight">1️⃣ <strong>Estructuras Condicionales</strong></a><ul><li><a href="#-if-else-if-y-else" class="table-of-contents__link toc-highlight">🟩 <code>if</code>, <code>else if</code> y <code>else</code></a></li><li><a href="#-operador-ternario" class="table-of-contents__link toc-highlight">🟨 Operador Ternario</a></li><li><a href="#-switch" class="table-of-contents__link toc-highlight">🟧 <code>switch</code></a></li><li><a href="#-comparativa-entre-ifelse-y-switch" class="table-of-contents__link toc-highlight">🟥 Comparativa entre <code>if...else</code> y <code>switch</code></a></li><li><a href="#-buenas-prácticas" class="table-of-contents__link toc-highlight">✅ Buenas Prácticas</a></li></ul></li><li><a href="#2️⃣-bucles-e-iteraciones" class="table-of-contents__link toc-highlight">2️⃣ <strong>Bucles e Iteraciones</strong></a><ul><li><a href="#-for" class="table-of-contents__link toc-highlight">🟩 <code>for</code></a></li><li><a href="#-while" class="table-of-contents__link toc-highlight">🟨 <code>while</code></a></li><li><a href="#-dowhile" class="table-of-contents__link toc-highlight">🟧 <code>do...while</code></a></li><li><a href="#-forin" class="table-of-contents__link toc-highlight">🟥 <code>for...in</code></a></li><li><a href="#-forof" class="table-of-contents__link toc-highlight">🟪 <code>for...of</code></a></li><li><a href="#-declaraciones-especiales-en-bucles" class="table-of-contents__link toc-highlight">🟦 Declaraciones Especiales en Bucles</a></li><li><a href="#-buenas-prácticas-1" class="table-of-contents__link toc-highlight">✅ Buenas Prácticas</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://jamfdev.github.io/">Apuntes para Ciclos Formativos de Formación Profesional</a> por <span property="cc:attributionName">Jose A. Martínez</span>  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p> 
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-ejercicios">📚 Ejercicios<a href="#-ejercicios" class="hash-link" aria-label="Enlace directo al 📚 Ejercicios" title="Enlace directo al 📚 Ejercicios">​</a></h2>
+<p>Misión Odisea: Control de Flujo</p>
+<p>Bienvenido, Cadete. Eres la IA de la nave espacial <strong>&quot;Odisea&quot;</strong>. Tu misión es asegurar que todos los sistemas funcionen correctamente para llegar a Marte a salvo.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-misión-1-la-cuenta-atrás">🚀 Misión 1: La Cuenta Atrás<a href="#-misión-1-la-cuenta-atrás" class="hash-link" aria-label="Enlace directo al 🚀 Misión 1: La Cuenta Atrás" title="Enlace directo al 🚀 Misión 1: La Cuenta Atrás">​</a></h3>
+<p>El despegue es inminente. Necesitamos iniciar la secuencia de lanzamiento.</p>
+<ul>
+<li><strong>Objetivo</strong>: Crear un bucle que cuente desde 10 hasta 0.</li>
+<li><strong>Requisito</strong>: Al llegar a 0, debe imprimir &quot;¡Despegue! 🚀&quot;.</li>
+<li><strong>Pista</strong>: Usa un bucle <code>for</code> decremental.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-misión-2-repostaje-en-órbita">⛽ Misión 2: Repostaje en Órbita<a href="#-misión-2-repostaje-en-órbita" class="hash-link" aria-label="Enlace directo al ⛽ Misión 2: Repostaje en Órbita" title="Enlace directo al ⛽ Misión 2: Repostaje en Órbita">​</a></h3>
+<p>Necesitamos llenar los tanques de combustible antes de abandonar la órbita terrestre.</p>
+<ul>
+<li><strong>Objetivo</strong>: Simular el llenado del tanque.</li>
+<li><strong>Datos</strong>: Empiezas con <code>combustible = 0</code>.</li>
+<li><strong>Requisito</strong>: Mientras el combustible sea menor a 100, añade cantidades (por ejemplo 10 o 20) e imprime el nivel actual.</li>
+<li><strong>Pista</strong>: Usa un bucle <code>while</code>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-misión-3-sistema-de-navegación">🧭 Misión 3: Sistema de Navegación<a href="#-misión-3-sistema-de-navegación" class="hash-link" aria-label="Enlace directo al 🧭 Misión 3: Sistema de Navegación" title="Enlace directo al 🧭 Misión 3: Sistema de Navegación">​</a></h3>
+<p>El piloto automático necesita comprobar el rumbo.</p>
+<ul>
+<li><strong>Objetivo</strong>: Traducir las coordenadas del compás.</li>
+<li><strong>Datos</strong>: Tienes una variable <code>rumbo</code> que puede ser &#x27;N&#x27;, &#x27;S&#x27;, &#x27;E&#x27;, &#x27;O&#x27;.</li>
+<li><strong>Requisito</strong>:<!-- -->
+<ul>
+<li>&#x27;N&#x27;: Imprime &quot;Rumbo al Norte&quot;.</li>
+<li>&#x27;S&#x27;: Imprime &quot;Rumbo al Sur&quot;.</li>
+<li>&#x27;E&#x27;: Imprime &quot;Rumbo al Este&quot;.</li>
+<li>&#x27;O&#x27;: Imprime &quot;Rumbo al Oeste&quot;.</li>
+<li>Cualquier otra cosa: &quot;Rumbo desconocido, abortar 🚨&quot;.</li>
+</ul>
+</li>
+<li><strong>Pista</strong>: <strong>Debes</strong> usar la estructura <code>switch</code>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-misión-4-estabilizador-de-gravedad">⚖️ Misión 4: Estabilizador de Gravedad<a href="#️-misión-4-estabilizador-de-gravedad" class="hash-link" aria-label="Enlace directo al ⚖️ Misión 4: Estabilizador de Gravedad" title="Enlace directo al ⚖️ Misión 4: Estabilizador de Gravedad">​</a></h3>
+<p>Al entrar en hipervelocidad, la gravedad artificial fluctúa.</p>
+<ul>
+<li><strong>Objetivo</strong>: Aumentar la gravedad hasta un nivel seguro.</li>
+<li><strong>Requisito</strong>: La gravedad empieza en 0. Auméntala de 1 en 1.</li>
+<li><strong>Condición</strong>: El bucle debe ejecutarse <strong>al menos una vez</strong> y detenerse cuando la gravedad sea mayor o igual a 3.</li>
+<li><strong>Pista</strong>: Usa <code>do...while</code>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-misión-5-campo-de-asteroides">☄️ Misión 5: Campo de Asteroides<a href="#️-misión-5-campo-de-asteroides" class="hash-link" aria-label="Enlace directo al ☄️ Misión 5: Campo de Asteroides" title="Enlace directo al ☄️ Misión 5: Campo de Asteroides">​</a></h3>
+<p>Estamos atravesando un cinturón de asteroides. El radar escanea 10 sectores.</p>
+<ul>
+<li><strong>Objetivo</strong>: Escanear sectores del 1 al 10.</li>
+<li><strong>Problema</strong>: El sector 7 tiene interferencias magnéticas extremas.</li>
+<li><strong>Requisito</strong>: Si el sector es el 7, <strong>salta ese escaneo</strong> y no imprimas nada para ese número. Para el resto, imprime &quot;Sector X despejado&quot;.</li>
+<li><strong>Pista</strong>: Usa <code>continue</code>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-misión-6-parada-de-emergencia">🌡️ Misión 6: Parada de Emergencia<a href="#️-misión-6-parada-de-emergencia" class="hash-link" aria-label="Enlace directo al 🌡️ Misión 6: Parada de Emergencia" title="Enlace directo al 🌡️ Misión 6: Parada de Emergencia">​</a></h3>
+<p>¡Alerta! El motor se está sobrecalentando.</p>
+<ul>
+<li><strong>Objetivo</strong>: Monitorizar la temperatura en un bucle &quot;infinito&quot; (o de muchas repeticiones, ej: 100).</li>
+<li><strong>Requisito</strong>: La temperatura sube en cada iteración. Si supera 100 grados, <strong>detén el bucle inmediatamente</strong> y muestra un mensaje de alerta.</li>
+<li><strong>Pista</strong>: Usa <code>break</code>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-misión-7-inventario-de-carga">📦 Misión 7: Inventario de Carga<a href="#-misión-7-inventario-de-carga" class="hash-link" aria-label="Enlace directo al 📦 Misión 7: Inventario de Carga" title="Enlace directo al 📦 Misión 7: Inventario de Carga">​</a></h3>
+<p>Antes de aterrizar en Marte, revisemos los suministros críticos.</p>
+<ul>
+<li><strong>Objetivo</strong>: Revisar la lista de carga.</li>
+<li><strong>Datos</strong>: Tienes una lista de suministros: <code>[&quot;Oxígeno&quot;, &quot;Agua&quot;, &quot;Comida&quot;, &quot;Trajes&quot;]</code>.</li>
+<li><strong>Requisito</strong>: Recorre la lista de suministros uno a uno e imprime &quot;Revisado: [Suministro]&quot;.</li>
+<li><strong>Pista</strong>: Usa <code>for...of</code>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-misión-8-simbología-alienígena">👽 Misión 8: Simbología Alienígena<a href="#-misión-8-simbología-alienígena" class="hash-link" aria-label="Enlace directo al 👽 Misión 8: Simbología Alienígena" title="Enlace directo al 👽 Misión 8: Simbología Alienígena">​</a></h3>
+<p>Hemos encontrado extraños símbolos en una cueva. Parecen patrones matemáticos.</p>
+<ul>
+<li><strong>Objetivo</strong>: Generar un patrón triangular de asteriscos.</li>
+<li><strong>Requisito</strong>: Usa dos bucles <code>for</code> anidados para imprimir 5 líneas.<!-- -->
+<ul>
+<li>Línea 1: &quot;*&quot;</li>
+<li>Línea 2: &quot;**&quot;</li>
+<li>...</li>
+<li>Línea 5: &quot;*****&quot;</li>
+</ul>
+</li>
+<li><strong>Pista</strong>: Un bucle controla las líneas (i), otro imprime los caracteres (j) concatenando en una variable string.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-misión-9-códigos-de-seguridad">🔐 Misión 9: Códigos de Seguridad<a href="#-misión-9-códigos-de-seguridad" class="hash-link" aria-label="Enlace directo al 🔐 Misión 9: Códigos de Seguridad" title="Enlace directo al 🔐 Misión 9: Códigos de Seguridad">​</a></h3>
+<p>La puerta de la base está bloqueada. Necesitamos resolver un acertijo matemático para entrar.</p>
+<ul>
+<li><strong>Objetivo</strong>: Encontrar números primos para desbloquear la seguridad.</li>
+<li><strong>Requisito</strong>:<!-- -->
+<ul>
+<li>Busca y muestra en consola los <strong>primeros 3 números primos</strong> que sean mayores que 10.</li>
+<li>Debes hacer un bucle que recorra números (11, 12, 13...) y verifique si son primos.</li>
+</ul>
+</li>
+<li><strong>Pista</strong>: Un número primo solo es divisible por 1 y por sí mismo. Necesitarás un bucle para probar divisores o una bandera (<code>isPrime</code>).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-misión-10-aterrizaje-en-marte">🚩 Misión 10: Aterrizaje en Marte<a href="#-misión-10-aterrizaje-en-marte" class="hash-link" aria-label="Enlace directo al 🚩 Misión 10: Aterrizaje en Marte" title="Enlace directo al 🚩 Misión 10: Aterrizaje en Marte">​</a></h3>
+<p>¡Llegamos! Pero el sistema de aterrizaje automático falla. Debes programar la lógica de frenado de emergencia.</p>
+<ul>
+<li><strong>Objetivo</strong>: Simular el descenso y lograr un aterrizaje suave.</li>
+<li><strong>Datos Iniciales</strong>: <code>altura = 200</code> metros, <code>velocidad = 20</code> m/s.</li>
+<li><strong>Reglas de la Física (Simulada)</strong>:<!-- -->
+<ul>
+<li>En cada paso del bucle (segundo), la <strong>altura</strong> disminuye según la <strong>velocidad</strong> actual.</li>
+<li>Debes actualizar la <strong>velocidad</strong>: si la velocidad es mayor a 10, activa los frenos (resta 3 a la velocidad). Si es 10 o menos, la gravedad acelera la nave (suma 1 a la velocidad).</li>
+</ul>
+</li>
+<li><strong>Condición de Parada</strong>: El bucle se detiene cuando la <code>altura</code> llega a 0 (o menos).</li>
+<li><strong>Resultado</strong>:<!-- -->
+<ul>
+<li>Si al tocar suelo (<code>altura &lt;= 0</code>) la <code>velocidad</code> es <strong>menor de 15</strong>: Imprime &quot;¡Aterrizaje exitoso! 🏆&quot;.</li>
+<li>Si es mayor o igual a 15: Imprime &quot;¡Crash! La nave se ha estrellado 💥&quot;.</li>
+</ul>
+</li>
+<li><strong>Pista</strong>: Un <code>while</code> controla la altura. Dentro, usa <code>if</code> para modificar la velocidad y muestra los datos en cada paso para ver qué ocurre.</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/lenguajes-de-marcas/3 Java Script/3.2 Variables tipos y operadores"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">3.2 Variables, Tipos y Operadores</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/lenguajes-de-marcas/3 Java Script/3.4 Funciones"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">3.4 Funciones en JavaScript</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1️⃣-estructuras-condicionales" class="table-of-contents__link toc-highlight">1️⃣ <strong>Estructuras Condicionales</strong></a><ul><li><a href="#-if-else-if-y-else" class="table-of-contents__link toc-highlight">🟩 <code>if</code>, <code>else if</code> y <code>else</code></a></li><li><a href="#-operador-ternario" class="table-of-contents__link toc-highlight">   🟨 Operador Ternario</a></li><li><a href="#-switch" class="table-of-contents__link toc-highlight">🟧 <code>switch</code></a></li><li><a href="#-comparativa-entre-ifelse-y-switch" class="table-of-contents__link toc-highlight">🟥 Comparativa entre <code>if...else</code> y <code>switch</code></a></li><li><a href="#-buenas-prácticas" class="table-of-contents__link toc-highlight">✅ Buenas Prácticas</a></li></ul></li><li><a href="#2️⃣-bucles-e-iteraciones" class="table-of-contents__link toc-highlight">2️⃣ <strong>Bucles e Iteraciones</strong></a><ul><li><a href="#-for" class="table-of-contents__link toc-highlight">🟩 <code>for</code></a></li><li><a href="#-while" class="table-of-contents__link toc-highlight">🟨 <code>while</code></a></li><li><a href="#-dowhile" class="table-of-contents__link toc-highlight">🟧 <code>do...while</code></a></li><li><a href="#-forin" class="table-of-contents__link toc-highlight">🟥 <code>for...in</code></a></li><li><a href="#-forof" class="table-of-contents__link toc-highlight">🟪 <code>for...of</code></a></li><li><a href="#-declaraciones-especiales-en-bucles" class="table-of-contents__link toc-highlight">🟦 Declaraciones Especiales en Bucles</a></li><li><a href="#-buenas-prácticas-1" class="table-of-contents__link toc-highlight">✅ Buenas Prácticas</a></li></ul></li><li><a href="#-ejercicios" class="table-of-contents__link toc-highlight">📚 Ejercicios</a><ul><li><a href="#-misión-1-la-cuenta-atrás" class="table-of-contents__link toc-highlight">🚀 Misión 1: La Cuenta Atrás</a></li><li><a href="#-misión-2-repostaje-en-órbita" class="table-of-contents__link toc-highlight">⛽ Misión 2: Repostaje en Órbita</a></li><li><a href="#-misión-3-sistema-de-navegación" class="table-of-contents__link toc-highlight">🧭 Misión 3: Sistema de Navegación</a></li><li><a href="#️-misión-4-estabilizador-de-gravedad" class="table-of-contents__link toc-highlight">⚖️ Misión 4: Estabilizador de Gravedad</a></li><li><a href="#️-misión-5-campo-de-asteroides" class="table-of-contents__link toc-highlight">☄️ Misión 5: Campo de Asteroides</a></li><li><a href="#️-misión-6-parada-de-emergencia" class="table-of-contents__link toc-highlight">🌡️ Misión 6: Parada de Emergencia</a></li><li><a href="#-misión-7-inventario-de-carga" class="table-of-contents__link toc-highlight">📦 Misión 7: Inventario de Carga</a></li><li><a href="#-misión-8-simbología-alienígena" class="table-of-contents__link toc-highlight">👽 Misión 8: Simbología Alienígena</a></li><li><a href="#-misión-9-códigos-de-seguridad" class="table-of-contents__link toc-highlight">🔐 Misión 9: Códigos de Seguridad</a></li><li><a href="#-misión-10-aterrizaje-en-marte" class="table-of-contents__link toc-highlight">🚩 Misión 10: Aterrizaje en Marte</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://jamfdev.github.io/">Apuntes para Ciclos Formativos de Formación Profesional</a> por <span property="cc:attributionName">Jose A. Martínez</span>  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p> 
         <p>📧 jamartinezf01@iesalbarregas.es</p></div></div></div></footer></div>
 </body>
 </html>
