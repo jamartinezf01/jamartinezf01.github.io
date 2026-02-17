@@ -1,0 +1,5 @@
+﻿[
+  {"sku": "SKU-001", "nombre": "Teclado", "precio": 59.9, "stock": 5},
+  {"sku": "SKU-002", "nombre": "Raton", "precio": 29.5, "stock": 8},
+  {"sku": "SKU-003", "nombre": "Monitor", "precio": 149.0, "stock": 2}
+]

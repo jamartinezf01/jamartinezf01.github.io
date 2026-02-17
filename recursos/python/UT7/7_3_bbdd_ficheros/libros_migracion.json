@@ -1,0 +1,8 @@
+[
+    {"titulo": "El Aleph", "autor": "Jorge Luis Borges", "paginas": 146, "categoria": "Ficción"},
+    {"titulo": "Crónica de una muerte anunciada", "autor": "Gabriel García Márquez", "paginas": 150, "categoria": "Realismo Mágico"},
+    {"titulo": "Rayuela", "autor": "Julio Cortázar", "paginas": 600, "categoria": "Ficción"},
+    {"titulo": "Ficciones", "autor": "Jorge Luis Borges", "paginas": 176, "categoria": "Ficción"},
+    {"titulo": "Libro Corrupto", "autor": null, "paginas": 100, "categoria": "Error"},
+    {"titulo": "La ciudad y los perros", "autor": "Mario Vargas Llosa", "paginas": 448, "categoria": "Ficción"}
+]

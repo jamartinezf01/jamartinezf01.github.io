@@ -1,0 +1,9 @@
+﻿[
+  {"id_evento": "E-1001", "timestamp": "2026-02-17T08:20:11", "tipo": "INFO", "mensaje": "Inicio de servicio"},
+  {"id_evento": "E-1002", "timestamp": "2026-02-17T08:21:05", "tipo": "WARN", "mensaje": "Latencia alta"},
+  {"id_evento": "E-1003", "timestamp": "2026-02-17T08:22:41", "tipo": "ERROR", "mensaje": "Timeout en proveedor"},
+  {"id_evento": "E-1004", "timestamp": "", "tipo": "INFO", "mensaje": "Heartbeat"},
+  {"id_evento": "", "timestamp": "2026-02-17T08:24:00", "tipo": "ERROR", "mensaje": "Fallo de autenticación"},
+  {"id_evento": "E-1006", "timestamp": "2026-02-17T08:25:30", "tipo": "DEBUG", "mensaje": "Traza de depuración"},
+  {"id_evento": "E-1007", "timestamp": "2026-02-17T08:26:10", "tipo": "INFO", "mensaje": "Usuario conectado"}
+]

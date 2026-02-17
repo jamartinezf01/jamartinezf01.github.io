@@ -1,0 +1,9 @@
+﻿id,nombre,rol,activo,ultimo_acceso
+1,Ana,admin,True,2026-02-17
+2,Luis,analista,False,2026-02-10
+3,Marta,analista,True,
+4,,soporte,True,2026-02-16
+5,Carlos,soporte,True,2026-02-15
+6,Nora,analista,True,2026-02-17
+7,Pablo,admin,True,
+8,Elena,soporte,False,2026-02-12

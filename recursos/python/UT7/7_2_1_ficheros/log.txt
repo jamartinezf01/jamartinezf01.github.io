@@ -1,0 +1,8 @@
+2026-02-16 08:59:58 INFO Sistema iniciado
+2026-02-16 08:59:59 DEBUG Cargando modulo A
+2026-02-16 09:00:00 INFO Modulo A cargado correctamente
+2026-02-16 09:00:01 DEBUG Cargando modulo B
+2026-02-16 09:00:02 ERROR Fallo en modulo B
+2026-02-16 09:00:03 INFO Intentando recuperacion
+2026-02-16 09:00:04 ERROR Conexion perdida con servidor
+2026-02-16 09:00:05 INFO Sistema en modo seguro

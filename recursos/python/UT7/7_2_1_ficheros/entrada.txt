@@ -1,0 +1,11 @@
+# SISTEMA CENTRAL - INFORME INICIAL
+
+El sistema principal ha sufrido una interrupcion inesperada.
+Se necesita revisar los registros y reconstruir el estado anterior.
+
+Tareas pendientes:
+- Verificar integridad de los logs.
+- Unificar modulos.
+- Generar copia de seguridad.
+
+Estado actual: INCOMPLETO

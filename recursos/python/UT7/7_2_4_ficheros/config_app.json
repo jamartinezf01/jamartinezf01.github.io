@@ -1,0 +1,13 @@
+﻿{
+  "app": "Panel Mercurio",
+  "entorno": "prod",
+  "network": {
+    "timeout": 30,
+    "reintentos": 3,
+    "base_url": "https://api.mercurio.local"
+  },
+  "features": {
+    "notificaciones": true,
+    "auditoria": true
+  }
+}

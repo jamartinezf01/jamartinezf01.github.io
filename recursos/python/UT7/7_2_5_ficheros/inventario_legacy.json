@@ -1,0 +1,5 @@
+﻿[
+  {"sku": "SKU-010", "nombre": "SSD 1TB", "precio": 109.9},
+  {"sku": "SKU-011", "nombre": "Webcam HD", "precio": 44.99},
+  {"sku": "SKU-012", "nombre": "Microfono USB", "precio": 79.0}
+]

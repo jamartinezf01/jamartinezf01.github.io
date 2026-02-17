@@ -1,0 +1,6 @@
+﻿{
+  "app": "Sentinel",
+  "entorno": "prod",
+  "reintentos": 3,
+  "timeout":
+}

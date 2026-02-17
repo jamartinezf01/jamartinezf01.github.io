@@ -1,0 +1,10 @@
+# LISTADO DE ACCESOS
+# usuario | rol | activo
+
+admin | superusuario | True
+invitado | basico | False
+operador | tecnico | True
+admin | superusuario | True
+usuario1 | basico | True
+ | tecnico | True
+usuario2 | basico | 

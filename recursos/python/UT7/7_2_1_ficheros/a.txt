@@ -1,0 +1,5 @@
+MODULO A - DATOS
+
+Usuario: admin
+Permisos: completos
+Estado: operativo

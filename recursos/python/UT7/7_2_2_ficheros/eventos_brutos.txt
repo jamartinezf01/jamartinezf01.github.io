@@ -1,0 +1,12 @@
+# REGISTRO DE EVENTOS SIN PROCESAR
+# formato: fecha | nivel | usuario | mensaje
+
+2026-02-16 | INFO  | admin   | inicio del sistema
+2026-02-16 | DEBUG | admin   | cargando modulo A
+2026-02-16 | ERROR | invitado | fallo autenticacion
+2026-02-16 | INFO | admin | modulo A cargado
+
+2026-02-17 | ERROR | admin | error en base de datos
+2026-02-17 | DEBUG |  | variable x = 42
+2026-02-17 | INFO | invitado | cierre de sesion
+2026-02-17 | ERROR | admin | timeout conexion

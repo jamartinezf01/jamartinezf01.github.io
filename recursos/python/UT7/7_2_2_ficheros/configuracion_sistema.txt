@@ -1,0 +1,10 @@
+# CONFIGURACION ACTUAL DEL SISTEMA
+
+modo = produccion
+max_usuarios = 100
+timeout = 30
+debug = true
+
+# parametros legacy
+cache_activa = si
+nivel_log = INFO
