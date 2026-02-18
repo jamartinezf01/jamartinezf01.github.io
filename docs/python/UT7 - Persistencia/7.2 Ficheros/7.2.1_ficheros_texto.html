@@ -8,7 +8,7 @@
 <meta httpequiv="Expires" content="0">
 
 <script src="/version.js"></script><link rel="stylesheet" href="/assets/css/styles.e40d5c09.css">
-<script src="/assets/js/runtime~main.94f721f2.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.3a2c5dfa.js" defer="defer"></script>
 <script src="/assets/js/main.3ad37b37.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -220,13 +220,6 @@ En la práctica hay tres ideas clave que suelen generar errores:</p>
 <div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">import</span><span class="token plain"> os</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">contenido </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Datos nuevos...&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">with</span><span class="token plain"> </span><span class="token builtin">open</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;datos.tmp&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;w&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> encoding</span><span class="token operator" style="color:#393A34">=</span><span class="token string" style="color:#e3116c">&quot;utf-8&quot;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">as</span><span class="token plain"> f</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    f</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">write</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">contenido</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">os</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">replace</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;datos.tmp&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;datos.txt&quot;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic"># Sustitución segura</span><br></span></code></pre></div></div>
 <p>Esto evita perder el archivo original si algo falla a mitad.</p>
 <hr>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Idea clave</div><div class="admonitionContent_BuS1"><ul>
-<li><code>&#x27;w&#x27;</code> borra todo</li>
-<li><code>write()</code> no pone <code>\n</code></li>
-<li>el buffer puede retrasar la escritura real
-Si entiendes estas tres cosas, evitas el 90% de errores al escribir ficheros.</li>
-</ul></div></div>
-<hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="6️⃣-modos-avanzados"><strong>6️⃣ Modos avanzados</strong><a href="#6️⃣-modos-avanzados" class="hash-link" aria-label="Enlace directo al 6️⃣-modos-avanzados" title="Enlace directo al 6️⃣-modos-avanzados">​</a></h2>
 <table><thead><tr><th>Modo</th><th>Descripción</th></tr></thead><tbody><tr><td><code>&#x27;r+&#x27;</code></td><td>Leer y escribir</td></tr><tr><td><code>&#x27;w+&#x27;</code></td><td>Sobrescribe y permite leer</td></tr><tr><td><code>&#x27;a+&#x27;</code></td><td>Añadir y permitir lectura</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="-atención-al-puntero">🟦 Atención al puntero<a href="#-atención-al-puntero" class="hash-link" aria-label="Enlace directo al 🟦 Atención al puntero" title="Enlace directo al 🟦 Atención al puntero">​</a></h3>
@@ -256,9 +249,10 @@ Como técnico del equipo, debes analizar los archivos disponibles y restaurar el
 <li><code>b.txt</code> → Datos del módulo B</li>
 </ul>
 <p>Cada ejercicio representa una fase del proceso de recuperación.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>IMPORTANTE</div><div class="admonitionContent_BuS1"><p>En todos los ejercicios es <strong>obligatorio</strong> capturar la excepción <code>FileNotFoundError</code> para gestionar correctamente los casos en los que el archivo no esté disponible, mostrando un mensaje descriptivo por consola.</p></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="-fase-1--diagnóstico-del-sistema">🟢 Fase 1 – Diagnóstico del sistema<a href="#-fase-1--diagnóstico-del-sistema" class="hash-link" aria-label="Enlace directo al 🟢 Fase 1 – Diagnóstico del sistema" title="Enlace directo al 🟢 Fase 1 – Diagnóstico del sistema">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="-ejercicio-1--análisis-del-informe-inicial-entradatxt">🟩 Ejercicio 1 – Análisis del informe inicial (<code>entrada.txt</code>)<a href="#-ejercicio-1--análisis-del-informe-inicial-entradatxt" class="hash-link" aria-label="Enlace directo al -ejercicio-1--análisis-del-informe-inicial-entradatxt" title="Enlace directo al -ejercicio-1--análisis-del-informe-inicial-entradatxt">​</a></h4>
-<p>Lee completamente <code>entrada.txt</code> y muestra:</p>
+<p>Lee completamente <code>entrada.txt</code> (capturando la excepción si el archivo no existe) y muestra:</p>
 <ul>
 <li>Número total de líneas.</li>
 <li>Número total de caracteres.</li>
@@ -267,7 +261,7 @@ Como técnico del equipo, debes analizar los archivos disponibles y restaurar el
 </ul>
 <p>Objetivo: practicar lectura completa y manejo básico del archivo.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="-ejercicio-2--revisión-de-errores-en-el-sistema-logtxt">🟦 Ejercicio 2 – Revisión de errores en el sistema (<code>log.txt</code>)<a href="#-ejercicio-2--revisión-de-errores-en-el-sistema-logtxt" class="hash-link" aria-label="Enlace directo al -ejercicio-2--revisión-de-errores-en-el-sistema-logtxt" title="Enlace directo al -ejercicio-2--revisión-de-errores-en-el-sistema-logtxt">​</a></h4>
-<p>Recorre <code>log.txt</code> línea a línea y:</p>
+<p>Recorre <code>log.txt</code> línea a línea (controlando si el archivo existe) y:</p>
 <ul>
 <li>Muestra únicamente las líneas que contengan <code>ERROR</code>.</li>
 <li>Cuenta cuántos errores aparecen en total.</li>
@@ -276,7 +270,7 @@ Como técnico del equipo, debes analizar los archivos disponibles y restaurar el
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="-fase-2--control-del-puntero-y-verificación">🟡 Fase 2 – Control del puntero y verificación<a href="#-fase-2--control-del-puntero-y-verificación" class="hash-link" aria-label="Enlace directo al 🟡 Fase 2 – Control del puntero y verificación" title="Enlace directo al 🟡 Fase 2 – Control del puntero y verificación">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="-ejercicio-3--inspección-parcial-del-informe-entradatxt">🟨 Ejercicio 3 – Inspección parcial del informe (<code>entrada.txt</code>)<a href="#-ejercicio-3--inspección-parcial-del-informe-entradatxt" class="hash-link" aria-label="Enlace directo al -ejercicio-3--inspección-parcial-del-informe-entradatxt" title="Enlace directo al -ejercicio-3--inspección-parcial-del-informe-entradatxt">​</a></h4>
 <ol>
-<li>Lee los primeros 25 caracteres.</li>
+<li>Lee los primeros 25 caracteres (capturando la excepción si no existe).</li>
 <li>Muestra la posición actual del puntero con <code>tell()</code>.</li>
 <li>Vuelve al inicio con <code>seek(0)</code>.</li>
 <li>Lee de nuevo los primeros 10 caracteres.</li>
@@ -287,17 +281,17 @@ Como técnico del equipo, debes analizar los archivos disponibles y restaurar el
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="-ejercicio-4--unificación-de-módulos-atxt-y-btxt">🟧 Ejercicio 4 – Unificación de módulos (<code>a.txt</code> y <code>b.txt</code>)<a href="#-ejercicio-4--unificación-de-módulos-atxt-y-btxt" class="hash-link" aria-label="Enlace directo al -ejercicio-4--unificación-de-módulos-atxt-y-btxt" title="Enlace directo al -ejercicio-4--unificación-de-módulos-atxt-y-btxt">​</a></h4>
 <p>Crea un nuevo archivo llamado <code>sistema_unificado.txt</code> con el siguiente formato:</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">--- MODULO A ---</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">(contenido de a.txt)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">--- MODULO B ---</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">(contenido de b.txt)</span><br></span></code></pre></div></div>
-<p>Debes respetar los saltos de línea y no cargar los archivos completos con <code>.read()</code>.</p>
+<p>Debes respetar los saltos de línea y no cargar los archivos completos con <code>.read()</code>. Asegúrate de gestionar la posible ausencia de los archivos de origen.</p>
 <p>Objetivo: practicar lectura y escritura controlada.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="-ejercicio-5--generación-de-copia-de-seguridad-origentxt">🟥 Ejercicio 5 – Generación de copia de seguridad (<code>origen.txt</code>)<a href="#-ejercicio-5--generación-de-copia-de-seguridad-origentxt" class="hash-link" aria-label="Enlace directo al -ejercicio-5--generación-de-copia-de-seguridad-origentxt" title="Enlace directo al -ejercicio-5--generación-de-copia-de-seguridad-origentxt">​</a></h4>
 <p>Crea un archivo <code>backup_config.txt</code> que contenga exactamente el mismo contenido que <code>origen.txt</code>.</p>
-<p>Condición: debe hacerse recorriendo el archivo línea a línea.</p>
+<p>Condición: debe hacerse recorriendo el archivo línea a línea y controlando errores de apertura.</p>
 <p>Objetivo: consolidar el patrón correcto de copia de archivos.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="-fase-4--actualización-segura-del-sistema">🔴 Fase 4 – Actualización segura del sistema<a href="#-fase-4--actualización-segura-del-sistema" class="hash-link" aria-label="Enlace directo al 🔴 Fase 4 – Actualización segura del sistema" title="Enlace directo al 🔴 Fase 4 – Actualización segura del sistema">​</a></h3>
 <p>El sistema ha sido revisado y debe marcarse como operativo.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="-ejercicio-6--actualización-controlada-entradatxt">🟫 Ejercicio 6 – Actualización controlada (<code>entrada.txt</code>)<a href="#-ejercicio-6--actualización-controlada-entradatxt" class="hash-link" aria-label="Enlace directo al -ejercicio-6--actualización-controlada-entradatxt" title="Enlace directo al -ejercicio-6--actualización-controlada-entradatxt">​</a></h4>
 <ol>
-<li>Lee el contenido de <code>entrada.txt</code>.</li>
+<li>Lee el contenido de <code>entrada.txt</code> gestionando la excepción si no existe.</li>
 <li>Añade al final la línea:</li>
 </ol>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Estado actual: OPERATIVO</span><br></span></code></pre></div></div>
@@ -308,7 +302,7 @@ Como técnico del equipo, debes analizar los archivos disponibles y restaurar el
 <p>Objetivo: practicar escritura segura sin riesgo de corrupción.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="-fase-final--verificación">🟣 Fase Final – Verificación<a href="#-fase-final--verificación" class="hash-link" aria-label="Enlace directo al 🟣 Fase Final – Verificación" title="Enlace directo al 🟣 Fase Final – Verificación">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="-ejercicio-7--confirmación-del-estado-final">🟪 Ejercicio 7 – Confirmación del estado final<a href="#-ejercicio-7--confirmación-del-estado-final" class="hash-link" aria-label="Enlace directo al 🟪 Ejercicio 7 – Confirmación del estado final" title="Enlace directo al 🟪 Ejercicio 7 – Confirmación del estado final">​</a></h4>
-<p>Abre el nuevo <code>entrada.txt</code> y comprueba que:</p>
+<p>Abre el nuevo <code>entrada.txt</code> (capturando errores si no se encuentra) y comprueba que:</p>
 <ul>
 <li>Contiene la línea <code>Estado actual: OPERATIVO</code>.</li>
 <li>No se ha perdido el contenido anterior.</li>
