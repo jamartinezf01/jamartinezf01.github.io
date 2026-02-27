@@ -1,4 +1,4 @@
-﻿[
+[
   {"id_evento": "EV-001", "tipo": "INFO", "mensaje": "inicio"},
   {"id_evento": "EV-002", "mensaje": "sin tipo"},
   {"id_evento": "EV-003", "tipo": "ERROR", "mensaje": "fallo db"},

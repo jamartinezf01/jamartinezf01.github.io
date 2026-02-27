@@ -1,4 +1,4 @@
-﻿[
+[
   {"id": 1, "nombre": "Ana", "email": "ana@empresa.com", "rol": "admin", "activo": true},
   {"id": 2, "nombre": "Luis", "email": "", "rol": "analista", "activo": true},
   {"id": 3, "nombre": "Nora", "email": "nora@empresa.com", "rol": "soporte", "activo": false},

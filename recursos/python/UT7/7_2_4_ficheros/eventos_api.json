@@ -1,4 +1,4 @@
-﻿[
+[
   {"id_evento": "E-1001", "timestamp": "2026-02-17T08:20:11", "tipo": "INFO", "mensaje": "Inicio de servicio"},
   {"id_evento": "E-1002", "timestamp": "2026-02-17T08:21:05", "tipo": "WARN", "mensaje": "Latencia alta"},
   {"id_evento": "E-1003", "timestamp": "2026-02-17T08:22:41", "tipo": "ERROR", "mensaje": "Timeout en proveedor"},
