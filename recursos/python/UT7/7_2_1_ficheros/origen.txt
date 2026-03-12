@@ -1,7 +1,0 @@
-MODULO A - CONFIGURACION
-
-Parametro_1 = activo
-Parametro_2 = 42
-Parametro_3 = habilitado
-
-Fin del modulo A

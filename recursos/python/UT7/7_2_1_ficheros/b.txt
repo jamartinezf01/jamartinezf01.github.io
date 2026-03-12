@@ -1,5 +1,0 @@
-MODULO B - DATOS
-
-Usuario: invitado
-Permisos: limitados
-Estado: error_detectado
