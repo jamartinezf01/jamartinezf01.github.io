@@ -8,8 +8,8 @@
 <meta httpequiv="Expires" content="0">
 
 <script src="/version.js"></script><link rel="stylesheet" href="/assets/css/styles.5bff957b.css">
-<script src="/assets/js/runtime~main.e2975454.js" defer="defer"></script>
-<script src="/assets/js/main.8e6563cc.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4c94fc4a.js" defer="defer"></script>
+<script src="/assets/js/main.a6f84c8b.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -19,66 +19,74 @@
 <div style="display:flex;justify-content:center"><img src="/img/portada_dwes.jpg" alt="Desarrollo Web en Entorno Servidor" title="Desarrollo Web en Entorno Servidor"></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣-qué-aprenderemos">1️⃣ <strong>¿Qué aprenderemos?</strong><a href="#1️⃣-qué-aprenderemos" class="hash-link" aria-label="Enlace directo al 1️⃣-qué-aprenderemos" title="Enlace directo al 1️⃣-qué-aprenderemos" translate="no">​</a></h2>
 <p>En este módulo aprenderemos a desarrollar aplicaciones web cuya lógica principal se ejecuta en el servidor. Partiremos del funcionamiento básico de una aplicación web y de la comunicación entre cliente y servidor para avanzar, de forma progresiva, hacia aplicaciones completas desarrolladas con <strong>Java y Spring Boot</strong>.</p>
-<p>A lo largo del curso se trabajará con controladores, rutas, peticiones HTTP, formularios, vistas dinámicas con <strong>Thymeleaf</strong>, organización del código, acceso a bases de datos mediante <strong>Spring Data JPA</strong>, mantenimiento del estado mediante sesiones y cookies, autenticación y autorización y desarrollo de servicios web mediante <strong>APIs REST</strong>.</p>
-<p>El objetivo no será únicamente aprender a utilizar Spring Boot, sino comprender qué ocurre detrás de una aplicación web, cómo se relacionan sus componentes y por qué se toman determinadas decisiones de diseño. Conceptos como la separación entre presentación y lógica de negocio, la organización por responsabilidades o el uso de patrones como MVC se irán introduciendo de forma transversal, cuando resulten necesarios dentro de las distintas unidades.</p>
-<p>En la última parte del módulo se combinarán tecnologías de servidor y cliente para construir aplicaciones más completas, consumir servicios desde JavaScript, realizar pruebas y documentar el trabajo desarrollado.</p>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Idea principal</div><div class="admonitionContent_BuS1"><p>Spring Boot será la tecnología principal del módulo, pero el objetivo será aprender conceptos de desarrollo web en entorno servidor que puedan trasladarse posteriormente a otros lenguajes, frameworks y plataformas.</p></div></div>
+<p>A lo largo del curso trabajaremos con peticiones HTTP, controladores, rutas, formularios, vistas dinámicas con <strong>Thymeleaf</strong>, acceso a bases de datos mediante <strong>Spring Data JPA</strong>, mantenimiento del estado mediante sesiones y cookies, autenticación y autorización y desarrollo de servicios web mediante <strong>APIs REST</strong>.</p>
+<p>El objetivo no será únicamente aprender a utilizar Spring Boot, sino comprender qué ocurre detrás de una aplicación web, cómo se relacionan sus componentes y por qué se toman determinadas decisiones de diseño. Conceptos como la separación entre presentación y lógica de negocio, la organización por responsabilidades o el uso del patrón MVC se irán introduciendo de forma transversal, cuando resulten necesarios dentro de las distintas unidades.</p>
+<p>En la última parte del módulo combinaremos tecnologías de servidor y cliente para construir aplicaciones más completas, consumir servicios desde JavaScript, actualizar información de forma dinámica y desarrollar un proyecto integrador.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Idea principal</div><div class="admonitionContent_BuS1"><p>Spring Boot será la tecnología principal del módulo, pero antes de utilizarlo necesitaremos comprender cómo funciona una aplicación web y cómo se comunican cliente y servidor.</p><p>Los conceptos aprendidos podrán trasladarse posteriormente a otros lenguajes, frameworks y plataformas.</p></div></div>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2️⃣-organización-del-módulo">2️⃣ <strong>Organización del módulo</strong><a href="#2️⃣-organización-del-módulo" class="hash-link" aria-label="Enlace directo al 2️⃣-organización-del-módulo" title="Enlace directo al 2️⃣-organización-del-módulo" translate="no">​</a></h2>
-<p>El módulo se organiza en siete unidades de trabajo. Cada una introduce nuevos conceptos sobre los anteriores, de manera que las aplicaciones desarrolladas serán progresivamente más completas.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ut1--arquitectura-web-y-fundamentos"><strong>UT1 – Arquitectura web y fundamentos</strong><a href="#ut1--arquitectura-web-y-fundamentos" class="hash-link" aria-label="Enlace directo al ut1--arquitectura-web-y-fundamentos" title="Enlace directo al ut1--arquitectura-web-y-fundamentos" translate="no">​</a></h3>
-<p>Comenzaremos analizando cómo funciona una aplicación web y qué diferencias existen entre la ejecución de código en el cliente y en el servidor.</p>
-<p>Se trabajarán conceptos como:</p>
+<p>El módulo se organiza en <strong>siete unidades de trabajo</strong>. Cada una parte de los conceptos anteriores y añade nuevas capacidades, de forma que las aplicaciones desarrolladas serán progresivamente más completas.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ut1--arquitectura-web-y-fundamentos">🟩 UT1 – Arquitectura web y fundamentos<a href="#-ut1--arquitectura-web-y-fundamentos" class="hash-link" aria-label="Enlace directo al 🟩 UT1 – Arquitectura web y fundamentos" title="Enlace directo al 🟩 UT1 – Arquitectura web y fundamentos" translate="no">​</a></h3>
+<p>Comenzaremos entendiendo cómo funciona una aplicación web antes de introducir un framework.</p>
+<p>Trabajaremos:</p>
 <ol>
 <li class="">Arquitectura cliente-servidor.</li>
+<li class="">Diferencias entre ejecución en cliente y en servidor.</li>
 <li class="">Funcionamiento básico de HTTP.</li>
 <li class="">Peticiones y respuestas.</li>
+<li class="">Códigos de estado y cabeceras principales.</li>
 <li class="">Generación dinámica de contenido.</li>
-<li class="">Tecnologías de desarrollo web en servidor.</li>
 <li class="">Servidores web y servidores de aplicaciones.</li>
-<li class="">Introducción a Java y Spring Boot en aplicaciones web.</li>
-<li class="">Spring Initializr y creación de un proyecto.</li>
-<li class="">Estructura básica de una aplicación Spring Boot.</li>
-<li class="">Primeros controladores, rutas y parámetros.</li>
+<li class="">Tecnologías de desarrollo web en servidor.</li>
+<li class="">Simulación del funcionamiento de peticiones y respuestas HTTP mediante Java.</li>
 </ol>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>En esta unidad</div><div class="admonitionContent_BuS1"><p>Todavía no utilizaremos Spring Boot.</p><p>El objetivo será comprender primero el funcionamiento general de una aplicación web y los conceptos sobre los que trabajaremos posteriormente con el framework.</p></div></div>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ut2--controladores-vistas-y-thymeleaf"><strong>UT2 – Controladores, vistas y Thymeleaf</strong><a href="#ut2--controladores-vistas-y-thymeleaf" class="hash-link" aria-label="Enlace directo al ut2--controladores-vistas-y-thymeleaf" title="Enlace directo al ut2--controladores-vistas-y-thymeleaf" translate="no">​</a></h3>
-<p>Una vez comprendido el funcionamiento general de una aplicación web, aprenderemos a generar contenido dinámico desde el servidor y a separar la lógica de la aplicación de su presentación.</p>
-<p>Se trabajarán:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ut2--controladores-vistas-y-thymeleaf">🟨 UT2 – Controladores, vistas y Thymeleaf<a href="#-ut2--controladores-vistas-y-thymeleaf" class="hash-link" aria-label="Enlace directo al 🟨 UT2 – Controladores, vistas y Thymeleaf" title="Enlace directo al 🟨 UT2 – Controladores, vistas y Thymeleaf" translate="no">​</a></h3>
+<p>Una vez comprendido el funcionamiento general de una aplicación web, comenzaremos a desarrollar aplicaciones con <strong>Spring Boot</strong>.</p>
+<p>El recorrido de la unidad será progresivo:</p>
 <ol>
-<li class="">Controladores y rutas.</li>
-<li class="">Devolución de vistas desde Spring Boot.</li>
-<li class="">Uso de <code>Model</code>.</li>
-<li class="">Plantillas Thymeleaf.</li>
-<li class="">Variables y expresiones.</li>
-<li class="">Operadores.</li>
-<li class="">Condicionales.</li>
-<li class="">Bucles y colecciones.</li>
-<li class="">Fragmentos y plantillas reutilizables.</li>
+<li class="">Creación de un proyecto con Spring Initializr.</li>
+<li class="">Estructura básica de un proyecto Spring Boot.</li>
+<li class="">Dependencias y funcionamiento básico de Maven.</li>
+<li class="">Controladores y rutas con Spring MVC.</li>
+<li class="">Organización de rutas mediante <code>@RequestMapping</code> y <code>@GetMapping</code>.</li>
+<li class="">Parámetros de petición con <code>@RequestParam</code> y <code>@PathVariable</code>.</li>
+<li class="">Devolución de vistas Thymeleaf.</li>
+<li class="">Uso de <code>Model</code> para enviar datos a una vista.</li>
+<li class="">Objetos Java como datos de la vista.</li>
+<li class="">Expresiones <code>${...}</code> y <code>@{...}</code>.</li>
+<li class="">Construcción de enlaces y referencias a recursos.</li>
 <li class="">Recursos estáticos.</li>
-<li class="">Introducción al patrón MVC.</li>
+<li class="">Colecciones en las vistas.</li>
+<li class="">Bucles con <code>th:each</code>.</li>
+<li class="">Condicionales con <code>th:if</code> y <code>th:unless</code>.</li>
+<li class="">Integración progresiva de todos estos elementos en una misma aplicación.</li>
 </ol>
+<p>A lo largo de la unidad desarrollaremos una aplicación que irá creciendo en varias fases, de modo que cada actividad reutilizará y ampliará el trabajo anterior.</p>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ut3--formularios-y-validación"><strong>UT3 – Formularios y validación</strong><a href="#ut3--formularios-y-validación" class="hash-link" aria-label="Enlace directo al ut3--formularios-y-validación" title="Enlace directo al ut3--formularios-y-validación" translate="no">​</a></h3>
-<p>En esta unidad aprenderemos a recibir, procesar y validar la información que el usuario envía desde una página web.</p>
-<p>Se trabajarán:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ut3--formularios-y-validación">🟧 UT3 – Formularios y validación<a href="#-ut3--formularios-y-validación" class="hash-link" aria-label="Enlace directo al 🟧 UT3 – Formularios y validación" title="Enlace directo al 🟧 UT3 – Formularios y validación" translate="no">​</a></h3>
+<p>En esta unidad aprenderemos a recibir y procesar información enviada por el usuario desde una página web.</p>
+<p>Trabajaremos:</p>
 <ol>
 <li class="">Formularios HTML.</li>
 <li class="">Envío de datos mediante GET y POST.</li>
-<li class="">Parámetros de las peticiones.</li>
-<li class=""><code>@RequestParam</code>.</li>
-<li class=""><code>@PathVariable</code>.</li>
+<li class="">Diferencias entre ambos métodos en el contexto de formularios.</li>
+<li class="">Recepción de datos en controladores.</li>
 <li class="">Binding de formularios con objetos Java.</li>
 <li class="">Validación de datos.</li>
 <li class="">Mensajes de error.</li>
+<li class="">Conservación y presentación de errores en las vistas.</li>
 <li class="">Redirecciones.</li>
-<li class="">Flujo completo entre formulario, servidor y vista.</li>
-<li class="">Separación de responsabilidades en el procesamiento de formularios.</li>
+<li class="">Datos temporales asociados a una redirección.</li>
+<li class="">Flujo completo entre formulario, controlador y vista.</li>
+<li class="">Separación de responsabilidades durante el procesamiento de formularios.</li>
 </ol>
+<p>Los conceptos de rutas y parámetros ya introducidos en la UT2 se reutilizarán aquí dentro de un problema nuevo: el procesamiento de formularios.</p>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ut4--persistencia-con-spring-data-jpa"><strong>UT4 – Persistencia con Spring Data JPA</strong><a href="#ut4--persistencia-con-spring-data-jpa" class="hash-link" aria-label="Enlace directo al ut4--persistencia-con-spring-data-jpa" title="Enlace directo al ut4--persistencia-con-spring-data-jpa" translate="no">​</a></h3>
-<p>Hasta este momento los datos utilizados por las aplicaciones serán temporales o simulados. En esta unidad incorporaremos persistencia real mediante bases de datos.</p>
-<p>Se trabajarán:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ut4--persistencia-con-spring-data-jpa">🟥 UT4 – Persistencia con Spring Data JPA<a href="#-ut4--persistencia-con-spring-data-jpa" class="hash-link" aria-label="Enlace directo al 🟥 UT4 – Persistencia con Spring Data JPA" title="Enlace directo al 🟥 UT4 – Persistencia con Spring Data JPA" translate="no">​</a></h3>
+<p>Hasta este momento los datos utilizados por nuestras aplicaciones serán temporales o estarán creados directamente desde Java. En esta unidad incorporaremos persistencia real mediante bases de datos.</p>
+<p>Trabajaremos:</p>
 <ol>
 <li class="">Integración de una base de datos en Spring Boot.</li>
 <li class="">Introducción a JPA e Hibernate.</li>
@@ -88,15 +96,16 @@
 <li class="">Operaciones CRUD.</li>
 <li class="">Relaciones básicas entre entidades.</li>
 <li class="">Consultas.</li>
-<li class="">Capa de servicio.</li>
+<li class="">Introducción de una capa de servicio cuando la aplicación lo necesite.</li>
 <li class="">Organización <code>Controller → Service → Repository</code>.</li>
 <li class="">Integración de la persistencia con controladores y vistas.</li>
 <li class="">Prueba y documentación de aplicaciones con acceso a datos.</li>
 </ol>
+<p>La organización por capas no se introducirá como una estructura artificial desde el principio. Aparecerá cuando el crecimiento de la aplicación haga necesario separar mejor sus responsabilidades.</p>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ut5--sesiones-cookies-y-seguridad"><strong>UT5 – Sesiones, cookies y seguridad</strong><a href="#ut5--sesiones-cookies-y-seguridad" class="hash-link" aria-label="Enlace directo al ut5--sesiones-cookies-y-seguridad" title="Enlace directo al ut5--sesiones-cookies-y-seguridad" translate="no">​</a></h3>
-<p>Las aplicaciones web necesitan mantener información entre diferentes peticiones e identificar a los usuarios que acceden a ellas.</p>
-<p>Se trabajarán:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ut5--sesiones-cookies-y-seguridad">🟪 UT5 – Sesiones, cookies y seguridad<a href="#-ut5--sesiones-cookies-y-seguridad" class="hash-link" aria-label="Enlace directo al 🟪 UT5 – Sesiones, cookies y seguridad" title="Enlace directo al 🟪 UT5 – Sesiones, cookies y seguridad" translate="no">​</a></h3>
+<p>Una aplicación web recibe peticiones independientes, pero en muchas ocasiones necesita recordar información entre ellas e identificar al usuario que está utilizando el sistema.</p>
+<p>Trabajaremos:</p>
 <ol>
 <li class="">Estado en aplicaciones web.</li>
 <li class="">Cookies.</li>
@@ -107,41 +116,46 @@
 <li class="">Login y logout.</li>
 <li class="">Usuarios y roles.</li>
 <li class="">Rutas públicas y privadas.</li>
+<li class="">Autorización básica.</li>
 <li class="">Prueba y depuración de aplicaciones con estado y autenticación.</li>
 </ol>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ut6--apis-rest"><strong>UT6 – APIs REST</strong><a href="#ut6--apis-rest" class="hash-link" aria-label="Enlace directo al ut6--apis-rest" title="Enlace directo al ut6--apis-rest" translate="no">​</a></h3>
-<p>Además de generar páginas HTML, una aplicación servidor puede ofrecer datos y funcionalidades para que otras aplicaciones puedan utilizarlos.</p>
-<p>Se trabajarán:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ut6--apis-rest">🟩 UT6 – APIs REST<a href="#-ut6--apis-rest" class="hash-link" aria-label="Enlace directo al 🟩 UT6 – APIs REST" title="Enlace directo al 🟩 UT6 – APIs REST" translate="no">​</a></h3>
+<p>Además de generar páginas HTML, una aplicación servidor puede ofrecer datos y operaciones para que otras aplicaciones puedan utilizarlos.</p>
+<p>Trabajaremos:</p>
 <ol>
 <li class="">Concepto de servicio web.</li>
-<li class="">Características y ventajas de los servicios web.</li>
 <li class="">Principios básicos de REST.</li>
+<li class="">Recursos y URL.</li>
 <li class="">HTTP aplicado a APIs.</li>
 <li class="">Controladores REST.</li>
-<li class="">JSON.</li>
-<li class="">Métodos HTTP.</li>
 <li class=""><code>@RestController</code>.</li>
-<li class=""><code>@RequestBody</code>.</li>
+<li class="">Representación de datos mediante JSON.</li>
+<li class="">Métodos HTTP en una API REST.</li>
+<li class="">Recepción de datos mediante <code>@RequestBody</code>.</li>
+<li class="">Uso de objetos específicos para intercambio de datos cuando resulte necesario.</li>
 <li class="">Operaciones CRUD mediante una API.</li>
-<li class="">Validación y gestión de errores.</li>
+<li class="">Validación.</li>
+<li class="">Gestión de errores.</li>
 <li class="">Pruebas de servicios con Insomnia.</li>
-<li class="">Consumo de APIs.</li>
 <li class="">Documentación básica de servicios.</li>
 </ol>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Herramienta de referencia</div><div class="admonitionContent_BuS1"><p>Para probar las APIs REST utilizaremos <strong>Insomnia</strong>.</p><p>Postman puede emplearse como alternativa, pero no será la herramienta de referencia del módulo.</p></div></div>
 <hr>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ut7--integración-pruebas-y-proyecto-final"><strong>UT7 – Integración, pruebas y proyecto final</strong><a href="#ut7--integración-pruebas-y-proyecto-final" class="hash-link" aria-label="Enlace directo al ut7--integración-pruebas-y-proyecto-final" title="Enlace directo al ut7--integración-pruebas-y-proyecto-final" translate="no">​</a></h3>
-<p>En la última unidad integraremos los conocimientos adquiridos para desarrollar aplicaciones web más completas y combinar tecnologías de servidor y cliente.</p>
-<p>Se trabajarán:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ut7--integración-cliente-servidor-y-proyecto-final">🟨 UT7 – Integración cliente-servidor y proyecto final<a href="#-ut7--integración-cliente-servidor-y-proyecto-final" class="hash-link" aria-label="Enlace directo al 🟨 UT7 – Integración cliente-servidor y proyecto final" title="Enlace directo al 🟨 UT7 – Integración cliente-servidor y proyecto final" translate="no">​</a></h3>
+<p>En la última unidad integraremos los conocimientos adquiridos y veremos cómo una aplicación cliente puede comunicarse con los servicios desarrollados en el servidor.</p>
+<p>Trabajaremos:</p>
 <ol>
-<li class="">Integración de las distintas capas de una aplicación.</li>
+<li class="">Integración de las distintas partes de una aplicación.</li>
 <li class="">Combinación de vistas y APIs.</li>
 <li class="">Diferencias y complementariedad entre tecnologías cliente y servidor.</li>
 <li class="">Consumo de servicios desde JavaScript.</li>
-<li class="">Uso de <code>fetch()</code> para comunicarse con una API.</li>
-<li class="">Actualización dinámica del contenido de una página.</li>
-<li class="">Validación e interacción en el cliente.</li>
-<li class="">Pruebas básicas de la aplicación.</li>
+<li class="">Uso de <code>fetch()</code> para realizar peticiones HTTP.</li>
+<li class="">Peticiones asíncronas.</li>
+<li class="">Procesamiento de respuestas.</li>
+<li class="">Actualización dinámica del DOM.</li>
+<li class="">Gestión básica de errores en el cliente.</li>
+<li class="">Pruebas de la aplicación.</li>
 <li class="">Documentación.</li>
 <li class="">Preparación para el despliegue.</li>
 <li class="">Desarrollo de un proyecto final integrador.</li>
@@ -155,16 +169,18 @@
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>RA9 y formación en empresa</div><div class="admonitionContent_BuS1"><p>El <strong>RA9</strong> se desarrollará principalmente durante la <strong>fase de formación en empresa u organismo equiparado (FEOE)</strong>.</p></div></div>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4️⃣-tecnologías-y-herramientas">4️⃣ <strong>Tecnologías y herramientas</strong><a href="#4️⃣-tecnologías-y-herramientas" class="hash-link" aria-label="Enlace directo al 4️⃣-tecnologías-y-herramientas" title="Enlace directo al 4️⃣-tecnologías-y-herramientas" translate="no">​</a></h2>
-<p>Durante el módulo se utilizarán principalmente las siguientes herramientas y tecnologías:</p>
-<table><thead><tr><th>Tecnología</th><th>Uso principal</th></tr></thead><tbody><tr><td><strong>Java</strong></td><td>Lenguaje de programación principal</td></tr><tr><td><strong>Spring Boot</strong></td><td>Desarrollo de aplicaciones web en servidor</td></tr><tr><td><strong>Spring MVC</strong></td><td>Controladores, rutas y procesamiento de peticiones</td></tr><tr><td><strong>Thymeleaf</strong></td><td>Generación de vistas HTML dinámicas</td></tr><tr><td><strong>Spring Data JPA</strong></td><td>Persistencia y acceso a bases de datos</td></tr><tr><td><strong>Spring Security</strong></td><td>Autenticación y autorización</td></tr><tr><td><strong>Maven</strong></td><td>Gestión del proyecto y de sus dependencias</td></tr><tr><td><strong>IntelliJ IDEA</strong></td><td>Entorno de desarrollo de referencia</td></tr><tr><td><strong>Spring Initializr</strong></td><td>Generación inicial de proyectos Spring Boot</td></tr><tr><td><strong>Insomnia</strong></td><td>Prueba de APIs REST</td></tr><tr><td><strong>Git</strong></td><td>Control de versiones</td></tr><tr><td><strong>JavaScript</strong></td><td>Integración cliente-servidor en la parte final del módulo</td></tr></tbody></table>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Entorno de trabajo</div><div class="admonitionContent_BuS1"><p>El IDE de referencia será <strong>IntelliJ IDEA en su modalidad gratuita</strong>. Se podrán utilizar otros entornos como Visual Studio Code o Eclipse, aunque su configuración quedará a cargo del alumnado.</p><p>Los proyectos Spring Boot se crearán principalmente mediante <strong>Spring Initializr desde su versión web</strong>.</p></div></div>
+<p>Durante el módulo utilizaremos principalmente las siguientes herramientas y tecnologías:</p>
+<table><thead><tr><th>Tecnología</th><th>Uso principal</th></tr></thead><tbody><tr><td><strong>Java</strong></td><td>Lenguaje de programación principal</td></tr><tr><td><strong>Spring Boot</strong></td><td>Desarrollo de aplicaciones web en servidor</td></tr><tr><td><strong>Spring MVC</strong></td><td>Controladores, rutas y procesamiento de peticiones</td></tr><tr><td><strong>Thymeleaf</strong></td><td>Generación de vistas HTML dinámicas</td></tr><tr><td><strong>Spring Data JPA</strong></td><td>Persistencia y acceso a bases de datos</td></tr><tr><td><strong>Spring Security</strong></td><td>Autenticación y autorización</td></tr><tr><td><strong>Maven</strong></td><td>Sistema de construcción y gestión de dependencias</td></tr><tr><td><strong>IntelliJ IDEA</strong></td><td>Entorno de desarrollo de referencia</td></tr><tr><td><strong>Spring Initializr</strong></td><td>Generación inicial de proyectos Spring Boot</td></tr><tr><td><strong>Insomnia</strong></td><td>Prueba de APIs REST</td></tr><tr><td><strong>Git</strong></td><td>Control de versiones</td></tr><tr><td><strong>JavaScript</strong></td><td>Integración cliente-servidor en la parte final del módulo</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Entorno de trabajo</div><div class="admonitionContent_BuS1"><p>El IDE de referencia será <strong>IntelliJ IDEA en su modalidad gratuita</strong>.</p><p>Se podrán utilizar otros entornos como Visual Studio Code o Eclipse, aunque su configuración quedará a cargo del alumnado.</p><p>Los proyectos Spring Boot se crearán principalmente mediante <strong>Spring Initializr desde la web</strong>.</p><p>Maven se utilizará como sistema de construcción y gestión de dependencias, profundizando en su funcionamiento únicamente cuando resulte necesario.</p></div></div>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5️⃣-forma-de-trabajo">5️⃣ <strong>Forma de trabajo</strong><a href="#5️⃣-forma-de-trabajo" class="hash-link" aria-label="Enlace directo al 5️⃣-forma-de-trabajo" title="Enlace directo al 5️⃣-forma-de-trabajo" translate="no">​</a></h2>
-<p>El aprendizaje tendrá un enfoque principalmente práctico. Los conceptos se introducirán a medida que sean necesarios para resolver problemas concretos y se acompañarán de ejemplos guiados, ejercicios y pequeñas aplicaciones.</p>
-<p>A lo largo del módulo iremos construyendo aplicaciones cada vez más completas. Al principio trabajaremos con ejemplos muy sencillos para comprender el funcionamiento de Spring Boot y, progresivamente, incorporaremos vistas, formularios, persistencia, seguridad y servicios web.</p>
-<p>La organización del código también evolucionará a medida que las aplicaciones crezcan. La separación entre controladores, servicios, repositorios y vistas no se estudiará como un contenido aislado, sino como una necesidad que aparecerá de forma natural al desarrollar proyectos más complejos.</p>
-<p>No se pretende memorizar anotaciones o fragmentos de código, sino comprender qué función cumple cada elemento dentro de una aplicación web y ser capaz de aplicarlo en situaciones nuevas.</p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>aviso</div><div class="admonitionContent_BuS1"><p>Spring Boot facilita gran parte de la configuración necesaria para desarrollar aplicaciones web, pero utilizar un framework sin comprender qué ocurre detrás suele provocar dificultades cuando aparecen errores. Por este motivo, antes de automatizar un proceso intentaremos comprender qué problema está resolviendo.</p></div></div></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--next" href="/docs/dwes/repaso-java"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">Repaso de Java</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1️⃣-qué-aprenderemos" class="table-of-contents__link toc-highlight">1️⃣ <strong>¿Qué aprenderemos?</strong></a></li><li><a href="#2️⃣-organización-del-módulo" class="table-of-contents__link toc-highlight">2️⃣ <strong>Organización del módulo</strong></a><ul><li><a href="#ut1--arquitectura-web-y-fundamentos" class="table-of-contents__link toc-highlight"><strong>UT1 – Arquitectura web y fundamentos</strong></a></li><li><a href="#ut2--controladores-vistas-y-thymeleaf" class="table-of-contents__link toc-highlight"><strong>UT2 – Controladores, vistas y Thymeleaf</strong></a></li><li><a href="#ut3--formularios-y-validación" class="table-of-contents__link toc-highlight"><strong>UT3 – Formularios y validación</strong></a></li><li><a href="#ut4--persistencia-con-spring-data-jpa" class="table-of-contents__link toc-highlight"><strong>UT4 – Persistencia con Spring Data JPA</strong></a></li><li><a href="#ut5--sesiones-cookies-y-seguridad" class="table-of-contents__link toc-highlight"><strong>UT5 – Sesiones, cookies y seguridad</strong></a></li><li><a href="#ut6--apis-rest" class="table-of-contents__link toc-highlight"><strong>UT6 – APIs REST</strong></a></li><li><a href="#ut7--integración-pruebas-y-proyecto-final" class="table-of-contents__link toc-highlight"><strong>UT7 – Integración, pruebas y proyecto final</strong></a></li></ul></li><li><a href="#3️⃣-resultados-de-aprendizaje" class="table-of-contents__link toc-highlight">3️⃣ <strong>Resultados de aprendizaje</strong></a></li><li><a href="#4️⃣-tecnologías-y-herramientas" class="table-of-contents__link toc-highlight">4️⃣ <strong>Tecnologías y herramientas</strong></a></li><li><a href="#5️⃣-forma-de-trabajo" class="table-of-contents__link toc-highlight">5️⃣ <strong>Forma de trabajo</strong></a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://jamfdev.github.io/">Apuntes para Ciclos Formativos de Formación Profesional</a> por <span property="cc:attributionName">Jose A. Martínez</span>  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p> 
+<p>El aprendizaje tendrá un enfoque principalmente práctico. Los conceptos se introducirán a medida que sean necesarios para resolver problemas concretos y se acompañarán de ejemplos guiados, ejercicios y aplicaciones progresivamente más completas.</p>
+<p>En la <strong>UT1</strong> comenzaremos sin Spring Boot para comprender cómo funciona una aplicación web, cómo se comunican cliente y servidor y qué papel desempeña HTTP.</p>
+<p>A partir de la <strong>UT2</strong> comenzaremos a utilizar Spring Boot. Primero trabajaremos con controladores, rutas y vistas sencillas y, progresivamente, incorporaremos datos dinámicos, formularios, persistencia, sesiones, seguridad y servicios web.</p>
+<p>Algunas unidades utilizarán proyectos que evolucionarán durante varias actividades. De esta forma podremos comprobar cómo una misma aplicación crece cuando aparecen nuevas necesidades, en lugar de comenzar siempre desde cero.</p>
+<p>La organización del código también evolucionará a medida que las aplicaciones crezcan. La separación entre controladores, servicios, repositorios y vistas no se estudiará como una estructura aislada, sino como una necesidad que aparecerá de forma natural al desarrollar proyectos más complejos.</p>
+<p>No pretendemos memorizar anotaciones o fragmentos de código. El objetivo es comprender qué función cumple cada elemento dentro de una aplicación web, saber relacionarlo con los conceptos que hay detrás y ser capaces de aplicarlo en situaciones nuevas.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>aviso</div><div class="admonitionContent_BuS1"><p>Spring Boot facilita gran parte de la configuración necesaria para desarrollar aplicaciones web, pero utilizar un framework sin comprender qué ocurre detrás suele provocar dificultades cuando aparecen errores.</p><p>Por este motivo, antes de automatizar un proceso intentaremos comprender qué problema está resolviendo.</p></div></div></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--next" href="/docs/dwes/repaso-java"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">Repaso de Java</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1️⃣-qué-aprenderemos" class="table-of-contents__link toc-highlight">1️⃣ <strong>¿Qué aprenderemos?</strong></a></li><li><a href="#2️⃣-organización-del-módulo" class="table-of-contents__link toc-highlight">2️⃣ <strong>Organización del módulo</strong></a><ul><li><a href="#-ut1--arquitectura-web-y-fundamentos" class="table-of-contents__link toc-highlight">🟩 UT1 – Arquitectura web y fundamentos</a></li><li><a href="#-ut2--controladores-vistas-y-thymeleaf" class="table-of-contents__link toc-highlight">🟨 UT2 – Controladores, vistas y Thymeleaf</a></li><li><a href="#-ut3--formularios-y-validación" class="table-of-contents__link toc-highlight">🟧 UT3 – Formularios y validación</a></li><li><a href="#-ut4--persistencia-con-spring-data-jpa" class="table-of-contents__link toc-highlight">🟥 UT4 – Persistencia con Spring Data JPA</a></li><li><a href="#-ut5--sesiones-cookies-y-seguridad" class="table-of-contents__link toc-highlight">🟪 UT5 – Sesiones, cookies y seguridad</a></li><li><a href="#-ut6--apis-rest" class="table-of-contents__link toc-highlight">🟩 UT6 – APIs REST</a></li><li><a href="#-ut7--integración-cliente-servidor-y-proyecto-final" class="table-of-contents__link toc-highlight">🟨 UT7 – Integración cliente-servidor y proyecto final</a></li></ul></li><li><a href="#3️⃣-resultados-de-aprendizaje" class="table-of-contents__link toc-highlight">3️⃣ <strong>Resultados de aprendizaje</strong></a></li><li><a href="#4️⃣-tecnologías-y-herramientas" class="table-of-contents__link toc-highlight">4️⃣ <strong>Tecnologías y herramientas</strong></a></li><li><a href="#5️⃣-forma-de-trabajo" class="table-of-contents__link toc-highlight">5️⃣ <strong>Forma de trabajo</strong></a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://jamfdev.github.io/">Apuntes para Ciclos Formativos de Formación Profesional</a> por <span property="cc:attributionName">Jose A. Martínez</span>  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p> 
         <p>📧 jamartinezf01@iesalbarregas.es</p></div></div></div></footer></div>
 </body>
 </html>
