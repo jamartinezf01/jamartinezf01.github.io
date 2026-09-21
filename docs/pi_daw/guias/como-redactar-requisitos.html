@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-pi_daw/guias/como-redactar-requisitos" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Cómo redactar requisitos | Apuntes de Informática</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://jamartinezf01.github.io/docs/pi_daw/guias/como-redactar-requisitos"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Cómo redactar requisitos | Apuntes de Informática"><meta data-rh="true" name="description" content="Guía para distinguir necesidades, objetivos y requisitos, y aprender a redactar requisitos funcionales y no funcionales de forma clara y comprobable"><meta data-rh="true" property="og:description" content="Guía para distinguir necesidades, objetivos y requisitos, y aprender a redactar requisitos funcionales y no funcionales de forma clara y comprobable"><link data-rh="true" rel="icon" href="/img/logoJAMF.png"><link data-rh="true" rel="canonical" href="https://jamartinezf01.github.io/docs/pi_daw/guias/como-redactar-requisitos"><link data-rh="true" rel="alternate" href="https://jamartinezf01.github.io/docs/pi_daw/guias/como-redactar-requisitos" hreflang="es"><link data-rh="true" rel="alternate" href="https://jamartinezf01.github.io/docs/pi_daw/guias/como-redactar-requisitos" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cómo redactar requisitos","item":"https://jamartinezf01.github.io/docs/pi_daw/guias/como-redactar-requisitos"}]}</script><meta httpequiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta httpequiv="Pragma" content="no-cache">
+<meta httpequiv="Expires" content="0">
+
+<script src="/version.js"></script><link rel="stylesheet" href="/assets/css/styles.5bff957b.css">
+<script src="/assets/js/runtime~main.a8f905fd.js" defer="defer"></script>
+<script src="/assets/js/main.4af938e3.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><b class="navbar__title text--truncate">Inicio</b></a><a class="navbar__item navbar__link" href="/docs/dwes/introduccion">DWES</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/pi_daw/introduccion">PI DAW</a><a class="navbar__item navbar__link" href="/docs/lenguajes-de-marcas/Introducción">LLMM</a><a class="navbar__item navbar__link" href="/docs/python/Introducción">Python</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://informatica.iesalbarregas.com/login/index.php" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Moodle<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Cambiar entre modo oscuro y claro (actualmente system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/pi_daw/introduccion"><span title="Proyecto Intermodular" class="linkLabel_WmDU">Proyecto Intermodular</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/pi_daw/Organizacion/temporalizacion"><span title="Organización" class="categoryLinkLabel_W154">Organización</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/pi_daw/fases"><span title="Fases del proyecto" class="categoryLinkLabel_W154">Fases del proyecto</span></a><button aria-label="Ampliar la categoría &#x27;Fases del proyecto&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/pi_daw/guias/como-redactar-requisitos"><span title="Guías" class="categoryLinkLabel_W154">Guías</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/pi_daw/guias/como-redactar-requisitos"><span title="Cómo redactar requisitos" class="linkLabel_WmDU">Cómo redactar requisitos</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Guías</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Cómo redactar requisitos</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Cómo redactar requisitos</h1></header>
+<p>Cuando empezamos un proyecto, es muy fácil decir cosas como:</p>
+<ul>
+<li class="">“La aplicación tendrá que estar bien”.</li>
+<li class="">“Queremos que sea intuitiva”.</li>
+<li class="">“Habrá un sistema de reservas”.</li>
+<li class="">“El usuario podrá hacer muchas cosas”.</li>
+</ul>
+<p>El problema es que frases como estas <strong>no sirven todavía como requisitos</strong>.</p>
+<p>En esta guía vamos a aprender a distinguir entre <strong>necesidad, objetivo, funcionalidad y requisito</strong>, y a redactar requisitos de forma <strong>clara, concreta y comprobable</strong>.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Un requisito bien redactado nos ayuda a:</p><ul>
+<li class="">entender mejor qué debe hacer la aplicación.</li>
+<li class="">organizarnos mejor durante el desarrollo.</li>
+<li class="">comprobar después si el proyecto cumple lo que prometía.</li>
+<li class="">evitar malentendidos dentro del equipo.</li>
+</ul></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣-antes-de-redactar-requisitos-qué-estamos-describiendo">1️⃣ <strong>Antes de redactar requisitos: qué estamos describiendo</strong><a href="#1️⃣-antes-de-redactar-requisitos-qué-estamos-describiendo" class="hash-link" aria-label="Enlace directo al 1️⃣-antes-de-redactar-requisitos-qué-estamos-describiendo" title="Enlace directo al 1️⃣-antes-de-redactar-requisitos-qué-estamos-describiendo" translate="no">​</a></h2>
+<p>Uno de los errores más habituales es mezclar conceptos.</p>
+<p>No es lo mismo hablar de:</p>
+<ul>
+<li class="">una <strong>necesidad</strong>.</li>
+<li class="">un <strong>objetivo</strong>.</li>
+<li class="">una <strong>funcionalidad</strong>.</li>
+<li class="">un <strong>requisito</strong>.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-necesidad">🟩 Necesidad<a href="#-necesidad" class="hash-link" aria-label="Enlace directo al 🟩 Necesidad" title="Enlace directo al 🟩 Necesidad" translate="no">​</a></h3>
+<p>La necesidad describe <strong>el problema o situación que queremos mejorar</strong>.</p>
+<p><strong>Ejemplo:</strong></p>
+<blockquote>
+<p>Actualmente las reservas de material de una asociación juvenil se gestionan por mensajes y una hoja de cálculo. Esto provoca errores, retrasos y dificultad para saber qué material está disponible.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-objetivo">🟦 Objetivo<a href="#-objetivo" class="hash-link" aria-label="Enlace directo al 🟦 Objetivo" title="Enlace directo al 🟦 Objetivo" translate="no">​</a></h3>
+<p>El objetivo explica <strong>qué queremos conseguir</strong> al desarrollar el proyecto.</p>
+<p><strong>Ejemplo:</strong></p>
+<blockquote>
+<p>Mejorar la gestión del préstamo de material y facilitar que los socios conozcan la disponibilidad de los recursos compartidos.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-funcionalidad">🟨 Funcionalidad<a href="#-funcionalidad" class="hash-link" aria-label="Enlace directo al 🟨 Funcionalidad" title="Enlace directo al 🟨 Funcionalidad" translate="no">​</a></h3>
+<p>La funcionalidad expresa <strong>una capacidad o acción que ofrecerá la aplicación</strong>.</p>
+<p><strong>Ejemplo:</strong></p>
+<blockquote>
+<p>Consultar el catálogo de materiales.</p>
+<p>Realizar una reserva.</p>
+<p>Registrar una devolución.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-requisito">🟧 Requisito<a href="#-requisito" class="hash-link" aria-label="Enlace directo al 🟧 Requisito" title="Enlace directo al 🟧 Requisito" translate="no">​</a></h3>
+<p>El requisito concreta <strong>qué debe hacer la aplicación o qué condiciones debe cumplir</strong>, de forma que después podamos comprobarlo.</p>
+<p><strong>Ejemplo:</strong></p>
+<blockquote>
+<p><strong>RF01.</strong> El sistema permitirá a una persona registrada consultar el catálogo de materiales disponibles.</p>
+</blockquote>
+<blockquote>
+<p><strong>RF02.</strong> El sistema permitirá reservar un material disponible indicando fecha de inicio y fecha prevista de devolución.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2️⃣-de-la-necesidad-al-requisito">2️⃣ <strong>De la necesidad al requisito</strong><a href="#2️⃣-de-la-necesidad-al-requisito" class="hash-link" aria-label="Enlace directo al 2️⃣-de-la-necesidad-al-requisito" title="Enlace directo al 2️⃣-de-la-necesidad-al-requisito" translate="no">​</a></h2>
+<p>El proceso lógico suele ser este:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Necesidad → Objetivo → Funcionalidades → Requisitos</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ejemplo-completo">🟩 Ejemplo completo<a href="#-ejemplo-completo" class="hash-link" aria-label="Enlace directo al 🟩 Ejemplo completo" title="Enlace directo al 🟩 Ejemplo completo" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="necesidad">Necesidad<a href="#necesidad" class="hash-link" aria-label="Enlace directo al Necesidad" title="Enlace directo al Necesidad" translate="no">​</a></h4>
+<blockquote>
+<p>La asociación no sabe con claridad qué material está disponible ni quién lo tiene en cada momento.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="objetivo">Objetivo<a href="#objetivo" class="hash-link" aria-label="Enlace directo al Objetivo" title="Enlace directo al Objetivo" translate="no">​</a></h4>
+<blockquote>
+<p>Mejorar el control del material compartido y facilitar su préstamo.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="funcionalidades-posibles">Funcionalidades posibles<a href="#funcionalidades-posibles" class="hash-link" aria-label="Enlace directo al Funcionalidades posibles" title="Enlace directo al Funcionalidades posibles" translate="no">​</a></h4>
+<ul>
+<li class="">Consultar materiales.</li>
+<li class="">Reservar materiales.</li>
+<li class="">Registrar entregas.</li>
+<li class="">Registrar devoluciones.</li>
+<li class="">Consultar préstamos activos.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="requisitos">Requisitos<a href="#requisitos" class="hash-link" aria-label="Enlace directo al Requisitos" title="Enlace directo al Requisitos" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>RF01.</strong> El sistema permitirá consultar el catálogo de materiales activos.</li>
+<li class=""><strong>RF02.</strong> El sistema mostrará el estado de disponibilidad de cada material.</li>
+<li class=""><strong>RF03.</strong> El responsable podrá registrar la entrega de un material reservado.</li>
+<li class=""><strong>RF04.</strong> El responsable podrá registrar la devolución de un material prestado.</li>
+</ul>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>aviso</div><div class="admonitionContent_BuS1"><p>No debemos empezar por los requisitos si todavía no tenemos clara la necesidad.</p><p>Si no sabemos bien qué problema estamos resolviendo, es muy fácil redactar requisitos inútiles, repetidos o incoherentes.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3️⃣-qué-es-exactamente-un-requisito">3️⃣ <strong>Qué es exactamente un requisito</strong><a href="#3️⃣-qué-es-exactamente-un-requisito" class="hash-link" aria-label="Enlace directo al 3️⃣-qué-es-exactamente-un-requisito" title="Enlace directo al 3️⃣-qué-es-exactamente-un-requisito" translate="no">​</a></h2>
+<p>Un requisito es una afirmación que expresa <strong>algo que la solución debe hacer o una condición que debe cumplir</strong>.</p>
+<p>Los requisitos sirven como un acuerdo sobre lo que esperamos del sistema. Más adelante podremos utilizarlos para diseñar la aplicación, organizar el desarrollo y comprobar si el proyecto cumple lo que habíamos definido.</p>
+<p>En esta guía distinguiremos dos grandes grupos:</p>
+<ul>
+<li class=""><strong>requisitos funcionales (RF)</strong>;</li>
+<li class=""><strong>requisitos no funcionales (RNF)</strong>.</li>
+</ul>
+<p>La diferencia no consiste simplemente en que unos sean “funciones” y otros “cosas técnicas”. La clave está en <strong>qué aspecto del sistema describe cada uno</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-requisitos-funcionales-describen-capacidades-o-comportamientos">🟩 Requisitos funcionales: describen capacidades o comportamientos<a href="#-requisitos-funcionales-describen-capacidades-o-comportamientos" class="hash-link" aria-label="Enlace directo al 🟩 Requisitos funcionales: describen capacidades o comportamientos" title="Enlace directo al 🟩 Requisitos funcionales: describen capacidades o comportamientos" translate="no">​</a></h3>
+<p>Un requisito funcional indica <strong>qué debe poder hacer el sistema</strong>.</p>
+<p>Normalmente describe:</p>
+<ul>
+<li class="">una acción que puede realizar un usuario.</li>
+<li class="">una respuesta del sistema.</li>
+<li class="">una operación sobre los datos.</li>
+<li class="">una regla de funcionamiento.</li>
+<li class="">o un comportamiento que debe producirse ante una situación determinada.</li>
+</ul>
+<p>Por ejemplo:</p>
+<blockquote>
+<p><strong>RF01.</strong> El sistema permitirá a una persona registrada reservar un material disponible.</p>
+</blockquote>
+<p>Aquí estamos indicando una <strong>capacidad que la aplicación debe ofrecer</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-requisitos-no-funcionales-describen-condiciones-de-calidad-o-restricciones">🟦 Requisitos no funcionales: describen condiciones de calidad o restricciones<a href="#-requisitos-no-funcionales-describen-condiciones-de-calidad-o-restricciones" class="hash-link" aria-label="Enlace directo al 🟦 Requisitos no funcionales: describen condiciones de calidad o restricciones" title="Enlace directo al 🟦 Requisitos no funcionales: describen condiciones de calidad o restricciones" translate="no">​</a></h3>
+<p>Un requisito no funcional indica <strong>qué condiciones debe cumplir el sistema mientras ofrece sus funcionalidades</strong>.</p>
+<p>Suelen afectar a aspectos como:</p>
+<ul>
+<li class="">seguridad.</li>
+<li class="">rendimiento.</li>
+<li class="">accesibilidad.</li>
+<li class="">usabilidad.</li>
+<li class="">compatibilidad.</li>
+<li class="">privacidad.</li>
+<li class="">disponibilidad.</li>
+<li class="">mantenibilidad.</li>
+</ul>
+<p>Por ejemplo:</p>
+<blockquote>
+<p><strong>RNF01.</strong> La aplicación deberá poder utilizarse correctamente desde ordenador y dispositivo móvil.</p>
+</blockquote>
+<p>La aplicación podría permitir realizar reservas aunque no cumpliera este requisito. Lo que estamos definiendo es <strong>una condición de calidad de la solución</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-una-primera-regla-para-distinguirlos">🟨 Una primera regla para distinguirlos<a href="#-una-primera-regla-para-distinguirlos" class="hash-link" aria-label="Enlace directo al 🟨 Una primera regla para distinguirlos" title="Enlace directo al 🟨 Una primera regla para distinguirlos" translate="no">​</a></h3>
+<p>Podemos hacernos estas dos preguntas:</p>
+<blockquote>
+<p><strong>¿Este requisito describe una acción o comportamiento que la aplicación debe ofrecer?</strong><br>
+<!-- -->→ Probablemente es un <strong>requisito funcional</strong>.</p>
+</blockquote>
+<blockquote>
+<p><strong>¿Describe una condición de calidad, una restricción o una característica que debe cumplir la solución?</strong><br>
+<!-- -->→ Probablemente es un <strong>requisito no funcional</strong>.</p>
+</blockquote>
+<p>Pero esta regla no siempre es suficiente. Más adelante veremos algunos casos que pueden generar dudas.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4️⃣-requisitos-funcionales">4️⃣ <strong>Requisitos funcionales</strong><a href="#4️⃣-requisitos-funcionales" class="hash-link" aria-label="Enlace directo al 4️⃣-requisitos-funcionales" title="Enlace directo al 4️⃣-requisitos-funcionales" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-describen">🟩 Qué describen<a href="#-qué-describen" class="hash-link" aria-label="Enlace directo al 🟩 Qué describen" title="Enlace directo al 🟩 Qué describen" translate="no">​</a></h3>
+<p>Los requisitos funcionales expresan las <strong>capacidades del sistema</strong>.</p>
+<p>Nos indican qué operaciones existirán y qué comportamiento esperamos de la aplicación.</p>
+<p>Suelen responder a preguntas como:</p>
+<ul>
+<li class="">¿Qué podrá hacer cada tipo de usuario?</li>
+<li class="">¿Qué información podrá consultar?</li>
+<li class="">¿Qué datos podrá crear, modificar o eliminar?</li>
+<li class="">¿Qué debe hacer el sistema cuando ocurre algo?</li>
+<li class="">¿Qué reglas debe aplicar en una operación?</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-estructura-habitual">🟦 Estructura habitual<a href="#-estructura-habitual" class="hash-link" aria-label="Enlace directo al 🟦 Estructura habitual" title="Enlace directo al 🟦 Estructura habitual" translate="no">​</a></h3>
+<p>Muchos requisitos funcionales pueden redactarse siguiendo una estructura parecida:</p>
+<blockquote>
+<p><strong>[Actor o sistema] + acción + objeto o condición</strong></p>
+</blockquote>
+<p>Por ejemplo:</p>
+<blockquote>
+<p><strong>RF01.</strong> El socio podrá consultar el catálogo de materiales activos.</p>
+</blockquote>
+<blockquote>
+<p><strong>RF02.</strong> El sistema permitirá reservar un material cuando esté disponible.</p>
+</blockquote>
+<blockquote>
+<p><strong>RF03.</strong> El responsable podrá registrar la devolución de un préstamo.</p>
+</blockquote>
+<blockquote>
+<p><strong>RF04.</strong> El sistema impedirá confirmar una reserva si el material ya está reservado para el mismo periodo.</p>
+</blockquote>
+<p>En todos estos casos estamos describiendo <strong>algo que el sistema debe hacer</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-puede-aparecer-en-un-requisito-funcional">🟩 Qué puede aparecer en un requisito funcional<a href="#-qué-puede-aparecer-en-un-requisito-funcional" class="hash-link" aria-label="Enlace directo al 🟩 Qué puede aparecer en un requisito funcional" title="Enlace directo al 🟩 Qué puede aparecer en un requisito funcional" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="acciones-de-usuario">Acciones de usuario<a href="#acciones-de-usuario" class="hash-link" aria-label="Enlace directo al Acciones de usuario" title="Enlace directo al Acciones de usuario" translate="no">​</a></h4>
+<blockquote>
+<p><strong>RF05.</strong> El usuario podrá cancelar una reserva futura.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="consultas">Consultas<a href="#consultas" class="hash-link" aria-label="Enlace directo al Consultas" title="Enlace directo al Consultas" translate="no">​</a></h4>
+<blockquote>
+<p><strong>RF06.</strong> El responsable podrá consultar los préstamos que hayan superado la fecha prevista de devolución.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="modificaciones-de-datos">Modificaciones de datos<a href="#modificaciones-de-datos" class="hash-link" aria-label="Enlace directo al Modificaciones de datos" title="Enlace directo al Modificaciones de datos" translate="no">​</a></h4>
+<blockquote>
+<p><strong>RF07.</strong> El administrador podrá desactivar una cuenta de usuario.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="respuestas-automáticas-del-sistema">Respuestas automáticas del sistema<a href="#respuestas-automáticas-del-sistema" class="hash-link" aria-label="Enlace directo al Respuestas automáticas del sistema" title="Enlace directo al Respuestas automáticas del sistema" translate="no">​</a></h4>
+<blockquote>
+<p><strong>RF08.</strong> El sistema actualizará el estado del material a “prestado” cuando se registre su entrega.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="reglas-de-negocio">Reglas de negocio<a href="#reglas-de-negocio" class="hash-link" aria-label="Enlace directo al Reglas de negocio" title="Enlace directo al Reglas de negocio" translate="no">​</a></h4>
+<blockquote>
+<p><strong>RF09.</strong> El sistema impedirá reservar un material durante un periodo en el que ya exista otra reserva confirmada.</p>
+</blockquote>
+<p>Las reglas de negocio son importantes porque también describen <strong>cómo debe funcionar la lógica de la aplicación</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-no-es-un-buen-requisito-funcional">🟥 Qué NO es un buen requisito funcional<a href="#-qué-no-es-un-buen-requisito-funcional" class="hash-link" aria-label="Enlace directo al 🟥 Qué NO es un buen requisito funcional" title="Enlace directo al 🟥 Qué NO es un buen requisito funcional" translate="no">​</a></h3>
+<blockquote>
+<p><strong>RF01.</strong> La aplicación será muy útil.</p>
+</blockquote>
+<p>No describe ninguna función.</p>
+<blockquote>
+<p><strong>RF02.</strong> Habrá un buen sistema de gestión.</p>
+</blockquote>
+<p>No sabemos qué operaciones debe ofrecer.</p>
+<blockquote>
+<p><strong>RF03.</strong> El usuario podrá hacer todo lo necesario.</p>
+</blockquote>
+<p>No es concreto ni comprobable.</p>
+<blockquote>
+<p><strong>RF04.</strong> La pantalla de reservas será bonita y moderna.</p>
+</blockquote>
+<p>Esto no describe una funcionalidad.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-un-requisito-funcional-debe-poder-probarse">🟨 Un requisito funcional debe poder probarse<a href="#-un-requisito-funcional-debe-poder-probarse" class="hash-link" aria-label="Enlace directo al 🟨 Un requisito funcional debe poder probarse" title="Enlace directo al 🟨 Un requisito funcional debe poder probarse" translate="no">​</a></h3>
+<p>Si escribimos:</p>
+<blockquote>
+<p><strong>RF10.</strong> El sistema permitirá cancelar una reserva antes de que comience el préstamo.</p>
+</blockquote>
+<p>Más adelante podremos crear una prueba:</p>
+<ol>
+<li class="">Creamos una reserva futura.</li>
+<li class="">Intentamos cancelarla.</li>
+<li class="">Comprobamos que la reserva queda cancelada.</li>
+</ol>
+<p>Si no podemos imaginar cómo comprobar un requisito, probablemente necesite una redacción más precisa.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5️⃣-requisitos-no-funcionales">5️⃣ <strong>Requisitos no funcionales</strong><a href="#5️⃣-requisitos-no-funcionales" class="hash-link" aria-label="Enlace directo al 5️⃣-requisitos-no-funcionales" title="Enlace directo al 5️⃣-requisitos-no-funcionales" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-describen-1">🟩 Qué describen<a href="#-qué-describen-1" class="hash-link" aria-label="Enlace directo al 🟩 Qué describen" title="Enlace directo al 🟩 Qué describen" translate="no">​</a></h3>
+<p>Los requisitos no funcionales expresan <strong>condiciones de calidad, restricciones o características generales de la solución</strong>.</p>
+<p>No suelen añadir una nueva función al sistema. Indican <strong>qué nivel o condición debe cumplir la aplicación mientras realiza sus funciones</strong>.</p>
+<p>Por ejemplo:</p>
+<p>La aplicación puede tener una funcionalidad de inicio de sesión.</p>
+<p>Eso sería un requisito funcional:</p>
+<blockquote>
+<p><strong>RF01.</strong> El sistema permitirá iniciar sesión mediante una cuenta registrada.</p>
+</blockquote>
+<p>Pero además podemos establecer condiciones relacionadas con esa funcionalidad:</p>
+<blockquote>
+<p><strong>RNF01.</strong> Las contraseñas no se almacenarán en texto plano.</p>
+</blockquote>
+<blockquote>
+<p><strong>RNF02.</strong> El acceso a funciones administrativas estará restringido a usuarios autorizados.</p>
+</blockquote>
+<p>Estas condiciones están relacionadas con la <strong>seguridad</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-categorías-habituales">🟦 Categorías habituales<a href="#-categorías-habituales" class="hash-link" aria-label="Enlace directo al 🟦 Categorías habituales" title="Enlace directo al 🟦 Categorías habituales" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="seguridad">Seguridad<a href="#seguridad" class="hash-link" aria-label="Enlace directo al Seguridad" title="Enlace directo al Seguridad" translate="no">​</a></h4>
+<blockquote>
+<p><strong>RNF01.</strong> Las funciones de administración solo estarán disponibles para usuarios con permisos autorizados.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="accesibilidad">Accesibilidad<a href="#accesibilidad" class="hash-link" aria-label="Enlace directo al Accesibilidad" title="Enlace directo al Accesibilidad" translate="no">​</a></h4>
+<blockquote>
+<p><strong>RNF02.</strong> Los formularios deberán disponer de etiquetas asociadas a sus campos.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="compatibilidad">Compatibilidad<a href="#compatibilidad" class="hash-link" aria-label="Enlace directo al Compatibilidad" title="Enlace directo al Compatibilidad" translate="no">​</a></h4>
+<blockquote>
+<p><strong>RNF03.</strong> La aplicación deberá comprobarse en versiones actuales de Chrome, Firefox y Edge.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="diseño-adaptable">Diseño adaptable<a href="#diseño-adaptable" class="hash-link" aria-label="Enlace directo al Diseño adaptable" title="Enlace directo al Diseño adaptable" translate="no">​</a></h4>
+<blockquote>
+<p><strong>RNF04.</strong> Las pantallas principales deberán ser utilizables desde ordenador y dispositivo móvil.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="privacidad">Privacidad<a href="#privacidad" class="hash-link" aria-label="Enlace directo al Privacidad" title="Enlace directo al Privacidad" translate="no">​</a></h4>
+<blockquote>
+<p><strong>RNF05.</strong> Solo se almacenarán los datos personales necesarios para gestionar usuarios, reservas y préstamos.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="usabilidad">Usabilidad<a href="#usabilidad" class="hash-link" aria-label="Enlace directo al Usabilidad" title="Enlace directo al Usabilidad" translate="no">​</a></h4>
+<blockquote>
+<p><strong>RNF06.</strong> La aplicación mostrará mensajes claros de confirmación o error después de las operaciones principales.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="rendimiento">Rendimiento<a href="#rendimiento" class="hash-link" aria-label="Enlace directo al Rendimiento" title="Enlace directo al Rendimiento" translate="no">​</a></h4>
+<blockquote>
+<p><strong>RNF07.</strong> Las consultas habituales del catálogo deberán responder sin esperas perceptibles con el conjunto de datos previsto para el proyecto.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-no-es-un-buen-requisito-no-funcional">🟥 Qué NO es un buen requisito no funcional<a href="#-qué-no-es-un-buen-requisito-no-funcional" class="hash-link" aria-label="Enlace directo al 🟥 Qué NO es un buen requisito no funcional" title="Enlace directo al 🟥 Qué NO es un buen requisito no funcional" translate="no">​</a></h3>
+<blockquote>
+<p><strong>RNF01.</strong> La aplicación será segura.</p>
+</blockquote>
+<p>¿En qué sentido?</p>
+<blockquote>
+<p><strong>RNF02.</strong> La aplicación será rápida.</p>
+</blockquote>
+<p>¿En qué operaciones y en qué condiciones?</p>
+<blockquote>
+<p><strong>RNF03.</strong> La interfaz será intuitiva.</p>
+</blockquote>
+<p>¿Cómo sabremos si se cumple?</p>
+<blockquote>
+<p><strong>RNF04.</strong> La aplicación tendrá buena accesibilidad.</p>
+</blockquote>
+<p>Necesitamos concretar qué condiciones de accesibilidad esperamos.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-de-una-idea-vaga-a-un-requisito-comprobable">🟨 De una idea vaga a un requisito comprobable<a href="#-de-una-idea-vaga-a-un-requisito-comprobable" class="hash-link" aria-label="Enlace directo al 🟨 De una idea vaga a un requisito comprobable" title="Enlace directo al 🟨 De una idea vaga a un requisito comprobable" translate="no">​</a></h3>
+<p><strong>Demasiado vago:</strong></p>
+<blockquote>
+<p>La aplicación será segura.</p>
+</blockquote>
+<p><strong>Más concreto:</strong></p>
+<blockquote>
+<p>Las funciones administrativas solo podrán utilizarse después de iniciar sesión con un usuario autorizado.</p>
+</blockquote>
+<hr>
+<p><strong>Demasiado vago:</strong></p>
+<blockquote>
+<p>La aplicación funcionará bien en móviles.</p>
+</blockquote>
+<p><strong>Más concreto:</strong></p>
+<blockquote>
+<p>Las pantallas de catálogo, reserva y consulta de préstamos deberán poder utilizarse desde una anchura de pantalla móvil sin perder funcionalidades.</p>
+</blockquote>
+<hr>
+<p><strong>Demasiado vago:</strong></p>
+<blockquote>
+<p>Los formularios serán fáciles de usar.</p>
+</blockquote>
+<p><strong>Más concreto:</strong></p>
+<blockquote>
+<p>Los campos obligatorios estarán identificados y el sistema mostrará un mensaje cuando un formulario contenga datos incorrectos.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6️⃣-funcional-o-no-funcional-cómo-decidir">6️⃣ <strong>Funcional o no funcional: cómo decidir</strong><a href="#6️⃣-funcional-o-no-funcional-cómo-decidir" class="hash-link" aria-label="Enlace directo al 6️⃣-funcional-o-no-funcional-cómo-decidir" title="Enlace directo al 6️⃣-funcional-o-no-funcional-cómo-decidir" translate="no">​</a></h2>
+<p>La siguiente comparación puede ayudarnos.</p>
+<table><thead><tr><th>Pregunta</th><th>Requisito funcional</th><th>Requisito no funcional</th></tr></thead><tbody><tr><td><strong>¿Qué describe?</strong></td><td>Una capacidad o comportamiento del sistema</td><td>Una condición de calidad o restricción</td></tr><tr><td><strong>¿Añade una acción o comportamiento?</strong></td><td>Normalmente sí</td><td>Normalmente no</td></tr><tr><td><strong>¿Quién aparece con frecuencia?</strong></td><td>Usuario, administrador, responsable o el propio sistema</td><td>El sistema o la aplicación en general</td></tr><tr><td><strong>¿Qué verbos aparecen habitualmente?</strong></td><td>consultar, registrar, reservar, cancelar, mostrar, calcular, impedir</td><td>garantizar, restringir, soportar, responder, proteger, ser compatible</td></tr><tr><td><strong>¿Cómo se verifica?</strong></td><td>Mediante una operación o caso de prueba</td><td>Mediante pruebas, medidas, inspecciones o revisiones</td></tr><tr><td><strong>Ejemplo</strong></td><td>El usuario podrá reservar una actividad</td><td>La aplicación será utilizable desde móvil</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-el-mismo-caso-visto-desde-los-dos-tipos">🟩 El mismo caso visto desde los dos tipos<a href="#-el-mismo-caso-visto-desde-los-dos-tipos" class="hash-link" aria-label="Enlace directo al 🟩 El mismo caso visto desde los dos tipos" title="Enlace directo al 🟩 El mismo caso visto desde los dos tipos" translate="no">​</a></h3>
+<p>Imaginemos una funcionalidad de reservas.</p>
+<p><strong>Requisitos funcionales:</strong></p>
+<blockquote>
+<p><strong>RF01.</strong> El usuario podrá reservar una actividad con plazas disponibles.</p>
+</blockquote>
+<blockquote>
+<p><strong>RF02.</strong> El usuario podrá cancelar una reserva futura.</p>
+</blockquote>
+<blockquote>
+<p><strong>RF03.</strong> El sistema impedirá una reserva cuando no queden plazas.</p>
+</blockquote>
+<p>Estos requisitos indican <strong>qué hace el sistema</strong>.</p>
+<p><strong>Requisitos no funcionales relacionados:</strong></p>
+<blockquote>
+<p><strong>RNF01.</strong> El formulario de reserva podrá utilizarse desde dispositivo móvil.</p>
+</blockquote>
+<blockquote>
+<p><strong>RNF02.</strong> Solo los usuarios autenticados podrán realizar reservas.</p>
+</blockquote>
+<blockquote>
+<p><strong>RNF03.</strong> El sistema mostrará un mensaje comprensible cuando una reserva no pueda completarse.</p>
+</blockquote>
+<p>Estos requisitos indican <strong>condiciones que debe cumplir la solución</strong>.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="7️⃣-casos-que-pueden-generar-dudas">7️⃣ <strong>Casos que pueden generar dudas</strong><a href="#7️⃣-casos-que-pueden-generar-dudas" class="hash-link" aria-label="Enlace directo al 7️⃣-casos-que-pueden-generar-dudas" title="Enlace directo al 7️⃣-casos-que-pueden-generar-dudas" translate="no">​</a></h2>
+<p>Hay requisitos que no siempre encajan de forma evidente en una categoría.</p>
+<p>Lo importante es mantener <strong>un criterio coherente dentro del proyecto</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-permisos-y-roles">🟨 Permisos y roles<a href="#-permisos-y-roles" class="hash-link" aria-label="Enlace directo al 🟨 Permisos y roles" title="Enlace directo al 🟨 Permisos y roles" translate="no">​</a></h3>
+<p>Podemos escribir:</p>
+<blockquote>
+<p><strong>RF10.</strong> El administrador podrá desactivar cuentas de usuario.</p>
+</blockquote>
+<p>Es funcional porque describe una <strong>acción disponible para un tipo de usuario</strong>.</p>
+<p>En cambio:</p>
+<blockquote>
+<p><strong>RNF05.</strong> Las funciones administrativas solo estarán disponibles para usuarios autorizados.</p>
+</blockquote>
+<p>Lo tratamos como no funcional porque establece una <strong>condición general de seguridad</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-validaciones">🟧 Validaciones<a href="#-validaciones" class="hash-link" aria-label="Enlace directo al 🟧 Validaciones" title="Enlace directo al 🟧 Validaciones" translate="no">​</a></h3>
+<blockquote>
+<p><strong>RF11.</strong> El sistema impedirá realizar una reserva si la fecha de devolución es anterior a la fecha de inicio.</p>
+</blockquote>
+<p>Esto es una <strong>regla de negocio</strong>, por lo que podemos tratarla como requisito funcional.</p>
+<p>En cambio:</p>
+<blockquote>
+<p><strong>RNF06.</strong> Todos los formularios validarán los campos obligatorios antes de procesar la información.</p>
+</blockquote>
+<p>Es una condición general aplicable a la solución y podemos tratarla como requisito no funcional.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-reglas-de-negocio">🟦 Reglas de negocio<a href="#-reglas-de-negocio" class="hash-link" aria-label="Enlace directo al 🟦 Reglas de negocio" title="Enlace directo al 🟦 Reglas de negocio" translate="no">​</a></h3>
+<p>Las reglas de negocio suelen considerarse funcionales cuando determinan <strong>qué debe hacer el sistema ante una situación concreta</strong>.</p>
+<p>Por ejemplo:</p>
+<blockquote>
+<p><strong>RF12.</strong> Un usuario no podrá mantener más de tres préstamos activos simultáneamente.</p>
+</blockquote>
+<p>Aunque contiene una restricción, está definiendo <strong>la lógica funcional de una operación</strong>.</p>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>important</div><div class="admonitionContent_BuS1"><p>No necesitamos discutir durante horas si un requisito concreto podría clasificarse de otra manera en otra metodología.</p><p>Para nuestro proyecto lo importante será:</p><ol>
+<li class="">utilizar un criterio coherente.</li>
+<li class="">redactarlo con claridad.</li>
+<li class="">poder comprobarlo después.</li>
+</ol></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="8️⃣-una-prueba-rápida-para-clasificarlos">8️⃣ <strong>Una prueba rápida para clasificarlos</strong><a href="#8️⃣-una-prueba-rápida-para-clasificarlos" class="hash-link" aria-label="Enlace directo al 8️⃣-una-prueba-rápida-para-clasificarlos" title="Enlace directo al 8️⃣-una-prueba-rápida-para-clasificarlos" translate="no">​</a></h2>
+<p>Cuando tengamos dudas podemos seguir este razonamiento:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-1">Paso 1<a href="#paso-1" class="hash-link" aria-label="Enlace directo al Paso 1" title="Enlace directo al Paso 1" translate="no">​</a></h3>
+<p>Preguntamos:</p>
+<blockquote>
+<p><strong>¿Describe una operación, una acción de usuario o una respuesta concreta del sistema?</strong></p>
+</blockquote>
+<p>Si la respuesta es sí, probablemente sea <strong>funcional</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-2">Paso 2<a href="#paso-2" class="hash-link" aria-label="Enlace directo al Paso 2" title="Enlace directo al Paso 2" translate="no">​</a></h3>
+<p>Si no, preguntamos:</p>
+<blockquote>
+<p><strong>¿Describe seguridad, rendimiento, accesibilidad, compatibilidad, privacidad, usabilidad u otra condición general?</strong></p>
+</blockquote>
+<p>Si la respuesta es sí, probablemente sea <strong>no funcional</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="paso-3">Paso 3<a href="#paso-3" class="hash-link" aria-label="Enlace directo al Paso 3" title="Enlace directo al Paso 3" translate="no">​</a></h3>
+<p>Finalmente comprobamos:</p>
+<blockquote>
+<p><strong>¿Podemos verificar objetivamente si se cumple?</strong></p>
+</blockquote>
+<p>Si no podemos, debemos mejorar su redacción.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Ejemplo</div><div class="admonitionContent_BuS1"><p>“Los usuarios podrán reservar material” → <strong>funcional</strong>.</p><p>“La aplicación será usable desde móvil” → <strong>no funcional</strong>.</p><p>“El sistema impedirá reservar un material ya ocupado” → <strong>funcional</strong>, porque es una regla de negocio.</p><p>“Solo los usuarios autorizados podrán acceder a la administración” → <strong>no funcional</strong>, porque expresa una condición general de seguridad.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="9️⃣-cómo-redactar-un-buen-requisito">9️⃣ <strong>Cómo redactar un buen requisito</strong><a href="#9️⃣-cómo-redactar-un-buen-requisito" class="hash-link" aria-label="Enlace directo al 9️⃣-cómo-redactar-un-buen-requisito" title="Enlace directo al 9️⃣-cómo-redactar-un-buen-requisito" translate="no">​</a></h2>
+<p>Para que un requisito sea útil, conviene que cumpla estas características.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-claro">🟩 Claro<a href="#-claro" class="hash-link" aria-label="Enlace directo al 🟩 Claro" title="Enlace directo al 🟩 Claro" translate="no">​</a></h3>
+<p>Debe entenderse sin dar demasiadas vueltas.</p>
+<p><strong>Mal:</strong></p>
+<blockquote>
+<p>El sistema tendrá cierta capacidad de gestión.</p>
+</blockquote>
+<p><strong>Mejor:</strong></p>
+<blockquote>
+<p>El sistema permitirá registrar la devolución de un material prestado.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-concreto">🟦 Concreto<a href="#-concreto" class="hash-link" aria-label="Enlace directo al 🟦 Concreto" title="Enlace directo al 🟦 Concreto" translate="no">​</a></h3>
+<p>Debe decir algo preciso, no una idea general.</p>
+<p><strong>Mal:</strong></p>
+<blockquote>
+<p>La aplicación gestionará usuarios.</p>
+</blockquote>
+<p><strong>Mejor:</strong></p>
+<blockquote>
+<p>El administrador podrá crear, modificar y desactivar cuentas de usuario.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-comprobable">🟨 Comprobable<a href="#-comprobable" class="hash-link" aria-label="Enlace directo al 🟨 Comprobable" title="Enlace directo al 🟨 Comprobable" translate="no">​</a></h3>
+<p>Después debe poder comprobarse si se cumple o no.</p>
+<p><strong>Mal:</strong></p>
+<blockquote>
+<p>La aplicación será agradable de usar.</p>
+</blockquote>
+<p><strong>Mejor:</strong></p>
+<blockquote>
+<p>La aplicación mostrará mensajes de confirmación al completar una reserva o cancelar una operación.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-coherente-con-el-proyecto">🟧 Coherente con el proyecto<a href="#-coherente-con-el-proyecto" class="hash-link" aria-label="Enlace directo al 🟧 Coherente con el proyecto" title="Enlace directo al 🟧 Coherente con el proyecto" translate="no">​</a></h3>
+<p>Debe tener sentido con el problema, los objetivos y el alcance definidos.</p>
+<p><strong>Mal:</strong></p>
+<blockquote>
+<p>El sistema generará facturas en PDF.</p>
+</blockquote>
+<p>Si el proyecto no incluye pagos ni ventas, este requisito no tiene sentido.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-viable">🟥 Viable<a href="#-viable" class="hash-link" aria-label="Enlace directo al 🟥 Viable" title="Enlace directo al 🟥 Viable" translate="no">​</a></h3>
+<p>Debe poder desarrollarse dentro del tiempo y el alcance del proyecto.</p>
+<p><strong>Mal:</strong></p>
+<blockquote>
+<p>El sistema incorporará reconocimiento por voz y análisis predictivo en tiempo real.</p>
+</blockquote>
+<p>Si no está justificado y no es viable, no debería figurar como requisito del MVP.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-errores-frecuentes-al-redactar-requisitos">🔟 <strong>Errores frecuentes al redactar requisitos</strong><a href="#-errores-frecuentes-al-redactar-requisitos" class="hash-link" aria-label="Enlace directo al -errores-frecuentes-al-redactar-requisitos" title="Enlace directo al -errores-frecuentes-al-redactar-requisitos" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-confundir-objetivo-con-requisito">❌ Confundir objetivo con requisito<a href="#-confundir-objetivo-con-requisito" class="hash-link" aria-label="Enlace directo al ❌ Confundir objetivo con requisito" title="Enlace directo al ❌ Confundir objetivo con requisito" translate="no">​</a></h3>
+<p><strong>Objetivo:</strong></p>
+<blockquote>
+<p>Mejorar la gestión del material compartido.</p>
+</blockquote>
+<p><strong>Requisito:</strong></p>
+<blockquote>
+<p><strong>RF03.</strong> El sistema permitirá registrar la entrega de un material reservado.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-confundir-funcionalidad-con-interfaz">❌ Confundir funcionalidad con interfaz<a href="#-confundir-funcionalidad-con-interfaz" class="hash-link" aria-label="Enlace directo al ❌ Confundir funcionalidad con interfaz" title="Enlace directo al ❌ Confundir funcionalidad con interfaz" translate="no">​</a></h3>
+<p><strong>Mal:</strong></p>
+<blockquote>
+<p>Habrá una pantalla bonita para usuarios.</p>
+</blockquote>
+<p><strong>Mejor:</strong></p>
+<blockquote>
+<p><strong>RF06.</strong> El usuario podrá consultar sus préstamos activos.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-usar-palabras-vagas">❌ Usar palabras vagas<a href="#-usar-palabras-vagas" class="hash-link" aria-label="Enlace directo al ❌ Usar palabras vagas" title="Enlace directo al ❌ Usar palabras vagas" translate="no">​</a></h3>
+<p>Evitemos expresiones como:</p>
+<ul>
+<li class="">bonito.</li>
+<li class="">intuitivo.</li>
+<li class="">moderno.</li>
+<li class="">rápido.</li>
+<li class="">fácil.</li>
+<li class="">completo.</li>
+<li class="">eficiente.</li>
+<li class="">adecuado.</li>
+</ul>
+<p>No es que nunca puedan aparecer, sino que <strong>por sí solas no bastan como requisito</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-meter-demasiadas-cosas-en-un-solo-requisito">❌ Meter demasiadas cosas en un solo requisito<a href="#-meter-demasiadas-cosas-en-un-solo-requisito" class="hash-link" aria-label="Enlace directo al ❌ Meter demasiadas cosas en un solo requisito" title="Enlace directo al ❌ Meter demasiadas cosas en un solo requisito" translate="no">​</a></h3>
+<p><strong>Mal:</strong></p>
+<blockquote>
+<p><strong>RF10.</strong> El sistema permitirá consultar materiales, reservarlos, cancelarlos, pedir prórrogas, escribir mensajes, subir imágenes y generar informes.</p>
+</blockquote>
+<p>Mejor dividirlo en varios requisitos más simples.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-redactar-requisitos-que-no-responden-a-ninguna-necesidad">❌ Redactar requisitos que no responden a ninguna necesidad<a href="#-redactar-requisitos-que-no-responden-a-ninguna-necesidad" class="hash-link" aria-label="Enlace directo al ❌ Redactar requisitos que no responden a ninguna necesidad" title="Enlace directo al ❌ Redactar requisitos que no responden a ninguna necesidad" translate="no">​</a></h3>
+<p>Si no sabemos por qué ese requisito está ahí, probablemente no debería estar.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣1️⃣-cómo-numerar-los-requisitos">1️⃣1️⃣ <strong>Cómo numerar los requisitos</strong><a href="#1️⃣1️⃣-cómo-numerar-los-requisitos" class="hash-link" aria-label="Enlace directo al 1️⃣1️⃣-cómo-numerar-los-requisitos" title="Enlace directo al 1️⃣1️⃣-cómo-numerar-los-requisitos" translate="no">​</a></h2>
+<p>Conviene identificarlos con un código para poder referirnos a ellos con claridad.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-requisitos-funcionales">🟩 Requisitos funcionales<a href="#-requisitos-funcionales" class="hash-link" aria-label="Enlace directo al 🟩 Requisitos funcionales" title="Enlace directo al 🟩 Requisitos funcionales" translate="no">​</a></h3>
+<p>Usaremos un formato como este:</p>
+<ul>
+<li class=""><code>RF01</code></li>
+<li class=""><code>RF02</code></li>
+<li class=""><code>RF03</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-requisitos-no-funcionales">🟦 Requisitos no funcionales<a href="#-requisitos-no-funcionales" class="hash-link" aria-label="Enlace directo al 🟦 Requisitos no funcionales" title="Enlace directo al 🟦 Requisitos no funcionales" translate="no">​</a></h3>
+<p>Usaremos un formato como este:</p>
+<ul>
+<li class=""><code>RNF01</code></li>
+<li class=""><code>RNF02</code></li>
+<li class=""><code>RNF03</code></li>
+</ul>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>La numeración no es un detalle estético.</p><p>Nos ayuda a:</p><ul>
+<li class="">referirnos a un requisito concreto.</li>
+<li class="">modificarlo sin confundirnos.</li>
+<li class="">relacionarlo después con pruebas, incidencias o entregas.</li>
+</ul></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣2️⃣-ejemplo-comparado-mal-y-bien">1️⃣2️⃣ <strong>Ejemplo comparado: mal y bien</strong><a href="#1️⃣2️⃣-ejemplo-comparado-mal-y-bien" class="hash-link" aria-label="Enlace directo al 1️⃣2️⃣-ejemplo-comparado-mal-y-bien" title="Enlace directo al 1️⃣2️⃣-ejemplo-comparado-mal-y-bien" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-versión-mal-planteada">🟥 Versión mal planteada<a href="#-versión-mal-planteada" class="hash-link" aria-label="Enlace directo al 🟥 Versión mal planteada" title="Enlace directo al 🟥 Versión mal planteada" translate="no">​</a></h3>
+<p>Supongamos un proyecto sobre reservas de material.</p>
+<p>Los requisitos podrían aparecer así:</p>
+<ul>
+<li class="">La aplicación será intuitiva.</li>
+<li class="">El usuario podrá hacer muchas cosas.</li>
+<li class="">Habrá reservas.</li>
+<li class="">Será rápida.</li>
+<li class="">La aplicación será moderna.</li>
+<li class="">Habrá un sistema de control.</li>
+</ul>
+<p>El problema es que, con esta redacción:</p>
+<ul>
+<li class="">no está claro qué hace la aplicación.</li>
+<li class="">no sabemos qui én hace cada acción.</li>
+<li class="">no podemos comprobar casi nada.</li>
+<li class="">y varias frases son demasiado vagas.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-versión-mejor-redactada">🟩 Versión mejor redactada<a href="#-versión-mejor-redactada" class="hash-link" aria-label="Enlace directo al 🟩 Versión mejor redactada" title="Enlace directo al 🟩 Versión mejor redactada" translate="no">​</a></h3>
+<p>Ahora lo expresamos mejor:</p>
+<ul>
+<li class=""><strong>RF01.</strong> El sistema permitirá consultar el catálogo de materiales disponibles.</li>
+<li class=""><strong>RF02.</strong> El sistema permitirá reservar un material disponible indicando fecha de inicio y fecha prevista de devolución.</li>
+<li class=""><strong>RF03.</strong> El socio podrá cancelar una reserva futura antes del inicio del préstamo.</li>
+<li class=""><strong>RF04.</strong> El responsable podrá registrar la entrega de un material reservado.</li>
+<li class=""><strong>RF05.</strong> El responsable podrá registrar la devolución de un material prestado.</li>
+<li class=""><strong>RNF01.</strong> La aplicación deberá poder utilizarse correctamente desde ordenador y móvil.</li>
+<li class=""><strong>RNF02.</strong> Solo los usuarios con rol de responsable podrán gestionar inventario y préstamos.</li>
+<li class=""><strong>RNF03.</strong> Los formularios validarán los campos obligatorios antes de enviarse.</li>
+</ul>
+<p>Esta segunda versión resulta mucho más útil.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣3️⃣-del-borrador-al-requisito-final">1️⃣3️⃣ <strong>Del borrador al requisito final</strong><a href="#1️⃣3️⃣-del-borrador-al-requisito-final" class="hash-link" aria-label="Enlace directo al 1️⃣3️⃣-del-borrador-al-requisito-final" title="Enlace directo al 1️⃣3️⃣-del-borrador-al-requisito-final" translate="no">​</a></h2>
+<p>No siempre escribiremos el requisito perfecto a la primera.</p>
+<p>A veces partimos de una frase inicial y la mejoramos.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ejemplo-1">🟩 Ejemplo 1<a href="#-ejemplo-1" class="hash-link" aria-label="Enlace directo al 🟩 Ejemplo 1" title="Enlace directo al 🟩 Ejemplo 1" translate="no">​</a></h3>
+<p><strong>Borrador:</strong></p>
+<blockquote>
+<p>La app debe dejar reservar cosas.</p>
+</blockquote>
+<p><strong>Versión mejorada:</strong></p>
+<blockquote>
+<p><strong>RF01.</strong> El sistema permitirá a una persona registrada reservar un material disponible.</p>
+</blockquote>
+<p><strong>Versión todavía mejor:</strong></p>
+<blockquote>
+<p><strong>RF01.</strong> El sistema permitirá a una persona registrada reservar un material disponible indicando fecha de inicio y fecha prevista de devolución.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ejemplo-2">🟦 Ejemplo 2<a href="#-ejemplo-2" class="hash-link" aria-label="Enlace directo al 🟦 Ejemplo 2" title="Enlace directo al 🟦 Ejemplo 2" translate="no">​</a></h3>
+<p><strong>Borrador:</strong></p>
+<blockquote>
+<p>La aplicación debe ser segura.</p>
+</blockquote>
+<p><strong>Versión mejorada:</strong></p>
+<blockquote>
+<p><strong>RNF01.</strong> Las funciones de administración solo estarán disponibles para usuarios autorizados.</p>
+</blockquote>
+<p><strong>Versión ampliada:</strong></p>
+<blockquote>
+<p><strong>RNF01.</strong> Las funciones de gestión de usuarios e inventario solo estarán disponibles para personas con rol de responsable o administrador.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ejemplo-3">🟨 Ejemplo 3<a href="#-ejemplo-3" class="hash-link" aria-label="Enlace directo al 🟨 Ejemplo 3" title="Enlace directo al 🟨 Ejemplo 3" translate="no">​</a></h3>
+<p><strong>Borrador:</strong></p>
+<blockquote>
+<p>La aplicación será fácil de usar.</p>
+</blockquote>
+<p><strong>Versión mejorada:</strong></p>
+<blockquote>
+<p><strong>RNF02.</strong> La aplicación mostrará mensajes claros de confirmación o error al completar una operación.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣4️⃣-plantilla-mínima-para-redactar-requisitos">1️⃣4️⃣ <strong>Plantilla mínima para redactar requisitos</strong><a href="#1️⃣4️⃣-plantilla-mínima-para-redactar-requisitos" class="hash-link" aria-label="Enlace directo al 1️⃣4️⃣-plantilla-mínima-para-redactar-requisitos" title="Enlace directo al 1️⃣4️⃣-plantilla-mínima-para-redactar-requisitos" translate="no">​</a></h2>
+<p>Podemos organizar los requisitos con tablas como estas.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-requisitos-funcionales-1">🟩 Requisitos funcionales<a href="#-requisitos-funcionales-1" class="hash-link" aria-label="Enlace directo al 🟩 Requisitos funcionales" title="Enlace directo al 🟩 Requisitos funcionales" translate="no">​</a></h3>
+<table><thead><tr><th>Código</th><th>Requisito funcional</th><th>Usuario principal</th><th>Prioridad</th></tr></thead><tbody><tr><td>RF01</td><td>El sistema permitirá...</td><td>...</td><td>Alta</td></tr><tr><td>RF02</td><td>El usuario podrá...</td><td>...</td><td>Alta</td></tr><tr><td>RF03</td><td>El responsable podrá...</td><td>...</td><td>Media</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-requisitos-no-funcionales-1">🟦 Requisitos no funcionales<a href="#-requisitos-no-funcionales-1" class="hash-link" aria-label="Enlace directo al 🟦 Requisitos no funcionales" title="Enlace directo al 🟦 Requisitos no funcionales" translate="no">​</a></h3>
+<table><thead><tr><th>Código</th><th>Categoría</th><th>Requisito no funcional</th><th>Cómo podremos comprobarlo</th></tr></thead><tbody><tr><td>RNF01</td><td>Seguridad</td><td>...</td><td>...</td></tr><tr><td>RNF02</td><td>Usabilidad</td><td>...</td><td>...</td></tr><tr><td>RNF03</td><td>Compatibilidad</td><td>...</td><td>...</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Añadir la columna <strong>“Cómo podremos comprobarlo”</strong> es muy útil.</p><p>Nos obliga a pensar si el requisito está bien formulado y nos preparará mejor para la fase de pruebas.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣5️⃣-ilustración-recomendada">1️⃣5️⃣ <strong>Ilustración recomendada</strong><a href="#1️⃣5️⃣-ilustración-recomendada" class="hash-link" aria-label="Enlace directo al 1️⃣5️⃣-ilustración-recomendada" title="Enlace directo al 1️⃣5️⃣-ilustración-recomendada" translate="no">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="De la necesidad al requisito" src="/assets/images/de-la-necesidad-al-requisito-aebbd82676fa4b1f9ab04544eb2d0589.png" width="1672" height="941" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣6️⃣-ejercicio-guiado">1️⃣6️⃣ <strong>Ejercicio guiado</strong><a href="#1️⃣6️⃣-ejercicio-guiado" class="hash-link" aria-label="Enlace directo al 1️⃣6️⃣-ejercicio-guiado" title="Enlace directo al 1️⃣6️⃣-ejercicio-guiado" translate="no">​</a></h2>
+<p>Podemos practicar con este ejemplo.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-situación-inicial">🟩 Situación inicial<a href="#-situación-inicial" class="hash-link" aria-label="Enlace directo al 🟩 Situación inicial" title="Enlace directo al 🟩 Situaci ón inicial" translate="no">​</a></h3>
+<blockquote>
+<p>En un club deportivo, las inscripciones a actividades se realizan por WhatsApp. Esto provoca errores, olvidos y dificultad para saber cuántas plazas quedan libres.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-objetivo-1">🟦 Objetivo<a href="#-objetivo-1" class="hash-link" aria-label="Enlace directo al 🟦 Objetivo" title="Enlace directo al 🟦 Objetivo" translate="no">​</a></h3>
+<blockquote>
+<p>Mejorar la gestión de inscripciones y facilitar el control de plazas disponibles.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-funcionalidades-posibles">🟨 Funcionalidades posibles<a href="#-funcionalidades-posibles" class="hash-link" aria-label="Enlace directo al 🟨 Funcionalidades posibles" title="Enlace directo al 🟨 Funcionalidades posibles" translate="no">​</a></h3>
+<ul>
+<li class="">Consultar actividades.</li>
+<li class="">Ver plazas disponibles.</li>
+<li class="">Inscribirse en una actividad.</li>
+<li class="">Cancelar una inscripción.</li>
+<li class="">Consultar participantes.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-requisitos-funcionales-posibles">🟧 Requisitos funcionales posibles<a href="#-requisitos-funcionales-posibles" class="hash-link" aria-label="Enlace directo al 🟧 Requisitos funcionales posibles" title="Enlace directo al 🟧 Requisitos funcionales posibles" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>RF01.</strong> El sistema mostrará la lista de actividades disponibles.</li>
+<li class=""><strong>RF02.</strong> El sistema mostrará el número de plazas libres de cada actividad.</li>
+<li class=""><strong>RF03.</strong> Una persona registrada podrá inscribirse en una actividad con plazas disponibles.</li>
+<li class=""><strong>RF04.</strong> El sistema impedirá inscripciones cuando no queden plazas libres.</li>
+<li class=""><strong>RF05.</strong> El responsable podrá consultar el listado de personas inscritas en cada actividad.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-requisitos-no-funcionales-posibles">🟥 Requisitos no funcionales posibles<a href="#-requisitos-no-funcionales-posibles" class="hash-link" aria-label="Enlace directo al 🟥 Requisitos no funcionales posibles" title="Enlace directo al 🟥 Requisitos no funcionales posibles" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>RNF01.</strong> La aplicación deberá ser utilizable desde dispositivo móvil.</li>
+<li class=""><strong>RNF02.</strong> Los formularios validarán los campos obligatorios antes del envío.</li>
+<li class=""><strong>RNF03.</strong> Solo el personal autorizado podrá consultar el listado completo de participantes.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣7️⃣-lista-de-comprobación-final">1️⃣7️⃣ <strong>Lista de comprobación final</strong><a href="#1️⃣7️⃣-lista-de-comprobación-final" class="hash-link" aria-label="Enlace directo al 1️⃣7️⃣-lista-de-comprobación-final" title="Enlace directo al 1️⃣7️⃣-lista-de-comprobación-final" translate="no">​</a></h2>
+<p>Antes de cerrar nuestros requisitos, conviene revisar si:</p>
+<ul>
+<li class="">distinguen correctamente entre objetivo y requisito.</li>
+<li class="">responden a una necesidad real del proyecto.</li>
+<li class="">están redactados de forma clara.</li>
+<li class="">describen una acción o condición concreta.</li>
+<li class="">pueden comprobarse después.</li>
+<li class="">no mezclan demasiadas ideas en un mismo punto.</li>
+<li class="">utilizan una numeración coherente.</li>
+<li class="">son viables dentro del proyecto.</li>
+</ul>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>important</div><div class="admonitionContent_BuS1"><p>Si un requisito no se entiende bien o no sabemos cómo comprobarlo, probablemente todavía no está bien redactado.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣8️⃣-idea-final-para-recordar">1️⃣8️⃣ <strong>Idea final para recordar</strong><a href="#1️⃣8️⃣-idea-final-para-recordar" class="hash-link" aria-label="Enlace directo al 1️⃣8️⃣-idea-final-para-recordar" title="Enlace directo al 1️⃣8️⃣-idea-final-para-recordar" translate="no">​</a></h2>
+<p>Un requisito no es una frase para “rellenar documentación”.</p>
+<p>Es una herramienta para pensar mejor el proyecto.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-debemos-recordar">🟩 Qué debemos recordar<a href="#-qué-debemos-recordar" class="hash-link" aria-label="Enlace directo al 🟩 Qué debemos recordar" title="Enlace directo al 🟩 Qué debemos recordar" translate="no">​</a></h3>
+<ul>
+<li class="">La <strong>necesidad</strong> explica el problema.</li>
+<li class="">El <strong>objetivo</strong> explica qué queremos conseguir.</li>
+<li class="">La <strong>funcionalidad</strong> expresa una capacidad de la aplicación.</li>
+<li class="">El <strong>requisito</strong> concreta qué debe hacer o cumplir la solución.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-la-pregunta-clave">🟦 La pregunta clave<a href="#-la-pregunta-clave" class="hash-link" aria-label="Enlace directo al 🟦 La pregunta clave" title="Enlace directo al 🟦 La pregunta clave" translate="no">​</a></h3>
+<p>Cuando terminemos de redactar un requisito, podemos preguntarnos:</p>
+<blockquote>
+<p><strong>¿Podríamos comprobar más adelante si esto se ha cumplido o no?</strong></p>
+</blockquote>
+<p>Si la respuesta es <strong>sí</strong>, probablemente vamos por buen camino.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/pi_daw/fases/fase1-analisis-definicion-revisado"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Fase 1 · Análisis y definición del proyecto</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1️⃣-antes-de-redactar-requisitos-qué-estamos-describiendo" class="table-of-contents__link toc-highlight">1️⃣ <strong>Antes de redactar requisitos: qué estamos describiendo</strong></a><ul><li><a href="#-necesidad" class="table-of-contents__link toc-highlight">🟩 Necesidad</a></li><li><a href="#-objetivo" class="table-of-contents__link toc-highlight">🟦 Objetivo</a></li><li><a href="#-funcionalidad" class="table-of-contents__link toc-highlight">🟨 Funcionalidad</a></li><li><a href="#-requisito" class="table-of-contents__link toc-highlight">🟧 Requisito</a></li></ul></li><li><a href="#2️⃣-de-la-necesidad-al-requisito" class="table-of-contents__link toc-highlight">2️⃣ <strong>De la necesidad al requisito</strong></a><ul><li><a href="#-ejemplo-completo" class="table-of-contents__link toc-highlight">🟩 Ejemplo completo</a></li></ul></li><li><a href="#3️⃣-qué-es-exactamente-un-requisito" class="table-of-contents__link toc-highlight">3️⃣ <strong>Qué es exactamente un requisito</strong></a><ul><li><a href="#-requisitos-funcionales-describen-capacidades-o-comportamientos" class="table-of-contents__link toc-highlight">🟩 Requisitos funcionales: describen capacidades o comportamientos</a></li><li><a href="#-requisitos-no-funcionales-describen-condiciones-de-calidad-o-restricciones" class="table-of-contents__link toc-highlight">🟦 Requisitos no funcionales: describen condiciones de calidad o restricciones</a></li><li><a href="#-una-primera-regla-para-distinguirlos" class="table-of-contents__link toc-highlight">🟨 Una primera regla para distinguirlos</a></li></ul></li><li><a href="#4️⃣-requisitos-funcionales" class="table-of-contents__link toc-highlight">4️⃣ <strong>Requisitos funcionales</strong></a><ul><li><a href="#-qué-describen" class="table-of-contents__link toc-highlight">🟩 Qué describen</a></li><li><a href="#-estructura-habitual" class="table-of-contents__link toc-highlight">🟦 Estructura habitual</a></li><li><a href="#-qué-puede-aparecer-en-un-requisito-funcional" class="table-of-contents__link toc-highlight">🟩 Qué puede aparecer en un requisito funcional</a></li><li><a href="#-qué-no-es-un-buen-requisito-funcional" class="table-of-contents__link toc-highlight">🟥 Qué NO es un buen requisito funcional</a></li><li><a href="#-un-requisito-funcional-debe-poder-probarse" class="table-of-contents__link toc-highlight">🟨 Un requisito funcional debe poder probarse</a></li></ul></li><li><a href="#5️⃣-requisitos-no-funcionales" class="table-of-contents__link toc-highlight">5️⃣ <strong>Requisitos no funcionales</strong></a><ul><li><a href="#-qué-describen-1" class="table-of-contents__link toc-highlight">🟩 Qué describen</a></li><li><a href="#-categorías-habituales" class="table-of-contents__link toc-highlight">🟦 Categorías habituales</a></li><li><a href="#-qué-no-es-un-buen-requisito-no-funcional" class="table-of-contents__link toc-highlight">🟥 Qué NO es un buen requisito no funcional</a></li><li><a href="#-de-una-idea-vaga-a-un-requisito-comprobable" class="table-of-contents__link toc-highlight">🟨 De una idea vaga a un requisito comprobable</a></li></ul></li><li><a href="#6️⃣-funcional-o-no-funcional-cómo-decidir" class="table-of-contents__link toc-highlight">6️⃣ <strong>Funcional o no funcional: cómo decidir</strong></a><ul><li><a href="#-el-mismo-caso-visto-desde-los-dos-tipos" class="table-of-contents__link toc-highlight">🟩 El mismo caso visto desde los dos tipos</a></li></ul></li><li><a href="#7️⃣-casos-que-pueden-generar-dudas" class="table-of-contents__link toc-highlight">7️⃣ <strong>Casos que pueden generar dudas</strong></a><ul><li><a href="#-permisos-y-roles" class="table-of-contents__link toc-highlight">🟨 Permisos y roles</a></li><li><a href="#-validaciones" class="table-of-contents__link toc-highlight">🟧 Validaciones</a></li><li><a href="#-reglas-de-negocio" class="table-of-contents__link toc-highlight">🟦 Reglas de negocio</a></li></ul></li><li><a href="#8️⃣-una-prueba-rápida-para-clasificarlos" class="table-of-contents__link toc-highlight">8️⃣ <strong>Una prueba rápida para clasificarlos</strong></a><ul><li><a href="#paso-1" class="table-of-contents__link toc-highlight">Paso 1</a></li><li><a href="#paso-2" class="table-of-contents__link toc-highlight">Paso 2</a></li><li><a href="#paso-3" class="table-of-contents__link toc-highlight">Paso 3</a></li></ul></li><li><a href="#9️⃣-cómo-redactar-un-buen-requisito" class="table-of-contents__link toc-highlight">9️⃣ <strong>Cómo redactar un buen requisito</strong></a><ul><li><a href="#-claro" class="table-of-contents__link toc-highlight">🟩 Claro</a></li><li><a href="#-concreto" class="table-of-contents__link toc-highlight">🟦 Concreto</a></li><li><a href="#-comprobable" class="table-of-contents__link toc-highlight">🟨 Comprobable</a></li><li><a href="#-coherente-con-el-proyecto" class="table-of-contents__link toc-highlight">🟧 Coherente con el proyecto</a></li><li><a href="#-viable" class="table-of-contents__link toc-highlight">🟥 Viable</a></li></ul></li><li><a href="#-errores-frecuentes-al-redactar-requisitos" class="table-of-contents__link toc-highlight">🔟 <strong>Errores frecuentes al redactar requisitos</strong></a><ul><li><a href="#-confundir-objetivo-con-requisito" class="table-of-contents__link toc-highlight">❌ Confundir objetivo con requisito</a></li><li><a href="#-confundir-funcionalidad-con-interfaz" class="table-of-contents__link toc-highlight">❌ Confundir funcionalidad con interfaz</a></li><li><a href="#-usar-palabras-vagas" class="table-of-contents__link toc-highlight">❌ Usar palabras vagas</a></li><li><a href="#-meter-demasiadas-cosas-en-un-solo-requisito" class="table-of-contents__link toc-highlight">❌ Meter demasiadas cosas en un solo requisito</a></li><li><a href="#-redactar-requisitos-que-no-responden-a-ninguna-necesidad" class="table-of-contents__link toc-highlight">❌ Redactar requisitos que no responden a ninguna necesidad</a></li></ul></li><li><a href="#1️⃣1️⃣-cómo-numerar-los-requisitos" class="table-of-contents__link toc-highlight">1️⃣1️⃣ <strong>Cómo numerar los requisitos</strong></a><ul><li><a href="#-requisitos-funcionales" class="table-of-contents__link toc-highlight">🟩 Requisitos funcionales</a></li><li><a href="#-requisitos-no-funcionales" class="table-of-contents__link toc-highlight">🟦 Requisitos no funcionales</a></li></ul></li><li><a href="#1️⃣2️⃣-ejemplo-comparado-mal-y-bien" class="table-of-contents__link toc-highlight">1️⃣2️⃣ <strong>Ejemplo comparado: mal y bien</strong></a><ul><li><a href="#-versión-mal-planteada" class="table-of-contents__link toc-highlight">🟥 Versión mal planteada</a></li><li><a href="#-versión-mejor-redactada" class="table-of-contents__link toc-highlight">🟩 Versión mejor redactada</a></li></ul></li><li><a href="#1️⃣3️⃣-del-borrador-al-requisito-final" class="table-of-contents__link toc-highlight">1️⃣3️⃣ <strong>Del borrador al requisito final</strong></a><ul><li><a href="#-ejemplo-1" class="table-of-contents__link toc-highlight">🟩 Ejemplo 1</a></li><li><a href="#-ejemplo-2" class="table-of-contents__link toc-highlight">🟦 Ejemplo 2</a></li><li><a href="#-ejemplo-3" class="table-of-contents__link toc-highlight">🟨 Ejemplo 3</a></li></ul></li><li><a href="#1️⃣4️⃣-plantilla-mínima-para-redactar-requisitos" class="table-of-contents__link toc-highlight">1️⃣4️⃣ <strong>Plantilla mínima para redactar requisitos</strong></a><ul><li><a href="#-requisitos-funcionales-1" class="table-of-contents__link toc-highlight">🟩 Requisitos funcionales</a></li><li><a href="#-requisitos-no-funcionales-1" class="table-of-contents__link toc-highlight">🟦 Requisitos no funcionales</a></li></ul></li><li><a href="#1️⃣5️⃣-ilustración-recomendada" class="table-of-contents__link toc-highlight">1️⃣5️⃣ <strong>Ilustración recomendada</strong></a></li><li><a href="#1️⃣6️⃣-ejercicio-guiado" class="table-of-contents__link toc-highlight">1️⃣6️⃣ <strong>Ejercicio guiado</strong></a><ul><li><a href="#-situación-inicial" class="table-of-contents__link toc-highlight">🟩 Situación inicial</a></li><li><a href="#-objetivo-1" class="table-of-contents__link toc-highlight">🟦 Objetivo</a></li><li><a href="#-funcionalidades-posibles" class="table-of-contents__link toc-highlight">🟨 Funcionalidades posibles</a></li><li><a href="#-requisitos-funcionales-posibles" class="table-of-contents__link toc-highlight">🟧 Requisitos funcionales posibles</a></li><li><a href="#-requisitos-no-funcionales-posibles" class="table-of-contents__link toc-highlight">🟥 Requisitos no funcionales posibles</a></li></ul></li><li><a href="#1️⃣7️⃣-lista-de-comprobación-final" class="table-of-contents__link toc-highlight">1️⃣7️⃣ <strong>Lista de comprobación final</strong></a></li><li><a href="#1️⃣8️⃣-idea-final-para-recordar" class="table-of-contents__link toc-highlight">1️⃣8️⃣ <strong>Idea final para recordar</strong></a><ul><li><a href="#-qué-debemos-recordar" class="table-of-contents__link toc-highlight">🟩 Qué debemos recordar</a></li><li><a href="#-la-pregunta-clave" class="table-of-contents__link toc-highlight">🟦 La pregunta clave</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://jamfdev.github.io/">Apuntes para Ciclos Formativos de Formación Profesional</a> por <span property="cc:attributionName">Jose A. Martínez</span>  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p> 
+        <p>📧 jamartinezf01@iesalbarregas.es</p></div></div></div></footer></div>
+</body>
+</html>
