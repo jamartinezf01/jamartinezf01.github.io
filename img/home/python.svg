@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280">
+<rect width="640" height="280" rx="28" fill="#f6f8f7"/>
+<path d="M320 58c-70 0-66 34-66 34v34h70v12h-98s-46-5-46 67 40 69 40 69h26v-37s-2-40 39-40h70s38 1 38-37V96s6-38-73-38Z" transform="translate(0 -20)" fill="#2e8555"/>
+<circle cx="286" cy="86" r="8" fill="#fff"/>
+<path d="M320 222c70 0 66-34 66-34v-34h-70v-12h98s46 5 46-67-40-69-40-69h-26v37s2 40-39 40h-70s-38-1-38 37v64s-6 38 73 38Z" transform="translate(0 20)" fill="#79a98b"/>
+<circle cx="354" cy="194" r="8" fill="#fff"/>
+<text x="320" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#205d3b">PYTHON</text>
+</svg>
