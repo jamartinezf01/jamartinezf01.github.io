@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-pi_daw/fases/fase2-diseno-planificacion" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.2">
+<title data-rh="true">Fase 2 · Diseño y planificación del proyecto | Apuntes de Informática</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://jamartinezf01.github.io/docs/pi_daw/fases/fase2-diseno-planificacion"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Fase 2 · Diseño y planificación del proyecto | Apuntes de Informática"><meta data-rh="true" name="description" content="Diseñamos la solución, concretamos su estructura técnica, definimos el MVP y organizamos el trabajo necesario para comenzar el desarrollo"><meta data-rh="true" property="og:description" content="Diseñamos la solución, concretamos su estructura técnica, definimos el MVP y organizamos el trabajo necesario para comenzar el desarrollo"><link data-rh="true" rel="icon" href="/img/logoJAMF.png"><link data-rh="true" rel="canonical" href="https://jamartinezf01.github.io/docs/pi_daw/fases/fase2-diseno-planificacion"><link data-rh="true" rel="alternate" href="https://jamartinezf01.github.io/docs/pi_daw/fases/fase2-diseno-planificacion" hreflang="es"><link data-rh="true" rel="alternate" href="https://jamartinezf01.github.io/docs/pi_daw/fases/fase2-diseno-planificacion" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Fases del proyecto","item":"https://jamartinezf01.github.io/docs/pi_daw/fases/"},{"@type":"ListItem","position":2,"name":"Fase 2 · Diseño y planificación del proyecto","item":"https://jamartinezf01.github.io/docs/pi_daw/fases/fase2-diseno-planificacion"}]}</script><meta httpequiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta httpequiv="Pragma" content="no-cache">
+<meta httpequiv="Expires" content="0">
+
+<script src="/version.js"></script><link rel="stylesheet" href="/assets/css/styles.ecfcf92a.css">
+<script src="/assets/js/runtime~main.aac054d9.js" defer="defer"></script>
+<script src="/assets/js/main.8747aa45.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><b class="navbar__title text--truncate">Inicio</b></a><a class="navbar__item navbar__link" href="/docs/dwes/introduccion">DWES</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/pi_daw/introduccion">PI DAW</a><a class="navbar__item navbar__link" href="/docs/lenguajes-de-marcas/Introducción">LLMM</a><a class="navbar__item navbar__link" href="/docs/python/Introducción">Python</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://informatica.iesalbarregas.com/login/index.php" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Moodle<svg width="13.5" height="13.5" aria-label="(se abre en una nueva pestaña)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="modo del sistema" aria-label="Cambiar entre modo oscuro y claro (actualmente modo del sistema)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/pi_daw/introduccion"><span class="linkLabel_WmDU">Proyecto Intermodular</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/pi_daw/Organizacion/temporalizacion"><span class="categoryLinkLabel_W154">Organización</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/docs/pi_daw/fases"><span class="categoryLinkLabel_W154">Fases del proyecto</span></a><button aria-label="Colapsar categoría &#x27;Fases del proyecto&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/pi_daw/fases/fase1-analisis-definicion-revisado"><span class="linkLabel_WmDU">Fase 1 · Análisis y definición del proyecto</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/pi_daw/fases/fase2-diseno-planificacion"><span class="linkLabel_WmDU">Fase 2 · Diseño y planificación del proyecto</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/pi_daw/guias/guia-herramientas-proyecto-intermodular"><span class="categoryLinkLabel_W154">Guías</span></a></div></li></ul></nav><button type="button" title="Colapsar barra lateral" aria-label="Colapsar barra lateral" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/pi_daw/fases"><span>Fases del proyecto</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Fase 2 · Diseño y planificación del proyecto</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Fase 2 - Diseño y planificación del proyecto</h1></header>
+<p>En la Fase 1 hemos definido <strong>qué problema queremos resolver, para quién y qué deberá permitir hacer nuestra aplicación</strong>.</p>
+<p>Ahora vamos a dar un paso más: transformar esa definición inicial en una solución <strong>suficientemente diseñada y planificada</strong> como para poder comenzar su desarrollo.</p>
+<p>En esta fase tendremos que decidir:</p>
+<blockquote>
+<p><strong>qué identidad visual tendrá el proyecto → cómo se organizará la aplicación → cómo navegarán los usuarios → qué pantallas necesitaremos → cómo estructuraremos técnicamente la solución → qué datos gestionaremos → qué tecnologías utilizaremos → qué formará parte del MVP → cómo comenzaremos el desarrollo</strong></p>
+</blockquote>
+<div style="text-align:center"><img src="/img/pidaw/fases/recorrido-fase2.png" alt="Recorrido de la Fase 2" style="width:100%;max-width:1100px"></div>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>consejo</div><div class="admonitionContent_BuS1"><p>La Fase 2 no pretende dejar cerrado cada detalle del proyecto.</p><p>Su objetivo es tomar las <strong>decisiones necesarias para poder comenzar el desarrollo con una dirección clara</strong>, sabiendo qué queremos construir primero y cómo encajan entre sí las distintas partes de la solución.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣-visión-general-de-la-fase">1️⃣ <strong>Visión general de la fase</strong><a href="#1️⃣-visión-general-de-la-fase" class="hash-link" aria-label="Enlace directo al 1️⃣-visión-general-de-la-fase" title="Enlace directo al 1️⃣-visión-general-de-la-fase" translate="no">​</a></h2>
+<p>La Fase 2 se organiza en <strong>dos actividades evaluables</strong>. Cada una termina con una entrega y una presentación breve.</p>
+<table><thead><tr><th>Evidencia / entrega</th><th style="text-align:right">Peso en la 1.ª evaluación</th><th style="text-align:right">Peso en la nota final</th></tr></thead><tbody><tr><td><strong>Actividad 3. Diseño funcional e interfaz + presentación</strong></td><td style="text-align:right"><strong>28 %</strong></td><td style="text-align:right"><strong>7 %</strong></td></tr><tr><td><strong>Actividad 4. Diseño técnico, MVP y planificación + presentación</strong></td><td style="text-align:right"><strong>40 %</strong></td><td style="text-align:right"><strong>10 %</strong></td></tr></tbody></table>
+<p>En conjunto, la Fase 2 supone el <strong>68 % de la primera evaluación</strong> y el <strong>17 % de la nota final del módulo</strong>.</p>
+<p>El recorrido será:</p>
+<blockquote>
+<p><strong>Actividad 3 · Diseñamos cómo será la solución para sus usuarios</strong><br>
+<!-- -->↓<br>
+<strong>Actividad 4 · Decidimos cómo la construiremos y qué necesitamos para alcanzar el MVP</strong><br>
+<!-- -->↓<br>
+<strong>Hito F2 · El proyecto queda preparado para comenzar su desarrollo</strong></p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2️⃣-actividad-3--diseño-funcional-e-interfaz">2️⃣ <strong>Actividad 3 · Diseño funcional e interfaz</strong><a href="#2️⃣-actividad-3--diseño-funcional-e-interfaz" class="hash-link" aria-label="Enlace directo al 2️⃣-actividad-3--diseño-funcional-e-interfaz" title="Enlace directo al 2️⃣-actividad-3--diseño-funcional-e-interfaz" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-vamos-a-trabajar">🟩 Qué vamos a trabajar<a href="#-qué-vamos-a-trabajar" class="hash-link" aria-label="Enlace directo al 🟩 Qué vamos a trabajar" title="Enlace directo al 🟩 Qué vamos a trabajar" translate="no">​</a></h3>
+<p>En la Fase 1 hemos identificado los usuarios y definido los requisitos iniciales.</p>
+<p>Ahora necesitamos convertir esos requisitos en una aplicación que podamos <strong>visualizar y recorrer antes de empezar a programarla</strong>.</p>
+<p>No buscamos todavía un diseño gráfico definitivo. Queremos comprobar que la solución propuesta es coherente, que las distintas partes están conectadas y que los usuarios podrán realizar las acciones previstas.</p>
+<p>Trabajaremos seis aspectos principales.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-identidad-visual">🎨 Identidad visual<a href="#-identidad-visual" class="hash-link" aria-label="Enlace directo al 🎨 Identidad visual" title="Enlace directo al 🎨 Identidad visual" translate="no">​</a></h4>
+<p>Antes de diseñar las pantallas estableceremos una <strong>identidad visual básica</strong> que permita mantener una apariencia coherente en toda la aplicación.</p>
+<p>No pretendemos realizar un estudio profesional de branding ni elaborar un manual de identidad corporativa completo. Queremos definir los elementos gráficos mínimos que necesitaremos para desarrollar posteriormente la interfaz.</p>
+<p>Cada equipo deberá concretar:</p>
+<ul>
+<li class="">nombre definitivo del proyecto.</li>
+<li class="">logotipo o identificador visual.</li>
+<li class="">variantes básicas del logotipo, cuando sean necesarias.</li>
+<li class="">paleta de colores corporativa, indicando sus valores HEX.</li>
+<li class="">tipografías principales.</li>
+<li class="">criterios básicos para el uso coherente de estos elementos.</li>
+</ul>
+<p>La elección de colores deberá tener en cuenta no solo cuestiones estéticas, sino también la <strong>legibilidad y el contraste</strong> necesarios para una interfaz web.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>consejo</div><div class="admonitionContent_BuS1"><p>No buscamos crear un manual de identidad corporativa completo.</p><p>El objetivo es disponer de unas <strong>reglas visuales mínimas y coherentes</strong> que podamos aplicar después al diseño de la interfaz.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-estructura-y-navegación">🧭 Estructura y navegación<a href="#-estructura-y-navegación" class="hash-link" aria-label="Enlace directo al 🧭 Estructura y navegación" title="Enlace directo al 🧭 Estructura y navegación" translate="no">​</a></h4>
+<p>Primero tendremos que decidir cómo se organizará la aplicación.</p>
+<p>Identificaremos sus principales áreas, secciones o pantallas y representaremos cómo se relacionan entre sí.</p>
+<p>El mapa de navegación debe permitir comprender:</p>
+<blockquote>
+<p><strong>dónde puede estar el usuario → a qué partes puede acceder → cómo puede desplazarse entre ellas</strong></p>
+</blockquote>
+<p>No es necesario representar cada enlace secundario de la aplicación. Lo importante es mostrar la <strong>estructura general y los recorridos principales</strong>.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>consejo</div><div class="admonitionContent_BuS1"><p>El mapa de navegación no es una lista de páginas.</p><p>Debe mostrar las <strong>relaciones y posibilidades de navegación</strong> entre las distintas partes de la aplicación.</p></div></div>
+<div style="text-align:center"><img src="/img/pidaw/fases/ejemplo-mapa-navegacion-fase2.png" alt="Ejemplo simplificado de mapa de navegación" style="width:100%;max-width:750px"></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-wireframes-de-las-pantallas-principales">🖼️ Wireframes de las pantallas principales<a href="#️-wireframes-de-las-pantallas-principales" class="hash-link" aria-label="Enlace directo al 🖼️ Wireframes de las pantallas principales" title="Enlace directo al 🖼️ Wireframes de las pantallas principales" translate="no">​</a></h4>
+<p>Una vez definida la estructura, diseñaremos los <strong>wireframes</strong> de las pantallas necesarias para comprender cómo funcionará la solución.</p>
+<p>Un wireframe representa la distribución de los elementos principales de una pantalla sin necesidad de definir todavía todos los detalles visuales.</p>
+<p>Podrá mostrar, entre otros elementos:</p>
+<ul>
+<li class="">zonas de navegación.</li>
+<li class="">información que se presenta al usuario.</li>
+<li class="">formularios.</li>
+<li class="">botones y acciones principales.</li>
+<li class="">listados o tablas.</li>
+<li class="">mensajes relevantes.</li>
+</ul>
+<p>No será necesario diseñar todas las pantallas posibles si varias siguen una estructura similar.</p>
+<p>Sí deberán aparecer las que resulten necesarias para comprender las <strong>funcionalidades principales del proyecto</strong>.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>aviso</div><div class="admonitionContent_BuS1"><p>Un wireframe no consiste en decorar una pantalla.</p><p>Lo importante en esta actividad es decidir <strong>qué información aparece, qué puede hacer el usuario y cómo continúa su recorrido</strong>.</p></div></div>
+<div style="text-align:center"><img src="/img/pidaw/fases/ejemplo-wireframes-fase2.png" alt="Ejemplo simplificado de wireframes principales" style="width:100%;max-width:1100px"></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-recorridos-principales-de-usuario">👣 Recorridos principales de usuario<a href="#-recorridos-principales-de-usuario" class="hash-link" aria-label="Enlace directo al 👣 Recorridos principales de usuario" title="Enlace directo al 👣 Recorridos principales de usuario" translate="no">​</a></h4>
+<p>También comprobaremos cómo realizará cada tipo de usuario algunas de las acciones más importantes de la aplicación.</p>
+<p>Por ejemplo:</p>
+<blockquote>
+<p><strong>accede a la aplicación → consulta información → selecciona una opción → completa los datos necesarios → confirma la acción → recibe el resultado</strong></p>
+</blockquote>
+<p>Los recorridos servirán para comprobar que no hemos diseñado pantallas aisladas y que las principales funcionalidades pueden completarse de principio a fin.</p>
+<p>No necesitamos documentar cada interacción posible.</p>
+<p>Nos centraremos en los <strong>recorridos que sean realmente importantes para comprender el funcionamiento del proyecto</strong>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-mockup-de-referencia">🖥️ Mockup de referencia<a href="#️-mockup-de-referencia" class="hash-link" aria-label="Enlace directo al 🖥️ Mockup de referencia" title="Enlace directo al 🖥️ Mockup de referencia" translate="no">​</a></h4>
+<p>Una vez definida la identidad visual y los wireframes, elaboraremos al menos un <strong>mockup de mayor fidelidad</strong> de una pantalla representativa del proyecto.</p>
+<p>En este mockup aplicaremos:</p>
+<ul>
+<li class="">logotipo o identificador visual.</li>
+<li class="">paleta de colores.</li>
+<li class="">tipografías seleccionadas.</li>
+<li class="">componentes visuales básicos.</li>
+</ul>
+<p>El objetivo no es diseñar gráficamente toda la aplicación en esta fase, sino comprobar cómo se traduce la identidad visual definida a una interfaz real.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>nota</div><div class="admonitionContent_BuS1"><p>Los wireframes seguirán siendo representaciones de <strong>baja fidelidad</strong> centradas en estructura y funcionalidad.</p><p>El mockup será la referencia visual que muestre cómo podría evolucionar una de esas pantallas hacia el diseño final.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-relación-con-los-requisitos">🔗 Relación con los requisitos<a href="#-relación-con-los-requisitos" class="hash-link" aria-label="Enlace directo al 🔗 Relación con los requisitos" title="Enlace directo al 🔗 Relación con los requisitos" translate="no">​</a></h4>
+<p>El diseño debe surgir de los requisitos definidos en la Fase 1.</p>
+<p>Por eso tendremos que poder relacionar las principales pantallas y recorridos con los requisitos funcionales que permiten resolver.</p>
+<p>Por ejemplo:</p>
+<blockquote>
+<p><strong>RF03.</strong> El sistema permitirá consultar las actividades con plazas disponibles.<br>
+<strong>Pantallas relacionadas:</strong> listado de actividades y detalle de actividad.</p>
+</blockquote>
+<p>Esta relación nos permitirá detectar requisitos que todavía no han sido representados o elementos del diseño que no responden a ninguna necesidad identificada.</p>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>important</div><div class="admonitionContent_BuS1"><p>No estamos diseñando una aplicación diferente a la definida en la Fase 1.</p><p>Estamos <strong>transformando los requisitos en una propuesta concreta de funcionamiento e interfaz</strong>.</p></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-debes-entregar">🟦 Qué debes entregar<a href="#-qué-debes-entregar" class="hash-link" aria-label="Enlace directo al 🟦 Qué debes entregar" title="Enlace directo al 🟦 Qué debes entregar" translate="no">​</a></h3>
+<p>La tercera entrega recogerá el <strong>diseño funcional inicial de la aplicación</strong>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="contenido-mínimo">Contenido mínimo<a href="#contenido-mínimo" class="hash-link" aria-label="Enlace directo al Contenido mínimo" title="Enlace directo al Contenido mínimo" translate="no">​</a></h4>
+<p><strong>1. Identidad visual</strong></p>
+<ul>
+<li class="">Nombre definitivo del proyecto.</li>
+<li class="">Logotipo o identificador visual.</li>
+<li class="">Paleta de colores con valores HEX.</li>
+<li class="">Tipografías seleccionadas.</li>
+<li class="">Breve justificación de las principales decisiones.</li>
+</ul>
+<p><strong>2. Estructura general de la aplicación</strong></p>
+<ul>
+<li class="">Áreas o secciones principales.</li>
+<li class="">Breve explicación de la función de cada una.</li>
+</ul>
+<p><strong>3. Mapa de navegación</strong></p>
+<ul>
+<li class="">Pantallas principales.</li>
+<li class="">Relaciones entre ellas.</li>
+<li class="">Accesos diferentes según el tipo de usuario, cuando proceda.</li>
+</ul>
+<p><strong>4. Wireframes</strong></p>
+<ul>
+<li class="">Wireframes de las pantallas necesarias para comprender las funcionalidades principales.</li>
+<li class="">Breve explicación cuando alguna decisión no resulte evidente en el propio diseño.</li>
+</ul>
+<p><strong>5. Recorridos principales de usuario</strong></p>
+<ul>
+<li class="">Selección de las acciones más importantes.</li>
+<li class="">Secuencia de pantallas o pasos necesarios para completarlas.</li>
+</ul>
+<p><strong>6. Mockup de referencia</strong></p>
+<ul>
+<li class="">Al menos una pantalla representativa con la identidad visual aplicada.</li>
+<li class="">Uso coherente del logotipo, colores y tipografías definidos.</li>
+</ul>
+<p><strong>7. Correspondencia con los requisitos</strong></p>
+<ul>
+<li class="">Relación entre requisitos funcionales y pantallas o recorridos que permiten cumplirlos.</li>
+<li class="">Identificación de requisitos pendientes de representar, si los hubiera.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-recursos-de-apoyo">📄 Recursos de apoyo<a href="#-recursos-de-apoyo" class="hash-link" aria-label="Enlace directo al 📄 Recursos de apoyo" title="Enlace directo al 📄 Recursos de apoyo" translate="no">​</a></h3>
+<p>Para preparar la entrega estará disponible un documento de ejemplo:</p>
+<p>👉 <a href="/assets/files/ejemplo-actividad3-40ae1c674a434cedd30b53d24c7413bf.pdf" target="_blank" class=""><strong>Ejemplo completo de la Actividad 3</strong></a></p>
+<p>El ejemplo continuará el mismo proyecto ficticio utilizado en la Fase 1 y mostrará cómo sus usuarios y requisitos pueden transformarse en una <strong>identidad visual básica, una estructura de navegación, wireframes, recorridos coherentes y un mockup de referencia</strong>.</p>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>peligro</div><div class="admonitionContent_BuS1"><p>El ejemplo servirá como referencia para comprender qué se espera en cada apartado.</p><p>No debe utilizarse para copiar el diseño ni para reproducir la misma estructura en un proyecto diferente.</p></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-presentación-de-la-actividad-3">🗣️ Presentación de la Actividad 3<a href="#️-presentación-de-la-actividad-3" class="hash-link" aria-label="Enlace directo al 🗣️ Presentación de la Actividad 3" title="Enlace directo al 🗣️ Presentación de la Actividad 3" translate="no">​</a></h3>
+<p>Cada equipo realizará una presentación breve centrada en:</p>
+<blockquote>
+<p><strong>identidad visual → usuarios → funcionalidades → navegación → pantallas → recorridos → mockup</strong></p>
+</blockquote>
+<p>La presentación debe permitir comprobar si la solución diseñada responde realmente a las necesidades y requisitos definidos en la fase anterior.</p>
+<p>También servirá para detectar problemas de navegación, funcionalidades que todavía no han sido representadas o decisiones de diseño que sea necesario revisar antes de avanzar.</p>
+<p>Las observaciones recibidas podrán incorporarse antes de cerrar definitivamente la actividad.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-podremos-reutilizar-en-la-memoria">📝 Qué podremos reutilizar en la memoria<a href="#-qué-podremos-reutilizar-en-la-memoria" class="hash-link" aria-label="Enlace directo al 📝 Qué podremos reutilizar en la memoria" title="Enlace directo al 📝 Qué podremos reutilizar en la memoria" translate="no">​</a></h3>
+<p>De esta actividad podremos recuperar posteriormente:</p>
+<p><strong>identidad visual · estructura funcional de la aplicación · mapa de navegación · diseño de interfaz · wireframes · mockup de referencia · recorridos de usuario · decisiones principales de usabilidad</strong></p>
+<p>El diseño podrá evolucionar durante el desarrollo si aparecen nuevas necesidades o detectamos que alguna decisión inicial no funciona como esperábamos.</p>
+<p>Cuando se produzcan cambios importantes tendremos que poder explicar <strong>qué hemos modificado y por qué</strong>.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3️⃣-actividad-4--diseño-técnico-definición-del-mvp-y-planificación">3️⃣ <strong>Actividad 4 · Diseño técnico, definición del MVP y planificación</strong><a href="#3️⃣-actividad-4--diseño-técnico-definición-del-mvp-y-planificación" class="hash-link" aria-label="Enlace directo al 3️⃣-actividad-4--diseño-técnico-definición-del-mvp-y-planificación" title="Enlace directo al 3️⃣-actividad-4--diseño-técnico-definición-del-mvp-y-planificación" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-vamos-a-trabajar-1">🟩 Qué vamos a trabajar<a href="#-qué-vamos-a-trabajar-1" class="hash-link" aria-label="Enlace directo al 🟩 Qué vamos a trabajar" title="Enlace directo al 🟩 Qué vamos a trabajar" translate="no">​</a></h3>
+<p>Ya sabemos cómo se organizará la aplicación desde el punto de vista de sus usuarios.</p>
+<p>Ahora necesitamos decidir <strong>cómo vamos a construirla</strong>.</p>
+<p>En esta actividad concretaremos <strong>qué hará el sistema, cómo se organizará técnicamente, qué tecnologías utilizaremos, qué datos gestionará, cómo se dividirá en componentes, cómo colaborarán sus partes en los procesos principales, qué formará parte del MVP y cómo planificaremos su desarrollo</strong>.</p>
+<p>Trabajaremos <strong>ocho aspectos principales</strong>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-casos-de-uso-principales">👤 Casos de uso principales<a href="#-casos-de-uso-principales" class="hash-link" aria-label="Enlace directo al 👤 Casos de uso principales" title="Enlace directo al 👤 Casos de uso principales" translate="no">​</a></h4>
+<p>Comenzaremos representando de forma gráfica <strong>qué funcionalidades principales ofrece el sistema y qué actores interactúan con ellas</strong>.</p>
+<p>El diagrama de casos de uso nos ayudará a comprobar:</p>
+<ul>
+<li class="">qué puede hacer cada tipo de usuario.</li>
+<li class="">qué funcionalidades son realmente nucleares en el proyecto.</li>
+<li class="">si existe coherencia entre usuarios, requisitos y acciones principales.</li>
+</ul>
+<p>No buscamos un diagrama exhaustivo con todos los casos posibles.</p>
+<p>Nos centraremos en los <strong>casos de uso principales del sistema</strong>.</p>
+<div style="text-align:center"><img src="/img/pidaw/fases/ejemplo-casos-uso-fase2.png" alt="Ejemplo simplificado de diagrama de casos de uso" style="width:100%;max-width:650px"></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-arquitectura-de-la-solución">🏗️ Arquitectura de la solución<a href="#️-arquitectura-de-la-solución" class="hash-link" aria-label="Enlace directo al 🏗️ Arquitectura de la solución" title="Enlace directo al 🏗️ Arquitectura de la solución" translate="no">​</a></h4>
+<p>Representaremos de forma sencilla los principales componentes que formarán parte de nuestra aplicación y cómo se relacionarán entre ellos.</p>
+<p>Por ejemplo:</p>
+<blockquote>
+<p><strong>usuario → interfaz web → lógica del servidor → base de datos</strong></p>
+</blockquote>
+<p>Cada proyecto deberá adaptar esta representación a su solución real.</p>
+<p>No buscamos utilizar una arquitectura compleja por el simple hecho de hacerlo. Debemos representar <strong>las partes que realmente necesitaremos y la responsabilidad principal de cada una</strong>.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>consejo</div><div class="admonitionContent_BuS1"><p>El diagrama debe ayudarnos a entender la solución.</p><p>Si necesita una explicación extensa para poder interpretarse, probablemente sea más complejo de lo necesario.</p></div></div>
+<div style="text-align:center"><img src="/img/pidaw/fases/ejemplo-arquitectura-fase2.png" alt="Esquema básico de arquitectura de una aplicación web" style="width:100%;max-width:700px"></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-stack-tecnológico">🧰 Stack tecnológico<a href="#-stack-tecnológico" class="hash-link" aria-label="Enlace directo al 🧰 Stack tecnológico" title="Enlace directo al 🧰 Stack tecnológico" translate="no">​</a></h4>
+<p>Tendremos que concretar las principales tecnologías que utilizaremos para desarrollar el proyecto.</p>
+<p>Según las características de cada solución podrán incluir:</p>
+<ul>
+<li class="">tecnologías de frontend.</li>
+<li class="">tecnologías de backend.</li>
+<li class="">sistema gestor de bases de datos.</li>
+<li class="">herramientas de desarrollo.</li>
+<li class="">control de versiones.</li>
+<li class="">servicios externos u otras herramientas necesarias.</li>
+</ul>
+<p>No basta con elaborar una lista.</p>
+<p>Las decisiones principales deberán estar <strong>brevemente justificadas en función de las necesidades del proyecto</strong>.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>aviso</div><div class="admonitionContent_BuS1"><p>No queremos una investigación teórica sobre cada tecnología.</p><p>La pregunta que debemos poder responder es:</p><blockquote>
+<p><strong>¿por qué esta elección tiene sentido para nuestro proyecto?</strong></p>
+</blockquote></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-diseño-de-datos">🗃️ Diseño de datos<a href="#️-diseño-de-datos" class="hash-link" aria-label="Enlace directo al 🗃️ Diseño de datos" title="Enlace directo al 🗃️ Diseño de datos" translate="no">​</a></h4>
+<p>Antes de desarrollar las funcionalidades principales necesitamos decidir qué información deberá almacenar y relacionar nuestra aplicación.</p>
+<p>En esta fase pediremos, cuando proceda:</p>
+<ul>
+<li class="">un <strong>modelo E/R o representación conceptual equivalente</strong>.</li>
+<li class="">un <strong>modelo relacional inicial</strong>, cuando la solución utilice una base de datos relacional.</li>
+<li class="">identificación de entidades o elementos principales.</li>
+<li class="">relaciones existentes.</li>
+<li class="">restricciones importantes.</li>
+</ul>
+<p>La representación utilizada deberá permitir comprender la <strong>estructura lógica de los datos que necesitará el proyecto</strong>.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>nota</div><div class="admonitionContent_BuS1"><p>El modelo definido en esta fase es un <strong>modelo inicial de trabajo</strong>.</p><p>Podrá evolucionar durante el desarrollo si descubrimos nuevas necesidades o detectamos decisiones que deben corregirse.</p></div></div>
+<div style="text-align:center"><img src="/img/pidaw/fases/ejemplo-modelo-datos-fase2.png" alt="Ejemplo simplificado de diseño de datos" style="width:100%;max-width:700px"></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-componentes-o-áreas-funcionales">🧩 Componentes o áreas funcionales<a href="#-componentes-o-áreas-funcionales" class="hash-link" aria-label="Enlace directo al 🧩 Componentes o áreas funcionales" title="Enlace directo al 🧩 Componentes o áreas funcionales" translate="no">​</a></h4>
+<p>Dividiremos la solución en bloques funcionales que nos ayuden a organizar su desarrollo.</p>
+<p>Dependiendo del proyecto podrían aparecer componentes como:</p>
+<p><strong>autenticación · gestión de usuarios · catálogo · reservas · administración · búsquedas · notificaciones</strong></p>
+<p>Cada componente debe representar una <strong>responsabilidad reconocible dentro de la aplicación</strong>.</p>
+<p>Esta división nos ayudará posteriormente a transformar el proyecto en tareas de desarrollo manejables.</p>
+<div style="text-align:center"><img src="/img/pidaw/fases/ejemplo-componentes-funcionales-fase2.png" alt="Ejemplo simplificado de mapa de componentes funcionales" style="width:100%;max-width:700px"></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-secuencia-de-procesos-clave">🔄 Secuencia de procesos clave<a href="#-secuencia-de-procesos-clave" class="hash-link" aria-label="Enlace directo al 🔄 Secuencia de procesos clave" title="Enlace directo al 🔄 Secuencia de procesos clave" translate="no">​</a></h4>
+<p>Además de la visión global del sistema, necesitaremos representar <strong>cómo colaboran sus partes en una operación concreta</strong>.</p>
+<p>Para ello elaboraremos <strong>uno o dos diagramas de secuencia</strong> de procesos especialmente importantes.</p>
+<p>Por ejemplo:</p>
+<ul>
+<li class="">realizar una reserva.</li>
+<li class="">registrarse en la aplicación.</li>
+<li class="">publicar una actividad.</li>
+</ul>
+<p>No pediremos un diagrama de secuencia por cada funcionalidad, sino solo de aquellos procesos que ayuden a comprender mejor la lógica del sistema.</p>
+<div style="text-align:center"><img src="/img/pidaw/fases/ejemplo-secuencia-fase2.png" alt="Ejemplo simplificado de diagrama de secuencia" style="width:100%;max-width:750px"></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-definición-del-mvp">🎯 Definición del MVP<a href="#-definición-del-mvp" class="hash-link" aria-label="Enlace directo al 🎯 Definición del MVP" title="Enlace directo al 🎯 Definición del MVP" translate="no">​</a></h4>
+<p>No intentaremos desarrollar todas las funcionalidades del proyecto al mismo tiempo.</p>
+<p>Primero definiremos qué conjunto mínimo necesitamos para disponer de un <strong>Producto Mínimo Viable (MVP)</strong>.</p>
+<p>El MVP debe ser una versión limitada, pero <strong>funcional y utilizable</strong>, que permita comprobar que las funcionalidades esenciales del proyecto trabajan conjuntamente.</p>
+<p>Para definirlo distinguiremos entre:</p>
+<p><strong>Funcionalidades del MVP</strong></p>
+<p>Las imprescindibles para disponer de una primera versión funcional del producto.</p>
+<p><strong>Funcionalidades posteriores al MVP</strong></p>
+<p>Aquellas que forman parte del alcance del proyecto, pero pueden desarrollarse después de haber alcanzado esa primera versión.</p>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>important</div><div class="admonitionContent_BuS1"><p>MVP no significa entregar una aplicación a medias.</p><p>Significa construir primero una versión <strong>reducida pero coherente</strong>, capaz de completar los recorridos esenciales del proyecto.</p></div></div>
+<p>La selección debe estar relacionada con los requisitos definidos anteriormente.</p>
+<p>Deberemos poder explicar:</p>
+<blockquote>
+<p><strong>qué requisitos cubre el MVP → qué puede hacer un usuario con él → qué dejamos para después y por qué</strong></p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-planificación-inicial-del-desarrollo">📋 Planificación inicial del desarrollo<a href="#-planificación-inicial-del-desarrollo" class="hash-link" aria-label="Enlace directo al 📋 Planificación inicial del desarrollo" title="Enlace directo al 📋 Planificación inicial del desarrollo" translate="no">​</a></h4>
+<p>Por último, transformaremos las decisiones anteriores en una primera organización del trabajo.</p>
+<p>Identificaremos las tareas necesarias para comenzar el desarrollo y alcanzar el MVP.</p>
+<p>La planificación deberá reflejar, al menos:</p>
+<ul>
+<li class="">tareas o bloques principales.</li>
+<li class="">orden previsto de realización.</li>
+<li class="">dependencias relevantes.</li>
+<li class="">responsables iniciales.</li>
+<li class="">organización temporal general mediante un <strong>diagrama de Gantt simplificado</strong>.</li>
+<li class="">organización detallada y actualizada del trabajo en la herramienta de seguimiento del equipo.</li>
+</ul>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>aviso</div><div class="admonitionContent_BuS1"><p>No queremos construir una planificación rígida de todo el curso.</p><p>Durante el desarrollo aparecerán cambios, dificultades y nuevas decisiones.</p><p>La planificación debe servir para <strong>organizar el trabajo y hacerlo visible</strong>, no para fingir que podemos prever con exactitud todo lo que ocurrirá.</p></div></div>
+<p>👉 <a class="" href="/docs/pi_daw/guias/guia-diagramas-diseno-proyecto#diagrama-de-gantt"><strong>Consulta la guía sobre planificación, Gantt y tablero de tareas</strong></a></p>
+<div style="text-align:center"><img src="/img/pidaw/fases/ejemplo-gantt-fase2.png" alt="Ejemplo simplificado de diagrama de Gantt" style="width:100%;max-width:750px"></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-debes-entregar-1">🟦 Qué debes entregar<a href="#-qué-debes-entregar-1" class="hash-link" aria-label="Enlace directo al 🟦 Qué debes entregar" title="Enlace directo al 🟦 Qué debes entregar" translate="no">​</a></h3>
+<p>La cuarta entrega recogerá el <strong>diseño técnico inicial y la planificación necesaria para comenzar el desarrollo</strong>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="contenido-mínimo-1">Contenido mínimo<a href="#contenido-mínimo-1" class="hash-link" aria-label="Enlace directo al Contenido mínimo" title="Enlace directo al Contenido mínimo" translate="no">​</a></h4>
+<p><strong>1. Casos de uso principales</strong></p>
+<ul>
+<li class="">Diagrama de casos de uso.</li>
+<li class="">Actores principales del sistema.</li>
+<li class="">Funcionalidades principales asociadas a cada actor.</li>
+</ul>
+<p><strong>2. Arquitectura general de la solución</strong></p>
+<ul>
+<li class="">Diagrama de arquitectura.</li>
+<li class="">Componentes principales.</li>
+<li class="">Responsabilidad de cada componente.</li>
+<li class="">Relaciones básicas entre ellos.</li>
+</ul>
+<p><strong>3. Tecnologías y herramientas</strong></p>
+<ul>
+<li class="">Tecnologías principales seleccionadas.</li>
+<li class="">Herramientas relevantes.</li>
+<li class="">Justificación breve de las decisiones principales.</li>
+</ul>
+<p><strong>4. Diseño de datos</strong></p>
+<ul>
+<li class="">Modelo E/R o representación conceptual equivalente.</li>
+<li class="">Modelo relacional inicial, cuando proceda.</li>
+<li class="">Elementos principales y relaciones.</li>
+<li class="">Restricciones relevantes.</li>
+</ul>
+<p><strong>5. Componentes o áreas funcionales</strong></p>
+<ul>
+<li class="">Mapa de componentes funcionales de la aplicación.</li>
+<li class="">Responsabilidad de cada bloque.</li>
+<li class="">Funcionalidades principales asociadas.</li>
+</ul>
+<p><strong>6. Secuencia de procesos clave</strong></p>
+<ul>
+<li class="">Uno o dos diagramas de secuencia.</li>
+<li class="">Procesos especialmente relevantes para comprender el sistema.</li>
+<li class="">Breve explicación del proceso representado.</li>
+</ul>
+<p><strong>7. Definición del MVP</strong></p>
+<ul>
+<li class="">Funcionalidades incluidas en el MVP.</li>
+<li class="">Requisitos relacionados.</li>
+<li class="">Componentes implicados.</li>
+<li class="">Funcionalidades que se desarrollarán posteriormente.</li>
+<li class="">Justificación de la selección realizada.</li>
+</ul>
+<p><strong>8. Planificación inicial del desarrollo</strong></p>
+<ul>
+<li class="">Tareas necesarias para comenzar el desarrollo y alcanzar el MVP.</li>
+<li class="">Orden previsto y dependencias principales.</li>
+<li class="">Reparto inicial de responsabilidades.</li>
+<li class="">Diagrama de Gantt simplificado.</li>
+<li class="">Evidencia de la organización del trabajo en la herramienta utilizada por el equipo.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-recursos-de-apoyo-1">📄 Recursos de apoyo<a href="#-recursos-de-apoyo-1" class="hash-link" aria-label="Enlace directo al 📄 Recursos de apoyo" title="Enlace directo al 📄 Recursos de apoyo" translate="no">​</a></h3>
+<p>Para preparar la entrega podéis consultar:</p>
+<p>👉 <a class="" href="/docs/pi_daw/guias/guia-diagramas-diseno-proyecto"><strong>Guía · Diagramas y modelos para diseñar el proyecto</strong></a></p>
+<p>👉 <a href="/assets/files/ejemplo-actividad4-c78712f3835d1b8ea6a70b2dff93ce9a.pdf" target="_blank" class=""><strong>Ejemplo completo de la Actividad 4</strong></a></p>
+<p>El ejemplo continuará el proyecto ficticio de las actividades anteriores y mostrará cómo transformar el diseño funcional en una <strong>propuesta técnica, un conjunto de diagramas útiles, un MVP concreto y una planificación inicial del desarrollo</strong>.</p>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>peligro</div><div class="admonitionContent_BuS1"><p>El ejemplo mostrará una posible forma de resolver la actividad, no una estructura técnica que todos los proyectos deban reproducir.</p><p>Cada equipo deberá tomar decisiones coherentes con las necesidades de su propia solución.</p></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-presentación-de-la-actividad-4">🗣️ Presentación de la Actividad 4<a href="#️-presentación-de-la-actividad-4" class="hash-link" aria-label="Enlace directo al 🗣️ Presentación de la Actividad 4" title="Enlace directo al 🗣️ Presentación de la Actividad 4" translate="no">​</a></h3>
+<p>Cada equipo realizará una presentación breve centrada en:</p>
+<blockquote>
+<p><strong>casos de uso → arquitectura → tecnologías → datos → componentes → secuencia → MVP → planificación</strong></p>
+</blockquote>
+<p>La presentación servirá para comprobar si las decisiones técnicas son coherentes con el proyecto definido, si el MVP tiene un alcance razonable y si el equipo dispone de una organización suficiente para comenzar el desarrollo.</p>
+<p>Las observaciones recibidas podrán incorporarse antes de cerrar definitivamente la actividad.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-podremos-reutilizar-en-la-memoria-1">📝 Qué podremos reutilizar en la memoria<a href="#-qué-podremos-reutilizar-en-la-memoria-1" class="hash-link" aria-label="Enlace directo al 📝 Qué podremos reutilizar en la memoria" title="Enlace directo al 📝 Qué podremos reutilizar en la memoria" translate="no">​</a></h3>
+<p>De esta actividad podremos recuperar posteriormente:</p>
+<p><strong>casos de uso principales · arquitectura de la solución · tecnologías utilizadas · diseño de datos · organización en componentes · secuencia de procesos clave · definición del MVP · planificación inicial del desarrollo</strong></p>
+<p>Estas decisiones podrán evolucionar a medida que avancemos.</p>
+<p>La memoria final deberá reflejar la <strong>solución realmente desarrollada</strong>, por lo que más adelante tendremos que actualizar aquellos apartados que hayan cambiado de forma significativa.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4️⃣-hito-final-de-la-fase-2">4️⃣ <strong>Hito final de la Fase 2</strong><a href="#4️⃣-hito-final-de-la-fase-2" class="hash-link" aria-label="Enlace directo al 4️⃣-hito-final-de-la-fase-2" title="Enlace directo al 4️⃣-hito-final-de-la-fase-2" translate="no">​</a></h2>
+<p>Al terminar las dos actividades, el proyecto debe estar <strong>suficientemente diseñado y planificado para comenzar su desarrollo</strong>.</p>
+<p>No significa que todas las decisiones sean definitivas.</p>
+<p>Durante el desarrollo podremos modificar pantallas, ajustar el modelo de datos, cambiar alguna tecnología, reorganizar tareas o revisar el alcance del MVP si encontramos razones justificadas para hacerlo.</p>
+<p>Lo importante es que ya no partimos únicamente de una idea y unos requisitos: disponemos de una <strong>propuesta concreta de solución y un camino inicial para construirla</strong>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-antes-de-cerrar-la-fase">✅ Antes de cerrar la fase<a href="#-antes-de-cerrar-la-fase" class="hash-link" aria-label="Enlace directo al ✅ Antes de cerrar la fase" title="Enlace directo al ✅ Antes de cerrar la fase" translate="no">​</a></h4>
+<p>Debemos poder responder con claridad:</p>
+<table><thead><tr><th>Pregunta</th><th></th></tr></thead><tbody><tr><td><strong>¿Tenemos definida una identidad visual básica y coherente?</strong></td><td>✅</td></tr><tr><td><strong>¿Sabemos cómo se organiza la aplicación?</strong></td><td>✅</td></tr><tr><td><strong>¿Sabemos cómo navegarán sus principales usuarios?</strong></td><td>✅</td></tr><tr><td><strong>¿Hemos representado las pantallas necesarias para las funcionalidades principales?</strong></td><td>✅</td></tr><tr><td><strong>¿Tenemos al menos un mockup que muestre cómo se aplicará la identidad visual?</strong></td><td>✅</td></tr><tr><td><strong>¿Podemos relacionar el diseño con los requisitos definidos?</strong></td><td>✅</td></tr><tr><td><strong>¿Hemos identificado los principales actores y casos de uso del sistema?</strong></td><td>✅</td></tr><tr><td><strong>¿Sabemos qué componentes principales tendrá la solución?</strong></td><td>✅</td></tr><tr><td><strong>¿Tenemos definido un modelo de datos inicial?</strong></td><td>✅</td></tr><tr><td><strong>¿Hemos representado al menos uno o dos procesos clave mediante diagramas de secuencia?</strong></td><td>✅</td></tr><tr><td><strong>¿Hemos elegido las tecnologías principales y podemos justificar su elección?</strong></td><td>✅</td></tr><tr><td><strong>¿Está definido qué funcionalidades forman parte del MVP?</strong></td><td>✅</td></tr><tr><td><strong>¿Sabemos qué funcionalidades pueden desarrollarse después?</strong></td><td>✅</td></tr><tr><td><strong>¿Tenemos una planificación inicial visible en un Gantt simplificado y en un tablero de trabajo?</strong></td><td>✅</td></tr><tr><td><strong>¿Sabemos qué debemos construir primero?</strong></td><td>✅</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Hito F2</div><div class="admonitionContent_BuS1"><p>La Fase 2 termina cuando podemos explicar y justificar <strong>cómo será nuestra solución, cómo vamos a construirla y qué necesitamos desarrollar primero para alcanzar el MVP</strong>.</p><p>A partir de aquí podremos comenzar el <strong>desarrollo del proyecto</strong>.</p></div></div></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/pi_daw/fases/fase1-analisis-definicion-revisado"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Fase 1 · Análisis y definición del proyecto</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/pi_daw/guias/guia-herramientas-proyecto-intermodular"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">Guía de herramientas</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1️⃣-visión-general-de-la-fase" class="table-of-contents__link toc-highlight">1️⃣ <strong>Visión general de la fase</strong></a></li><li><a href="#2️⃣-actividad-3--diseño-funcional-e-interfaz" class="table-of-contents__link toc-highlight">2️⃣ <strong>Actividad 3 · Diseño funcional e interfaz</strong></a><ul><li><a href="#-qué-vamos-a-trabajar" class="table-of-contents__link toc-highlight">🟩 Qué vamos a trabajar</a></li><li><a href="#-qué-debes-entregar" class="table-of-contents__link toc-highlight">🟦 Qué debes entregar</a></li><li><a href="#-recursos-de-apoyo" class="table-of-contents__link toc-highlight">📄 Recursos de apoyo</a></li><li><a href="#️-presentación-de-la-actividad-3" class="table-of-contents__link toc-highlight">🗣️ Presentación de la Actividad 3</a></li><li><a href="#-qué-podremos-reutilizar-en-la-memoria" class="table-of-contents__link toc-highlight">📝 Qué podremos reutilizar en la memoria</a></li></ul></li><li><a href="#3️⃣-actividad-4--diseño-técnico-definición-del-mvp-y-planificación" class="table-of-contents__link toc-highlight">3️⃣ <strong>Actividad 4 · Diseño técnico, definición del MVP y planificación</strong></a><ul><li><a href="#-qué-vamos-a-trabajar-1" class="table-of-contents__link toc-highlight">🟩 Qué vamos a trabajar</a></li><li><a href="#-qué-debes-entregar-1" class="table-of-contents__link toc-highlight">🟦 Qué debes entregar</a></li><li><a href="#-recursos-de-apoyo-1" class="table-of-contents__link toc-highlight">📄 Recursos de apoyo</a></li><li><a href="#️-presentación-de-la-actividad-4" class="table-of-contents__link toc-highlight">🗣️ Presentación de la Actividad 4</a></li><li><a href="#-qué-podremos-reutilizar-en-la-memoria-1" class="table-of-contents__link toc-highlight">📝 Qué podremos reutilizar en la memoria</a></li></ul></li><li><a href="#4️⃣-hito-final-de-la-fase-2" class="table-of-contents__link toc-highlight">4️⃣ <strong>Hito final de la Fase 2</strong></a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://jamfdev.github.io/">Apuntes para Ciclos Formativos de Formación Profesional</a> por <span property="cc:attributionName">Jose A. Martínez</span>  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p> 
+        <p>📧 jamartinezf01@iesalbarregas.es</p></div></div></div></footer></div>
+</body>
+</html>

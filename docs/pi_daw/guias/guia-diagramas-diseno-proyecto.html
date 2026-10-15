@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-pi_daw/guias/guia-diagramas-diseno-proyecto" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.2">
+<title data-rh="true">Diagramas y modelos para diseñar el proyecto | Apuntes de Informática</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://jamartinezf01.github.io/docs/pi_daw/guias/guia-diagramas-diseno-proyecto"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Diagramas y modelos para diseñar el proyecto | Apuntes de Informática"><meta data-rh="true" name="description" content="Aprendemos a representar casos de uso, arquitectura, datos, componentes, secuencias y planificación del proyecto"><meta data-rh="true" property="og:description" content="Aprendemos a representar casos de uso, arquitectura, datos, componentes, secuencias y planificación del proyecto"><link data-rh="true" rel="icon" href="/img/logoJAMF.png"><link data-rh="true" rel="canonical" href="https://jamartinezf01.github.io/docs/pi_daw/guias/guia-diagramas-diseno-proyecto"><link data-rh="true" rel="alternate" href="https://jamartinezf01.github.io/docs/pi_daw/guias/guia-diagramas-diseno-proyecto" hreflang="es"><link data-rh="true" rel="alternate" href="https://jamartinezf01.github.io/docs/pi_daw/guias/guia-diagramas-diseno-proyecto" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Diagramas y modelos para diseñar el proyecto","item":"https://jamartinezf01.github.io/docs/pi_daw/guias/guia-diagramas-diseno-proyecto"}]}</script><meta httpequiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta httpequiv="Pragma" content="no-cache">
+<meta httpequiv="Expires" content="0">
+
+<script src="/version.js"></script><link rel="stylesheet" href="/assets/css/styles.ecfcf92a.css">
+<script src="/assets/js/runtime~main.aac054d9.js" defer="defer"></script>
+<script src="/assets/js/main.8747aa45.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><b class="navbar__title text--truncate">Inicio</b></a><a class="navbar__item navbar__link" href="/docs/dwes/introduccion">DWES</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/pi_daw/introduccion">PI DAW</a><a class="navbar__item navbar__link" href="/docs/lenguajes-de-marcas/Introducción">LLMM</a><a class="navbar__item navbar__link" href="/docs/python/Introducción">Python</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://informatica.iesalbarregas.com/login/index.php" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Moodle<svg width="13.5" height="13.5" aria-label="(se abre en una nueva pestaña)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="modo del sistema" aria-label="Cambiar entre modo oscuro y claro (actualmente modo del sistema)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/pi_daw/introduccion"><span class="linkLabel_WmDU">Proyecto Intermodular</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/pi_daw/Organizacion/temporalizacion"><span class="categoryLinkLabel_W154">Organización</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/pi_daw/fases"><span class="categoryLinkLabel_W154">Fases del proyecto</span></a><button aria-label="Ampliar la categoría &#x27;Fases del proyecto&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/pi_daw/guias/guia-herramientas-proyecto-intermodular"><span class="categoryLinkLabel_W154">Guías</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/pi_daw/guias/guia-herramientas-proyecto-intermodular"><span class="linkLabel_WmDU">Guía de herramientas</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/pi_daw/guias/como-redactar-requisitos"><span class="linkLabel_WmDU">Cómo redactar requisitos</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/pi_daw/guias/guia-diagramas-diseno-proyecto"><span class="linkLabel_WmDU">Diagramas y modelos para diseñar el proyecto</span></a></li></ul></li></ul></nav><button type="button" title="Colapsar barra lateral" aria-label="Colapsar barra lateral" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Guías</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Diagramas y modelos para diseñar el proyecto</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Guía - Diagramas y modelos para diseñar el proyecto</h1></header>
+<p>Durante la Fase 2 vamos a utilizar distintos diagramas y modelos para <strong>pensar, explicar y comprobar el diseño del proyecto antes de empezar a programarlo</strong>.</p>
+<p>No todos representan lo mismo ni persiguen el mismo objetivo. Un diagrama de casos de uso nos ayuda a comprender quién utilizará el sistema y para qué. Un diagrama de arquitectura explica cómo se organiza técnicamente la solución. El modelo de datos representa la información que tendremos que almacenar. Los componentes funcionales nos permiten dividir la aplicación en bloques de trabajo. Los diagramas de secuencia muestran cómo colaboran esas partes en una operación concreta. Finalmente, el Gantt nos ayuda a ordenar temporalmente el trabajo necesario para llegar al MVP.</p>
+<table><thead><tr><th>Representación</th><th>Pregunta que nos ayuda a responder</th></tr></thead><tbody><tr><td><strong>Diagrama de casos de uso</strong></td><td>¿Quién utiliza el sistema y qué puede hacer?</td></tr><tr><td><strong>Diagrama de arquitectura</strong></td><td>¿Qué partes técnicas tendrá la solución y cómo se relacionan?</td></tr><tr><td><strong>Modelo E/R y modelo relacional</strong></td><td>¿Qué información necesitamos guardar y cómo se relaciona?</td></tr><tr><td><strong>Mapa de componentes funcionales</strong></td><td>¿En qué grandes bloques podemos dividir la aplicación?</td></tr><tr><td><strong>Diagrama de secuencia</strong></td><td>¿Qué ocurre paso a paso en una operación concreta?</td></tr><tr><td><strong>Diagrama de Gantt</strong></td><td>¿En qué orden y cuándo prevemos desarrollar cada bloque de trabajo?</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>important</div><div class="admonitionContent_BuS1"><p>No hacemos diagramas simplemente porque formen parte de la documentación.</p><p>Los utilizamos para <strong>tomar decisiones antes de programar</strong>, detectar problemas y explicar el diseño de nuestra solución.</p></div></div>
+<p>A lo largo de esta guía utilizaremos como ejemplo <strong>Materialia Joven</strong>, la aplicación ficticia de gestión de materiales compartidos que aparece en los ejemplos de las actividades del proyecto.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Del ejemplo básico al proyecto real</div><div class="admonitionContent_BuS1"><p>En cada apartado comenzaremos con una representación sencilla que nos permita entender la idea principal.</p><p>Después veremos cómo esa misma representación evoluciona hasta un ejemplo completo de Materialia Joven, con un nivel de detalle similar al que puede aparecer en la Actividad 4.</p><p>El objetivo no es hacer diagramas cada vez más complejos, sino aprender a añadir detalle <strong>solo cuando ayuda a explicar mejor el proyecto</strong>.</p></div></div>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Cómo utilizar esta guía</div><div class="admonitionContent_BuS1"><p>No es necesario trabajar todo el contenido de una vez.</p><p>Utilizaremos cada apartado cuando necesitemos elaborar la representación correspondiente durante el diseño del proyecto.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣-antes-de-empezar">1️⃣ <strong>Antes de empezar</strong><a href="#1️⃣-antes-de-empezar" class="hash-link" aria-label="Enlace directo al 1️⃣-antes-de-empezar" title="Enlace directo al 1️⃣-antes-de-empezar" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-un-diagrama-debe-ayudar-a-entender">🟩 Un diagrama debe ayudar a entender<a href="#-un-diagrama-debe-ayudar-a-entender" class="hash-link" aria-label="Enlace directo al 🟩 Un diagrama debe ayudar a entender" title="Enlace directo al 🟩 Un diagrama debe ayudar a entender" translate="no">​</a></h3>
+<p>Un buen diagrama no es el que contiene más cajas, flechas o símbolos. Es el que consigue explicar una parte del sistema de forma más clara que un párrafo largo.</p>
+<p>Antes de añadir cualquier elemento conviene preguntarse qué información aporta. Si una flecha, una relación o un bloque no ayuda a comprender una decisión, probablemente no sea necesario.</p>
+<blockquote>
+<p><strong>Un diagrama debe simplificar una idea, no hacerla más difícil de entender.</strong></p>
+</blockquote>
+<p>Por eso no todos los proyectos necesitarán exactamente el mismo nivel de detalle. Dos equipos pueden representar correctamente su solución de formas distintas si ambos consiguen explicar con claridad cómo funciona.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-herramienta-utilizar">🟦 Qué herramienta utilizar<a href="#-qué-herramienta-utilizar" class="hash-link" aria-label="Enlace directo al 🟦 Qué herramienta utilizar" title="Enlace directo al 🟦 Qué herramienta utilizar" translate="no">​</a></h3>
+<p>La herramienta es secundaria. Podemos trabajar con diagrams.net, una herramienta UML, un editor de diseño o una aplicación que genere diagramas a partir de texto.</p>
+<p>Lo importante es que el resultado sea <strong>claro, legible y editable</strong>, y que el equipo comprenda qué representa cada elemento.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>aviso</div><div class="admonitionContent_BuS1"><p>Generar automáticamente un diagrama no sustituye al diseño.</p><p>Si el equipo no puede explicar por qué aparece una relación, una dependencia o un componente, el diagrama no está cumpliendo su función.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-mantener-coherencia-entre-diagramas">🟧 Mantener coherencia entre diagramas<a href="#-mantener-coherencia-entre-diagramas" class="hash-link" aria-label="Enlace directo al 🟧 Mantener coherencia entre diagramas" title="Enlace directo al 🟧 Mantener coherencia entre diagramas" translate="no">​</a></h3>
+<p>Todos los diagramas de un mismo proyecto deben describir la misma solución desde perspectivas diferentes.</p>
+<p>Si en los requisitos aparece que un socio puede solicitar una reserva, esa funcionalidad debería reaparecer de alguna forma en los casos de uso, en las pantallas, en los datos, en los componentes, en los diagramas de secuencia y finalmente en la planificación.</p>
+<p>Podemos imaginarlo así:</p>
+<blockquote>
+<p><strong>requisito → caso de uso → pantalla → componente → datos → proceso → MVP → tarea</strong></p>
+</blockquote>
+<p>Esta posibilidad de seguir una misma funcionalidad a través de las distintas decisiones del proyecto recibe el nombre de <strong>trazabilidad</strong>.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2️⃣-diagrama-de-casos-de-uso">2️⃣ <strong>Diagrama de casos de uso</strong><a href="#2️⃣-diagrama-de-casos-de-uso" class="hash-link" aria-label="Enlace directo al 2️⃣-diagrama-de-casos-de-uso" title="Enlace directo al 2️⃣-diagrama-de-casos-de-uso" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-representa">🟩 Qué representa<a href="#-qué-representa" class="hash-link" aria-label="Enlace directo al 🟩 Qué representa" title="Enlace directo al 🟩 Qué representa" translate="no">​</a></h3>
+<p>El diagrama de casos de uso nos permite representar <strong>quién utiliza el sistema y qué objetivos puede conseguir mediante la aplicación</strong>.</p>
+<p>Su función no es describir cómo está programado el sistema ni cómo son sus pantallas. Nos interesa observar la aplicación desde el punto de vista de quienes la utilizan.</p>
+<p>Por eso, antes de comenzar a dibujar, debemos recuperar dos elementos que ya hemos trabajado en la Fase 1:</p>
+<blockquote>
+<p><strong>usuarios → requisitos funcionales</strong></p>
+</blockquote>
+<p>Los usuarios nos permiten identificar los <strong>actores</strong> y los requisitos nos ayudan a descubrir los principales <strong>casos de uso</strong>.</p>
+<p>Un actor representa un tipo de usuario o un sistema externo que interactúa con nuestra aplicación. No representa necesariamente a una persona concreta.</p>
+<p>Por ejemplo, en Materialia Joven hemos identificado tres tipos principales de usuario:</p>
+<p><strong>Socio/a · Responsable de material · Administrador/a</strong></p>
+<p>Cada uno interactúa con la aplicación con objetivos diferentes.</p>
+<p>Un caso de uso representa precisamente uno de esos <strong>objetivos que un actor quiere conseguir utilizando el sistema</strong>.</p>
+<p>Por ejemplo:</p>
+<blockquote>
+<p><strong>Solicitar reserva</strong></p>
+</blockquote>
+<p>es un caso de uso porque expresa algo que el socio quiere conseguir.</p>
+<p>En cambio:</p>
+<blockquote>
+<p>❌ Pulsar el botón Reservar<br>
+<!-- -->❌ Abrir el formulario de reserva<br>
+<!-- -->❌ Insertar una fila en la tabla <code>reserva</code></p>
+</blockquote>
+<p>no son casos de uso.</p>
+<p>Los dos primeros describen acciones de interfaz. El tercero describe una operación interna de la aplicación.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>consejo</div><div class="admonitionContent_BuS1"><p>Una forma sencilla de comprobar si hemos identificado correctamente un caso de uso es preguntarnos:</p><blockquote>
+<p><strong>¿Esto expresa algo que el usuario quiere conseguir o simplemente explica cómo lo hace el programa?</strong></p>
+</blockquote></div></div>
+<p>Los casos de uso se representan dentro de un rectángulo que marca el <strong>límite del sistema</strong>. Los actores permanecen fuera porque representan elementos externos que utilizan la aplicación.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-cómo-construirlo">🟦 Cómo construirlo<a href="#-cómo-construirlo" class="hash-link" aria-label="Enlace directo al 🟦 Cómo construirlo" title="Enlace directo al 🟦 Cómo construirlo" translate="no">​</a></h3>
+<p>No empezaremos dibujando.</p>
+<p>Primero revisaremos los usuarios y los requisitos funcionales que ya hemos definido.</p>
+<p>Supongamos que tenemos este requisito:</p>
+<blockquote>
+<p><strong>RF04.</strong> El sistema permitirá a un socio solicitar la reserva de un material disponible para unas fechas determinadas.</p>
+</blockquote>
+<p>Podemos analizarlo preguntándonos:</p>
+<blockquote>
+<p><strong>¿Quién realiza la acción?</strong> → Socio/a<br>
+<strong>¿Qué quiere conseguir?</strong> → Solicitar reserva</p>
+</blockquote>
+<p>De ahí obtenemos:</p>
+<blockquote>
+<p><strong>RF04 → Actor: Socio/a → Caso de uso: Solicitar reserva</strong></p>
+</blockquote>
+<p>Podemos hacer lo mismo con otro requisito:</p>
+<blockquote>
+<p><strong>RF08.</strong> El responsable podrá registrar la entrega de un material reservado.</p>
+</blockquote>
+<p>En este caso obtenemos:</p>
+<blockquote>
+<p><strong>RF08 → Actor: Responsable de material → Caso de uso: Registrar entrega</strong></p>
+</blockquote>
+<p>No todos los requisitos tienen que convertirse necesariamente en un caso de uso independiente.</p>
+<p>Algunos pueden formar parte de una funcionalidad mayor y otros describen condiciones del sistema que no representan un objetivo concreto de un usuario.</p>
+<p>El objetivo es identificar <strong>las acciones principales que permiten comprender para qué sirve la aplicación</strong>.</p>
+<p>Cuando ya tenemos los actores y los casos de uso podemos representarlos gráficamente y conectar cada actor con las funcionalidades en las que participa.</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/casos-uso-basico.png" alt="Ejemplo básico de diagrama de casos de uso" style="width:100%;max-width:600px"></div>
+<p>Este primer diagrama contiene únicamente los elementos necesarios para comprender la estructura básica.</p>
+<p>El socio puede consultar el catálogo, solicitar una reserva y consultar sus reservas. El responsable de material interviene en la entrega y devolución.</p>
+<p>Todavía no necesitamos representar relaciones más complejas.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-cuando-necesitamos-representar-relaciones-entre-casos-de-uso">🟧 Cuando necesitamos representar relaciones entre casos de uso<a href="#-cuando-necesitamos-representar-relaciones-entre-casos-de-uso" class="hash-link" aria-label="Enlace directo al 🟧 Cuando necesitamos representar relaciones entre casos de uso" title="Enlace directo al 🟧 Cuando necesitamos representar relaciones entre casos de uso" translate="no">​</a></h3>
+<p>En algunos proyectos descubriremos que ciertos casos de uso están relacionados entre sí.</p>
+<p>Podemos representar esas relaciones cuando aporten información útil.</p>
+<p>La relación <code>include</code> indica que un comportamiento <strong>forma parte siempre de otro caso de uso</strong>.</p>
+<p>En Materialia Joven, cuando un socio solicita una reserva, el sistema debe comprobar necesariamente si el material está disponible.</p>
+<p>Por tanto:</p>
+<blockquote>
+<p><strong>Solicitar reserva → <code>include</code> → Comprobar disponibilidad</strong></p>
+</blockquote>
+<p>No estamos diciendo que el usuario pulse una opción llamada <em>Comprobar disponibilidad</em>. Estamos indicando que esa comprobación forma parte del proceso necesario para completar la reserva.</p>
+<p>La relación <code>extend</code> representa una situación diferente. Se utiliza cuando un comportamiento aparece <strong>solo bajo determinadas condiciones</strong>.</p>
+<p>Por ejemplo, una devolución normalmente termina registrando que el material ha sido devuelto. Sin embargo, si el material presenta algún problema, puede ser necesario registrar además una incidencia.</p>
+<p>Por tanto:</p>
+<blockquote>
+<p><strong>Registrar incidencia → <code>extend</code> → Registrar devolución</strong></p>
+</blockquote>
+<p>El registro de la incidencia no ocurre siempre. Solo aparece cuando se cumple esa condición.</p>
+<p>También podemos encontrar relaciones entre actores.</p>
+<p>En Materialia Joven el administrador puede realizar las mismas operaciones que el responsable de material y, además, gestionar usuarios, roles y categorías.</p>
+<p>En ese caso podemos representar una <strong>generalización entre actores</strong>, evitando repetir todas las relaciones del responsable para el administrador.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>aviso</div><div class="admonitionContent_BuS1"><p><code>include</code>, <code>extend</code> y la generalización no deben utilizarse simplemente para que el diagrama parezca más completo.</p><p>Si una relación no aporta información o el equipo no puede explicar qué significa, es mejor no utilizarla.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ejemplo-completo-materialia-joven">Ejemplo completo: Materialia Joven<a href="#ejemplo-completo-materialia-joven" class="hash-link" aria-label="Enlace directo al Ejemplo completo: Materialia Joven" title="Enlace directo al Ejemplo completo: Materialia Joven" translate="no">​</a></h4>
+<p>Cuando incorporamos todos los actores y las funcionalidades principales obtenemos el siguiente diagrama:</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/casos-uso.png" alt="Diagrama completo de casos de uso de Materialia Joven" style="width:100%;max-width:1100px"></div>
+<div class="theme-admonition theme-admonition-explicacion"><div class="admonition-heading explicacion-heading"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="explicacion-icon" aria-hidden="true"><path d="M14 9 9 4 4 9"></path><path d="M20 20C13.925 20 9 15.075 9 9V4"></path></svg><span class="explicacion-title">en este ejemplo</span></div><div class="admonition-content"><p>Podemos comenzar la lectura por los actores.</p><p>A la izquierda encontramos al <strong>Socio/a</strong>, que utiliza principalmente las funcionalidades relacionadas con la consulta y reserva de material.</p><p>A la derecha aparece el <strong>Responsable de material</strong>, que interviene cuando el material se entrega, se devuelve o necesita gestionarse dentro del inventario.</p><p>El <strong>Administrador/a</strong> hereda las funciones del responsable y añade las operaciones propias de administración.</p><p>Si observamos ahora la parte central, podemos identificar también algunas decisiones importantes.</p><p><strong>Solicitar reserva</strong> incluye <strong>Comprobar disponibilidad</strong> porque una reserva nunca puede realizarse sin esa comprobación.</p><p><strong>Registrar incidencia</strong> aparece como extensión de <strong>Registrar devolución</strong> porque solo será necesario cuando el material presente algún problema.</p><p>También podemos comprobar que los casos de uso representan objetivos del usuario y no detalles de implementación. En el diagrama no aparecen controladores, tablas, peticiones HTTP ni botones.</p></div></div>
+<p>Esta lectura nos permite comprobar algo importante:</p>
+<blockquote>
+<p><strong>los casos de uso deben ser coherentes con los usuarios y requisitos definidos anteriormente.</strong></p>
+</blockquote>
+<p>Si aparece una funcionalidad que no podemos relacionar con ningún requisito o un requisito importante no aparece representado, tendremos que revisar el diseño.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-errores-frecuentes-y-qué-esperamos">🟥 Errores frecuentes y qué esperamos<a href="#-errores-frecuentes-y-qué-esperamos" class="hash-link" aria-label="Enlace directo al 🟥 Errores frecuentes y qué esperamos" title="Enlace directo al 🟥 Errores frecuentes y qué esperamos" translate="no">​</a></h3>
+<p>Un error habitual consiste en convertir el diagrama en una representación de todas las acciones posibles de la aplicación.</p>
+<p>No necesitamos un caso de uso para cada botón, formulario o consulta.</p>
+<p>Tampoco debemos introducir operaciones internas como <em>guardar reserva</em>, <em>consultar MySQL</em> o <em>validar DTO</em>. Esas decisiones aparecerán posteriormente en otros diagramas.</p>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>En vuestro proyecto</div><div class="admonitionContent_BuS1"><p>El diagrama deberá permitir identificar con claridad:</p><ul>
+<li class="">los actores principales.</li>
+<li class="">los casos de uso más importantes.</li>
+<li class="">qué actor participa en cada funcionalidad.</li>
+<li class="">las relaciones <code>include</code>, <code>extend</code> o de generalización únicamente cuando realmente aporten información.</li>
+</ul><p>No buscamos un diagrama exhaustivo.</p><p>Buscamos una representación que permita comprender <strong>quién utiliza vuestra aplicación y para qué</strong>.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3️⃣-diagrama-de-arquitectura">3️⃣ <strong>Diagrama de arquitectura</strong><a href="#3️⃣-diagrama-de-arquitectura" class="hash-link" aria-label="Enlace directo al 3️⃣-diagrama-de-arquitectura" title="Enlace directo al 3️⃣-diagrama-de-arquitectura" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-representa-1">🟩 Qué representa<a href="#-qué-representa-1" class="hash-link" aria-label="Enlace directo al 🟩 Qué representa" title="Enlace directo al 🟩 Qué representa" translate="no">​</a></h3>
+<p>El diagrama de arquitectura muestra <strong>las grandes partes técnicas de la solución y cómo se comunican entre ellas</strong>.</p>
+<p>En el apartado anterior observábamos el sistema desde el punto de vista de sus usuarios:</p>
+<blockquote>
+<p><strong>¿Quién utiliza la aplicación y qué puede hacer?</strong></p>
+</blockquote>
+<p>Ahora cambiamos de perspectiva y nos preguntamos:</p>
+<blockquote>
+<p><strong>¿Cómo estará construida técnicamente nuestra aplicación?</strong></p>
+</blockquote>
+<p>Para responder no empezamos pensando en clases, controladores o tablas concretas. Primero necesitamos identificar los <strong>grandes bloques</strong> que forman la solución.</p>
+<p>En una aplicación web como Materialia Joven podemos comenzar con tres grandes partes:</p>
+<ul>
+<li class=""><strong>Frontend</strong>, encargado de la interfaz con la que interactúa el usuario.</li>
+<li class=""><strong>Backend</strong>, encargado de recibir las peticiones, aplicar las reglas de negocio y coordinar el acceso a los datos.</li>
+<li class=""><strong>Base de datos</strong>, encargada de almacenar de forma persistente la información de la aplicación.</li>
+</ul>
+<p>En Materialia Joven estas responsabilidades se concretan inicialmente en:</p>
+<blockquote>
+<p><strong>Angular → Spring Boot → MySQL</strong></p>
+</blockquote>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>consejo</div><div class="admonitionContent_BuS1"><p>Una arquitectura no consiste únicamente en escribir el nombre de las tecnologías.</p><p>Debemos ser capaces de explicar <strong>qué responsabilidad tiene cada parte y por qué necesitamos que exista</strong>.</p></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-cómo-construirla">🟦 Cómo construirla<a href="#-cómo-construirla" class="hash-link" aria-label="Enlace directo al 🟦 Cómo construirla" title="Enlace directo al 🟦 Cómo construirla" translate="no">​</a></h3>
+<p>Tampoco en este caso debemos empezar dibujando.</p>
+<p>La arquitectura se construye a partir de las decisiones que ya hemos tomado sobre la solución.</p>
+<p>En la Fase 1 hemos definido qué problema queremos resolver y qué funcionalidades tendrá la aplicación. En la Fase 2 comenzamos además a decidir con qué tecnologías vamos a desarrollarla.</p>
+<p>A partir de ahí podemos plantearnos tres preguntas:</p>
+<blockquote>
+<p><strong>¿Dónde interactúa el usuario con la aplicación?</strong></p>
+</blockquote>
+<p>En Materialia Joven, mediante una aplicación web desarrollada con Angular.</p>
+<blockquote>
+<p><strong>¿Dónde se ejecutan las reglas del sistema?</strong></p>
+</blockquote>
+<p>En un servidor desarrollado con Spring Boot.</p>
+<blockquote>
+<p><strong>¿Dónde se almacena la información?</strong></p>
+</blockquote>
+<p>En una base de datos MySQL.</p>
+<p>Con estas decisiones ya podemos construir una primera arquitectura:</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/arquitectura-basica.png" alt="Arquitectura básica de Materialia Joven" style="width:100%;max-width:650px"></div>
+<p>Este primer diagrama todavía no intenta mostrar cómo está organizada internamente cada tecnología.</p>
+<p>Su función es permitirnos comprender el <strong>recorrido general de la información</strong>.</p>
+<p>Cuando un usuario realiza una acción en Angular, el frontend envía una petición al backend. Spring Boot procesa esa petición y, cuando necesita consultar o modificar información, accede a MySQL. Finalmente, el resultado vuelve hacia el cliente.</p>
+<p>Podemos resumir ese recorrido así:</p>
+<blockquote>
+<p><strong>navegador → Angular → Spring Boot → MySQL → Spring Boot → Angular → usuario</strong></p>
+</blockquote>
+<p>Esta representación ya nos permite comprobar una primera decisión importante: <strong>cada responsabilidad está situada en la parte adecuada del sistema</strong>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-de-la-arquitectura-básica-al-diseño-técnico">🟧 De la arquitectura básica al diseño técnico<a href="#-de-la-arquitectura-básica-al-diseño-técnico" class="hash-link" aria-label="Enlace directo al 🟧 De la arquitectura básica al diseño técnico" title="Enlace directo al 🟧 De la arquitectura básica al diseño técnico" translate="no">​</a></h3>
+<p>Cuando tenemos clara la estructura general podemos añadir un segundo nivel de detalle.</p>
+<p>No buscamos representar todas las clases que tendrá el proyecto. Queremos mostrar <strong>cómo se organiza internamente cada gran bloque</strong> cuando esa organización forma parte de las decisiones técnicas del equipo.</p>
+<p>En el cliente Angular podemos distinguir:</p>
+<ul>
+<li class=""><strong>Componentes y rutas</strong>, para organizar las pantallas y la navegación.</li>
+<li class=""><strong>Servicios HTTP</strong>, para comunicarse con el backend.</li>
+<li class=""><strong>Guardas de ruta</strong>, para controlar el acceso a determinadas zonas de la aplicación.</li>
+<li class=""><strong>Interceptor</strong>, para aplicar comportamiento común a las peticiones, como incorporar el token de autenticación.</li>
+<li class=""><strong>Estilos comunes</strong>, para mantener una presentación coherente en toda la aplicación.</li>
+</ul>
+<p>En el servidor Spring Boot podemos distinguir:</p>
+<ul>
+<li class=""><strong>Controladores REST</strong>, que reciben las peticiones procedentes del cliente.</li>
+<li class=""><strong>Servicios</strong>, donde se aplican las reglas de negocio.</li>
+<li class=""><strong>Repositorios</strong>, encargados del acceso a los datos.</li>
+<li class=""><strong>Spring Security y JWT</strong>, para gestionar autenticación y autorización.</li>
+<li class=""><strong>Gestión de errores</strong>, para devolver respuestas coherentes cuando una operación no puede completarse.</li>
+</ul>
+<p>La base de datos continúa teniendo una función clara: almacenar de forma persistente la información de la aplicación.</p>
+<p>También podemos indicar <strong>cómo se comunican estas partes</strong> cuando esa información ayuda a comprender la solución. En Materialia Joven, por ejemplo, Angular se comunica con Spring Boot mediante peticiones HTTP utilizando JSON, mientras que Spring Boot accede a MySQL mediante JPA.</p>
+<p>Esta evolución nos lleva desde una arquitectura muy sencilla:</p>
+<blockquote>
+<p><strong>Angular → Spring Boot → MySQL</strong></p>
+</blockquote>
+<p>hasta una representación que explica también <strong>cómo se organiza internamente cada una de esas partes</strong>.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>aviso</div><div class="admonitionContent_BuS1"><p>Añadir más bloques no significa mejorar la arquitectura.</p><p>Solo debemos representar aquellos elementos que ayuden a entender cómo se construirá realmente nuestra aplicación.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ejemplo-completo-materialia-joven-1">Ejemplo completo: Materialia Joven<a href="#ejemplo-completo-materialia-joven-1" class="hash-link" aria-label="Enlace directo al Ejemplo completo: Materialia Joven" title="Enlace directo al Ejemplo completo: Materialia Joven" translate="no">​</a></h4>
+<p>El diseño completo de Materialia Joven queda representado así:</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/arquitectura.png" alt="Arquitectura completa de Materialia Joven" style="width:100%;max-width:1150px"></div>
+<div class="theme-admonition theme-admonition-explicacion"><div class="admonition-heading explicacion-heading"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="explicacion-icon" aria-hidden="true"><path d="M14 9 9 4 4 9"></path><path d="M20 20C13.925 20 9 15.075 9 9V4"></path></svg><span class="explicacion-title">en este ejemplo</span></div><div class="admonition-content"><p>Podemos leer la arquitectura de izquierda a derecha siguiendo el recorrido de una petición.</p><p>El usuario interactúa con la aplicación desde Angular. Cuando necesita información del servidor, el cliente envía una petición HTTP/HTTPS en formato JSON al backend desarrollado con Spring Boot.</p><p>La petición llega a los <strong>controladores REST</strong>, que delegan la operación en los <strong>servicios</strong>. Estos aplican las reglas de negocio y, cuando necesitan consultar o modificar datos, utilizan los <strong>repositorios de Spring Data JPA</strong> para acceder a MySQL.</p><p>La seguridad y la gestión de errores aparecen como responsabilidades transversales porque afectan a distintas partes del backend.</p><p>En la zona inferior se muestran herramientas de apoyo al desarrollo, como Git, GitHub, Docker Compose y Flyway. Son importantes para construir y mantener el proyecto, pero no forman parte del recorrido principal de una petición.</p></div></div>
+<p>La arquitectura debe ser coherente con el resto del diseño.</p>
+<p>Si hemos decidido que la aplicación tendrá un frontend Angular y una API REST desarrollada con Spring Boot, esa decisión deberá aparecer después en los componentes, en los diagramas de secuencia y finalmente en el código.</p>
+<p>Del mismo modo, no tendría sentido representar una tecnología, una capa o un servicio que después no vayamos a utilizar.</p>
+<blockquote>
+<p><strong>La arquitectura debe describir la solución que realmente pretendemos construir.</strong></p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-errores-frecuentes-y-qué-esperamos-1">🟥 Errores frecuentes y qué esperamos<a href="#-errores-frecuentes-y-qué-esperamos-1" class="hash-link" aria-label="Enlace directo al 🟥 Errores frecuentes y qué esperamos" title="Enlace directo al 🟥 Errores frecuentes y qué esperamos" translate="no">​</a></h3>
+<p>Uno de los errores más habituales es confundir una arquitectura con una lista de tecnologías.</p>
+<p>Escribir simplemente:</p>
+<blockquote>
+<p>Angular · Spring Boot · MySQL</p>
+</blockquote>
+<p>no explica cómo está organizada la solución ni cómo se relacionan sus partes.</p>
+<p>El error contrario consiste en añadir demasiada información. No necesitamos representar todas las clases, paquetes, endpoints o tablas del proyecto. Ese nivel de detalle corresponde a otras representaciones o directamente al código.</p>
+<p>También debemos evitar incorporar tecnologías únicamente porque “parecen profesionales”. Añadir microservicios, colas, cachés o varios servidores sin una necesidad real hace el diseño más difícil de desarrollar y de justificar.</p>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>En vuestro proyecto</div><div class="admonitionContent_BuS1"><p>La arquitectura deberá permitir comprender con claridad:</p><ul>
+<li class="">cuáles son las grandes partes técnicas de la aplicación.</li>
+<li class="">qué responsabilidad tiene cada una.</li>
+<li class="">cómo se comunican.</li>
+<li class="">qué tecnologías principales se utilizarán.</li>
+<li class="">qué decisiones técnicas relevantes afectan al conjunto de la solución.</li>
+</ul><p>No buscamos una arquitectura compleja.</p><p>Buscamos una representación suficientemente clara para entender <strong>cómo estará construida vuestra aplicación antes de empezar a desarrollarla</strong>.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4️⃣-diseño-de-datos">4️⃣ <strong>Diseño de datos</strong><a href="#4️⃣-diseño-de-datos" class="hash-link" aria-label="Enlace directo al 4️⃣-diseño-de-datos" title="Enlace directo al 4️⃣-diseño-de-datos" translate="no">​</a></h2>
+<p>El diseño de datos responde a una pregunta diferente a las anteriores:</p>
+<blockquote>
+<p><strong>¿Qué información necesita nuestra aplicación y cómo se relaciona?</strong></p>
+</blockquote>
+<p>En un proyecto que utiliza una base de datos relacional trabajaremos normalmente con dos representaciones complementarias:</p>
+<ul>
+<li class=""><strong>Modelo conceptual E/R</strong>, para representar la información del problema y las relaciones entre sus elementos.</li>
+<li class=""><strong>Modelo relacional</strong>, para concretar cómo se organizará esa información en tablas.</li>
+</ul>
+<p>No son dos formas distintas de dibujar lo mismo.</p>
+<p>El modelo E/R se centra en <strong>qué información existe y cómo se relaciona</strong>.</p>
+<p>El modelo relacional se acerca más a la implementación y responde a <strong>cómo almacenaremos esa información en una base de datos relacional</strong>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-modelo-conceptual-er">🟩 Modelo conceptual E/R<a href="#-modelo-conceptual-er" class="hash-link" aria-label="Enlace directo al 🟩 Modelo conceptual E/R" title="Enlace directo al 🟩 Modelo conceptual E/R" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="qué-representa">Qué representa<a href="#qué-representa" class="hash-link" aria-label="Enlace directo al Qué representa" title="Enlace directo al Qué representa" translate="no">​</a></h4>
+<p>El modelo E/R representa las <strong>entidades sobre las que necesitamos almacenar información</strong> y las relaciones que existen entre ellas.</p>
+<p>Tampoco aquí debemos empezar dibujando.</p>
+<p>Primero debemos revisar los requisitos y preguntarnos:</p>
+<blockquote>
+<p><strong>¿Qué información necesita conservar el sistema para poder cumplirlos?</strong></p>
+</blockquote>
+<p>Supongamos que tenemos un requisito relacionado con las reservas:</p>
+<blockquote>
+<p><strong>RF04.</strong> El sistema permitirá a un socio solicitar la reserva de un material disponible para unas fechas determinadas.</p>
+</blockquote>
+<p>De este requisito podemos empezar a identificar varios conceptos importantes:</p>
+<ul>
+<li class=""><strong>Usuario</strong>, porque necesitamos saber quién realiza la reserva.</li>
+<li class=""><strong>Material</strong>, porque necesitamos saber qué se reserva.</li>
+<li class=""><strong>Reserva</strong>, porque necesitamos almacenar la propia operación y las fechas asociadas.</li>
+</ul>
+<p>Estos conceptos pueden convertirse en entidades porque necesitamos guardar información propia sobre ellos.</p>
+<p>Sin embargo, no todos los sustantivos que aparecen en los requisitos deben convertirse automáticamente en una entidad.</p>
+<p>Por ejemplo, la <strong>disponibilidad</strong> de un material no tiene por qué almacenarse como una entidad independiente. Puede obtenerse a partir de las reservas y préstamos existentes.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>consejo</div><div class="admonitionContent_BuS1"><p>Una posible entidad debe representar algo sobre lo que necesitamos <strong>guardar información propia durante la vida de la aplicación</strong>.</p><p>Encontrar un sustantivo en un requisito no es suficiente para convertirlo en entidad.</p></div></div>
+<p>Una vez identificadas las entidades debemos estudiar <strong>cómo se relacionan entre ellas</strong>.</p>
+<p>En nuestro ejemplo:</p>
+<blockquote>
+<p>Un usuario realiza reservas.<br>
+<!-- -->Una reserva corresponde a un material.</p>
+</blockquote>
+<p>Las relaciones deben representar reglas reales del problema, no conexiones arbitrarias entre entidades.</p>
+<p>También necesitamos indicar las <strong>cardinalidades</strong>, es decir, cuántas ocurrencias de una entidad pueden relacionarse con otra.</p>
+<p>Por ejemplo:</p>
+<blockquote>
+<p>Un usuario puede realizar muchas reservas, pero cada reserva pertenece a un único usuario.</p>
+</blockquote>
+<p>Por tanto, entre Usuario y Reserva existe una relación <strong>1<!-- -->:N</strong>.</p>
+<p>Las cardinalidades más habituales son:</p>
+<ul>
+<li class=""><strong>1:1</strong>, cuando una ocurrencia puede relacionarse como máximo con una del otro lado.</li>
+<li class=""><strong>1<!-- -->:N</strong>, cuando una ocurrencia puede relacionarse con varias del otro lado.</li>
+<li class=""><strong>N<!-- -->:M</strong>, cuando varias ocurrencias pueden relacionarse con varias del otro lado.</li>
+</ul>
+<p>Dependiendo de la notación utilizada también podremos indicar si la participación en una relación es obligatoria u opcional.</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/modelo-er-basico.png" alt="Modelo E/R básico de Materialia Joven" style="width:100%;max-width:600px"></div>
+<p>Este modelo reducido muestra únicamente las entidades necesarias para representar el flujo principal de una reserva.</p>
+<p>Su objetivo es que podamos comprobar si hemos identificado correctamente <strong>entidades, relaciones y cardinalidades</strong> antes de ampliar el diseño.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="del-modelo-básico-al-modelo-completo">Del modelo básico al modelo completo<a href="#del-modelo-básico-al-modelo-completo" class="hash-link" aria-label="Enlace directo al Del modelo básico al modelo completo" title="Enlace directo al Del modelo básico al modelo completo" translate="no">​</a></h4>
+<p>Cuando seguimos analizando los requisitos aparecen nuevas necesidades.</p>
+<p>Por ejemplo, necesitamos una <strong>Categoría</strong> porque queremos clasificar los materiales.</p>
+<p>También necesitamos un <strong>Préstamo</strong>, porque una reserva y una entrega real no representan la misma situación.</p>
+<p>Reservar un material significa solicitarlo para unas fechas determinadas. El préstamo aparece cuando ese material se entrega realmente al usuario y permite registrar posteriormente su devolución.</p>
+<p>Del mismo modo, necesitamos una <strong>Incidencia</strong> para almacenar problemas detectados durante el uso o la devolución del material.</p>
+<p>El modelo crece porque <strong>el problema necesita representar nueva información</strong>, no porque queramos añadir más entidades.</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/modelo-er.png" alt="Modelo E/R completo de Materialia Joven" style="width:100%;max-width:1150px"></div>
+<div class="theme-admonition theme-admonition-explicacion"><div class="admonition-heading explicacion-heading"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="explicacion-icon" aria-hidden="true"><path d="M14 9 9 4 4 9"></path><path d="M20 20C13.925 20 9 15.075 9 9V4"></path></svg><span class="explicacion-title">en este ejemplo</span></div><div class="admonition-content"><p>Podemos comenzar siguiendo el proceso principal de Materialia Joven.</p><p>Un <strong>Usuario</strong> puede realizar varias <strong>Reservas</strong>, mientras que cada reserva pertenece a un único usuario. Cada reserva corresponde además a un <strong>Material</strong>.</p><p>La <strong>Categoría</strong> permite clasificar los materiales. Una categoría puede agrupar varios materiales, mientras que cada material pertenece a una categoría.</p><p>Cuando una reserva se convierte en una entrega real aparece el <strong>Préstamo</strong>, que permite registrar la entrega y posterior devolución del material.</p><p>Por último, una <strong>Incidencia</strong> permite registrar problemas relacionados con el uso o devolución de un material.</p><p>La separación entre <strong>Reserva</strong> y <strong>Préstamo</strong> es una decisión importante del modelo: reservar un material no significa que haya sido entregado.</p></div></div>
+<p>Al revisar el modelo completo debemos comprobar que cada entidad tiene una finalidad clara, que las relaciones representan reglas reales del problema y que sus cardinalidades son coherentes.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-modelo-relacional-inicial">🟦 Modelo relacional inicial<a href="#-modelo-relacional-inicial" class="hash-link" aria-label="Enlace directo al 🟦 Modelo relacional inicial" title="Enlace directo al 🟦 Modelo relacional inicial" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="del-modelo-conceptual-a-las-tablas">Del modelo conceptual a las tablas<a href="#del-modelo-conceptual-a-las-tablas" class="hash-link" aria-label="Enlace directo al Del modelo conceptual a las tablas" title="Enlace directo al Del modelo conceptual a las tablas" translate="no">​</a></h4>
+<p>El modelo relacional concreta cómo organizaremos la información en una base de datos relacional.</p>
+<p>En este momento empezamos a transformar las decisiones del modelo E/R en <strong>tablas, claves y restricciones</strong>.</p>
+<p>La transformación más sencilla puede entenderse mediante algunas reglas básicas:</p>
+<ul>
+<li class="">Una <strong>entidad</strong> normalmente da lugar a una tabla.</li>
+<li class="">El identificador de la entidad se convierte en su <strong>clave primaria (PK)</strong>.</li>
+<li class="">En una relación <strong>1<!-- -->:N</strong>, la clave primaria del lado 1 aparece como <strong>clave ajena (FK)</strong> en la tabla del lado N.</li>
+<li class="">Un dato que no puede repetirse puede incorporar una restricción <strong>UQ</strong>.</li>
+<li class="">Cuando un dato puede no existir tendremos que decidir si el campo admite valores nulos.</li>
+</ul>
+<p>No pretendemos todavía escribir el script SQL completo de creación de la base de datos.</p>
+<p>Estamos definiendo suficientemente su estructura para poder comenzar posteriormente la implementación.</p>
+<p>Por ejemplo, el modelo E/R básico de Usuario, Material y Reserva puede transformarse en este primer modelo relacional:</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/del-modelo-er-al-modelo-relacional.png" alt="Del modelo E/R al modelo relacional" style="width:100%;max-width:700px"></div>
+<p>En este ejemplo podemos observar una transformación importante.</p>
+<p>La relación entre <strong>Usuario</strong> y <strong>Reserva</strong> se representa mediante <code>usuario_id</code>, que actúa como clave ajena dentro de la tabla <code>reserva</code>.</p>
+<p>Del mismo modo, <code>material_id</code> permite relacionar cada reserva con el material correspondiente.</p>
+<p>Así, una relación que en el modelo E/R se representa gráficamente pasa a formar parte de la estructura de las tablas.</p>
+<hr>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="modelo-completo-de-materialia-joven">Modelo completo de Materialia Joven<a href="#modelo-completo-de-materialia-joven" class="hash-link" aria-label="Enlace directo al Modelo completo de Materialia Joven" title="Enlace directo al Modelo completo de Materialia Joven" translate="no">​</a></h4>
+<p>Cuando el diseño está más avanzado podemos concretar también otros aspectos, como los tipos de datos principales, la nulabilidad o determinadas restricciones.</p>
+<p>La siguiente leyenda resume la notación utilizada en el modelo relacional completo:</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/leyenda-relacional.png" alt="Leyenda del modelo relacional de Materialia Joven" style="width:100%;max-width:1150px"></div>
+<div style="text-align:center"><img src="/img/pidaw/guias/modelo-relacional.png" alt="Modelo relacional completo de Materialia Joven" style="width:100%;max-width:1200px"></div>
+<div class="theme-admonition theme-admonition-explicacion"><div class="admonition-heading explicacion-heading"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="explicacion-icon" aria-hidden="true"><path d="M14 9 9 4 4 9"></path><path d="M20 20C13.925 20 9 15.075 9 9V4"></path></svg><span class="explicacion-title">en este ejemplo</span></div><div class="admonition-content"><p>Cada entidad principal del modelo conceptual se ha convertido en una tabla con su correspondiente clave primaria.</p><p>Las relaciones se concretan mediante claves ajenas. Por ejemplo, <code>usuario_id</code> y <code>material_id</code> permiten relacionar cada reserva con el usuario que la realiza y con el material reservado.</p><p>También aparecen restricciones como <strong>UQ</strong> cuando un valor debe ser único y se indica qué campos pueden admitir valores nulos.</p><p>El resultado conserva las decisiones tomadas en el modelo E/R, pero las expresa de una forma mucho más cercana a la base de datos que posteriormente implementaremos.</p></div></div>
+<p>Hay además decisiones que no consisten simplemente en transformar entidades en tablas.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Una decisión de diseño</div><div class="admonitionContent_BuS1"><p>En Materialia Joven el estado visible de un material —por ejemplo, <strong>Disponible, Reservado o Prestado</strong>— no se almacena directamente como un dato independiente.</p><p>Ese estado puede calcularse a partir de las reservas y préstamos existentes.</p><p>Al no almacenarlo evitamos que pueda quedar desincronizado con la situación real del material.</p><p>Diseñar los datos también consiste en decidir <strong>qué información debemos almacenar y qué información podemos calcular</strong>.</p></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-errores-frecuentes-y-qué-esperamos-2">🟥 Errores frecuentes y qué esperamos<a href="#-errores-frecuentes-y-qué-esperamos-2" class="hash-link" aria-label="Enlace directo al 🟥 Errores frecuentes y qué esperamos" title="Enlace directo al 🟥 Errores frecuentes y qué esperamos" translate="no">​</a></h3>
+<p>Uno de los errores más habituales consiste en convertir cada concepto mencionado en los requisitos en una entidad o una tabla.</p>
+<p>También debemos evitar duplicar información que puede obtenerse a partir de otros datos o crear relaciones sin haber comprobado antes qué regla del problema representan.</p>
+<p>En el modelo relacional, otro error frecuente es añadir claves ajenas, restricciones o campos sin poder relacionarlos con las decisiones tomadas en el modelo conceptual.</p>
+<p>Los dos modelos deben ser coherentes entre sí.</p>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>En vuestro proyecto</div><div class="admonitionContent_BuS1"><p>En los proyectos que utilicen una base de datos relacional, deberéis incluir:</p><ul>
+<li class="">un <strong>modelo conceptual E/R</strong>, o representación conceptual equivalente, con las entidades y relaciones principales.</li>
+<li class="">cardinalidades coherentes con las reglas del proyecto.</li>
+<li class="">un <strong>modelo relacional inicial</strong> con tablas, claves primarias y claves ajenas.</li>
+<li class="">las restricciones principales cuando sean relevantes para el diseño.</li>
+<li class="">coherencia entre el modelo conceptual y el modelo relacional.</li>
+</ul><p>No buscamos todavía el script SQL definitivo.</p><p>Buscamos un diseño suficientemente claro para comprender <strong>qué información necesita vuestra aplicación y cómo se almacenará antes de comenzar a implementarla</strong>.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5️⃣-mapa-de-componentes-funcionales">5️⃣ <strong>Mapa de componentes funcionales</strong><a href="#5️⃣-mapa-de-componentes-funcionales" class="hash-link" aria-label="Enlace directo al 5️⃣-mapa-de-componentes-funcionales" title="Enlace directo al 5️⃣-mapa-de-componentes-funcionales" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-representa-2">🟩 Qué representa<a href="#-qué-representa-2" class="hash-link" aria-label="Enlace directo al 🟩 Qué representa" title="Enlace directo al 🟩 Qué representa" translate="no">​</a></h3>
+<p>El mapa de componentes funcionales divide la aplicación en <strong>grandes áreas de responsabilidad</strong>.</p>
+<p>No debemos confundirlo con el diagrama de arquitectura.</p>
+<p>La arquitectura representa la organización técnica de la solución:</p>
+<blockquote>
+<p><strong>frontend → backend → base de datos</strong></p>
+</blockquote>
+<p>El mapa de componentes funcionales observa el sistema desde otra perspectiva y se pregunta:</p>
+<blockquote>
+<p><strong>¿En qué grandes bloques funcionales podemos dividir la aplicación?</strong></p>
+</blockquote>
+<p>En Materialia Joven aparecen, por ejemplo, áreas relacionadas con la autenticación, el catálogo, las reservas, los préstamos, el inventario o la administración.</p>
+<p>Estos componentes no representan tecnologías ni capas técnicas.</p>
+<p><strong>Catálogo</strong> no significa Angular.</p>
+<p><strong>Reservas</strong> no significa Spring Boot.</p>
+<p>Cada componente representa una <strong>parte coherente de la funcionalidad del sistema</strong>, aunque para implementarla posteriormente intervengan elementos tanto del frontend como del backend.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>consejo</div><div class="admonitionContent_BuS1"><p>Una forma sencilla de distinguir ambos diagramas es preguntarnos:</p><blockquote>
+<p><strong>Arquitectura:</strong> ¿con qué partes técnicas está construida la solución?<br>
+<strong>Componentes funcionales:</strong> ¿en qué grandes responsabilidades se divide la aplicación?</p>
+</blockquote></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-cómo-construirlo-1">🟦 Cómo construirlo<a href="#-cómo-construirlo-1" class="hash-link" aria-label="Enlace directo al 🟦 Cómo construirlo" title="Enlace directo al 🟦 Cómo construirlo" translate="no">​</a></h3>
+<p>Tampoco debemos empezar dibujando los componentes.</p>
+<p>El punto de partida son los <strong>requisitos funcionales que ya hemos definido</strong>.</p>
+<p>Debemos buscar requisitos que estén relacionados porque resuelven una misma parte del problema.</p>
+<p>Por ejemplo, imaginemos varios requisitos relacionados con los materiales:</p>
+<ul>
+<li class="">consultar el catálogo.</li>
+<li class="">filtrar materiales.</li>
+<li class="">consultar la información de un material.</li>
+</ul>
+<p>Aunque sean requisitos diferentes, todos forman parte de una misma responsabilidad.</p>
+<p>Podemos agruparlos dentro de un componente:</p>
+<blockquote>
+<p><strong>Catálogo</strong></p>
+</blockquote>
+<p>Podemos hacer lo mismo con los requisitos relacionados con las reservas:</p>
+<ul>
+<li class="">solicitar una reserva.</li>
+<li class="">consultar las reservas propias.</li>
+<li class="">comprobar la disponibilidad de un material.</li>
+<li class="">cancelar una reserva cuando corresponda.</li>
+</ul>
+<p>Todos ellos pertenecen a un mismo problema funcional:</p>
+<blockquote>
+<p><strong>Reservas y disponibilidad</strong></p>
+</blockquote>
+<p>Por tanto, el proceso puede resumirse así:</p>
+<blockquote>
+<p><strong>requisitos relacionados → responsabilidad común → componente funcional</strong></p>
+</blockquote>
+<p>No buscamos crear un componente por cada requisito.</p>
+<p>Tampoco debemos crear bloques tan grandes que agrupen prácticamente toda la aplicación.</p>
+<p>El componente debe tener una responsabilidad suficientemente concreta como para que podamos explicar <strong>qué problema resuelve</strong>, pero suficientemente amplia como para agrupar varias funcionalidades relacionadas.</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/componentes-funcionales.png" alt="Componentes funcionales de Materialia Joven" style="width:100%;max-width:650px"></div>
+<p>En este primer mapa aparecen únicamente las principales áreas funcionales. Su objetivo es comprobar si hemos dividido el sistema en bloques coherentes antes de añadir requisitos, elementos técnicos o dependencias.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-del-mapa-básico-a-la-organización-del-proyecto">🟧 Del mapa básico a la organización del proyecto<a href="#-del-mapa-básico-a-la-organización-del-proyecto" class="hash-link" aria-label="Enlace directo al 🟧 Del mapa básico a la organización del proyecto" title="Enlace directo al 🟧 Del mapa básico a la organización del proyecto" translate="no">​</a></h3>
+<p>Una vez identificados los componentes podemos enriquecer el mapa incorporando información que permita relacionarlos con el resto del diseño.</p>
+<p>Podemos indicar, por ejemplo:</p>
+<ul>
+<li class="">qué requisitos funcionales cubre cada componente.</li>
+<li class="">qué parte del frontend participa en su implementación.</li>
+<li class="">qué parte del backend participa.</li>
+<li class="">qué dependencias existen entre unos componentes y otros.</li>
+<li class="">qué responsabilidades son transversales a varios componentes.</li>
+</ul>
+<p>Esto convierte el mapa en algo más que una clasificación de funcionalidades.</p>
+<p>Nos ayuda a conectar:</p>
+<blockquote>
+<p><strong>requisitos → componentes → arquitectura → desarrollo</strong></p>
+</blockquote>
+<p>Por ejemplo, el componente <strong>Reservas y disponibilidad</strong> puede agrupar varios requisitos relacionados con la creación y consulta de reservas.</p>
+<p>Para implementarlo necesitaremos elementos del frontend Angular y elementos del backend Spring Boot.</p>
+<p>Además, no funciona de forma completamente aislada.</p>
+<p>Reservas necesita consultar información del <strong>Catálogo</strong> para conocer el material sobre el que se realiza la operación.</p>
+<p>Posteriormente, el componente de <strong>Préstamos</strong> puede utilizar la información de las reservas para registrar la entrega real de un material.</p>
+<p>De este modo empiezan a aparecer <strong>dependencias entre componentes</strong>.</p>
+<p>También existen responsabilidades que afectan a gran parte del sistema y que no tiene sentido asignar a un único componente.</p>
+<p>Por ejemplo, el control de acceso según el rol del usuario o una gestión común de errores pueden considerarse <strong>aspectos transversales</strong>.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>aviso</div><div class="admonitionContent_BuS1"><p>Una dependencia no significa simplemente que dos componentes estén relacionados temáticamente.</p><p>Debemos representarla cuando uno necesita realmente información o funcionalidad proporcionada por otro.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ejemplo-completo-materialia-joven-2">Ejemplo completo: Materialia Joven<a href="#ejemplo-completo-materialia-joven-2" class="hash-link" aria-label="Enlace directo al Ejemplo completo: Materialia Joven" title="Enlace directo al Ejemplo completo: Materialia Joven" translate="no">​</a></h4>
+<p>El mapa completo de Materialia Joven incorpora ya requisitos, relación con frontend y backend, dependencias y aspectos transversales:</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/componentes.png" alt="Mapa completo de componentes funcionales de Materialia Joven" style="width:100%;max-width:1150px"></div>
+<div class="theme-admonition theme-admonition-explicacion"><div class="admonition-heading explicacion-heading"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="explicacion-icon" aria-hidden="true"><path d="M14 9 9 4 4 9"></path><path d="M20 20C13.925 20 9 15.075 9 9V4"></path></svg><span class="explicacion-title">en este ejemplo</span></div><div class="admonition-content"><p>Podemos comenzar identificando las grandes áreas funcionales: <strong>Autenticación, Catálogo, Reservas y disponibilidad, Inventario e incidencias, Préstamos y Administración</strong>.</p><p>Dentro de cada componente aparecen los requisitos que agrupa y las partes principales del frontend y del backend que participarán en su implementación.</p><p>Las flechas muestran dependencias funcionales. Por ejemplo, <strong>Reservas y disponibilidad</strong> necesita información del catálogo, mientras que <strong>Préstamos</strong> utiliza las reservas para gestionar posteriormente la entrega y devolución del material.</p><p>En la parte transversal aparecen responsabilidades como la seguridad, la gestión de errores o determinados elementos comunes, porque afectan a varios componentes y no únicamente a uno de ellos.</p></div></div>
+<p>El mapa también nos ayuda a empezar a pensar en la organización del desarrollo.</p>
+<p>Si el componente <strong>Reservas y disponibilidad</strong> contiene varios requisitos relacionados, posteriormente podremos convertirlo en un bloque de trabajo y dividirlo en tareas más concretas.</p>
+<p>Por eso esta representación servirá después como uno de los puntos de partida para definir el <strong>MVP y la planificación</strong>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-errores-frecuentes-y-qué-esperamos-3">🟥 Errores frecuentes y qué esperamos<a href="#-errores-frecuentes-y-qué-esperamos-3" class="hash-link" aria-label="Enlace directo al 🟥 Errores frecuentes y qué esperamos" title="Enlace directo al 🟥 Errores frecuentes y qué esperamos" translate="no">​</a></h3>
+<p>Un error habitual consiste en crear un componente para cada requisito.</p>
+<p>Eso produce mapas muy fragmentados que no ayudan a entender la estructura funcional del proyecto.</p>
+<p>El problema contrario es crear bloques demasiado generales, como <em>Frontend</em>, <em>Backend</em> o <em>Base de datos</em>. Esos nombres pertenecen a la arquitectura técnica, no al mapa funcional.</p>
+<p>También debemos evitar nombres basados en detalles de implementación, como <em>ReservaController</em>, <em>tabla usuarios</em> o <em>Pantalla de catálogo</em>.</p>
+<p>Un componente debe expresar una <strong>responsabilidad funcional reconocible</strong>.</p>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>En vuestro proyecto</div><div class="admonitionContent_BuS1"><p>El mapa de componentes funcionales deberá permitir comprender:</p><ul>
+<li class="">cuáles son las principales áreas funcionales de la aplicación.</li>
+<li class="">qué responsabilidad tiene cada una.</li>
+<li class="">qué requisitos principales agrupa cada componente.</li>
+<li class="">qué dependencias relevantes existen entre ellos.</li>
+<li class="">qu é responsabilidades son transversales cuando sea necesario representarlas.</li>
+</ul><p>No buscamos dividir la aplicación en todas sus clases, pantallas o archivos.</p><p>Buscamos una organización funcional que nos ayude a pasar de <strong>los requisitos al desarrollo</strong>.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6️⃣-diagrama-de-secuencia">6️⃣ <strong>Diagrama de secuencia</strong><a href="#6️⃣-diagrama-de-secuencia" class="hash-link" aria-label="Enlace directo al 6️⃣-diagrama-de-secuencia" title="Enlace directo al 6️⃣-diagrama-de-secuencia" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-representa-3">🟩 Qué representa<a href="#-qué-representa-3" class="hash-link" aria-label="Enlace directo al 🟩 Qué representa" title="Enlace directo al 🟩 Qué representa" translate="no">​</a></h3>
+<p>Un diagrama de secuencia muestra <strong>qué ocurre paso a paso en una operación concreta y qué participantes intervienen en cada momento</strong>.</p>
+<p>Mientras que el diagrama de arquitectura ofrece una visión general de la solución, el diagrama de secuencia se concentra en una única funcionalidad.</p>
+<p>Nos permite responder a una pregunta como:</p>
+<blockquote>
+<p><strong>¿Qué ocurre desde que el usuario inicia una acción hasta que el sistema devuelve un resultado?</strong></p>
+</blockquote>
+<p>El tiempo avanza de arriba hacia abajo y cada participante aparece representado mediante una línea de vida.</p>
+<p>Entre ellos se intercambian mensajes, llamadas y respuestas.</p>
+<p>Por ejemplo, para solicitar una reserva podemos empezar con una visión muy sencilla:</p>
+<blockquote>
+<p><strong>Usuario → Interfaz → Backend → Base de datos</strong></p>
+</blockquote>
+<p>Este nivel todavía no pretende representar clases ni métodos concretos.</p>
+<p>Su objetivo es comprender <strong>el orden general de la interacción</strong>.</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/secuencia-basica.png" alt="Diagrama de secuencia básico para solicitar una reserva" style="width:100%;max-width:700px"></div>
+<p>En este primer ejemplo podemos seguir un recorrido sencillo:</p>
+<ul>
+<li class="">el usuario selecciona el material y las fechas.</li>
+<li class="">la interfaz envía la solicitud.</li>
+<li class="">el backend comprueba si la operación puede realizarse.</li>
+<li class="">la base de datos proporciona o almacena la información necesaria.</li>
+<li class="">el resultado vuelve hasta el usuario.</li>
+</ul>
+<p>No necesitamos todavía más detalle para comprender la idea principal.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-cómo-construirlo-2">🟦 Cómo construirlo<a href="#-cómo-construirlo-2" class="hash-link" aria-label="Enlace directo al 🟦 Cómo construirlo" title="Enlace directo al 🟦 Cómo construirlo" translate="no">​</a></h3>
+<p>Antes de dibujar debemos elegir <strong>qué proceso merece ser representado</strong>.</p>
+<p>No todas las funcionalidades necesitan un diagrama de secuencia.</p>
+<p>Elegiremos aquellas en las que resulte especialmente útil comprender el orden de las acciones, las decisiones que se toman o la colaboración entre varias partes del sistema.</p>
+<p>En Materialia Joven, por ejemplo, <strong>solicitar una reserva</strong> es un buen candidato porque intervienen varias capas de la aplicación y existe una regla de negocio importante: comprobar que el material está disponible para las fechas solicitadas.</p>
+<p>Una vez elegido el proceso, conviene escribirlo primero en lenguaje natural.</p>
+<p>Por ejemplo:</p>
+<blockquote>
+<p>El socio selecciona un material y unas fechas.<br>
+<!-- -->La interfaz valida los datos.<br>
+<!-- -->El backend recibe la solicitud.<br>
+<!-- -->El sistema comprueba la disponibilidad.<br>
+<!-- -->Si el material está disponible, registra la reserva.<br>
+<!-- -->Finalmente devuelve el resultado.</p>
+</blockquote>
+<p>A partir de esta descripción podemos identificar los participantes.</p>
+<p>En una primera versión podrían ser:</p>
+<ul>
+<li class=""><strong>Socio/a</strong>.</li>
+<li class=""><strong>Interfaz Angular</strong>.</li>
+<li class=""><strong>Backend</strong>.</li>
+<li class=""><strong>MySQL</strong>.</li>
+</ul>
+<p>Cuando conocemos mejor la arquitectura podemos sustituir participantes genéricos por elementos más concretos.</p>
+<p>Por ejemplo:</p>
+<blockquote>
+<p><strong>ReservaController → ReservaService → DisponibilidadService → MySQL</strong></p>
+</blockquote>
+<p>El diagrama empieza entonces a reflejar no solo el proceso funcional, sino también <strong>cómo se organiza técnicamente su ejecución</strong>.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>consejo</div><div class="admonitionContent_BuS1"><p>Un buen diagrama de secuencia debe poder explicarse primero con una historia sencilla.</p><p>Si no somos capaces de describir el proceso con claridad antes de dibujarlo, probablemente todavía no comprendamos suficientemente la funcionalidad.</p></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-cuando-el-proceso-tiene-varios-caminos">🟧 Cuando el proceso tiene varios caminos<a href="#-cuando-el-proceso-tiene-varios-caminos" class="hash-link" aria-label="Enlace directo al 🟧 Cuando el proceso tiene varios caminos" title="Enlace directo al 🟧 Cuando el proceso tiene varios caminos" translate="no">​</a></h3>
+<p>No todas las operaciones siguen siempre exactamente el mismo recorrido.</p>
+<p>En algunos casos existen resultados alternativos o acciones que solo se ejecutan bajo determinadas condiciones.</p>
+<p>Para representarlos podemos utilizar fragmentos combinados.</p>
+<p>El fragmento <code>alt</code> se utiliza cuando existen <strong>caminos alternativos excluyentes</strong>.</p>
+<p>Por ejemplo, al solicitar una reserva:</p>
+<blockquote>
+<p><strong>material disponible</strong> → se crea la reserva.<br>
+<strong>material no disponible</strong> → se informa del conflicto.</p>
+</blockquote>
+<p>Solo uno de esos caminos se ejecutará.</p>
+<p>El fragmento <code>opt</code> se utiliza cuando una parte del proceso es <strong>opcional</strong>.</p>
+<p>Por ejemplo, durante una devolución podemos registrar una incidencia únicamente si el material presenta algún problema.</p>
+<p>También podemos representar validaciones, respuestas de error o transacciones cuando resulten importantes para comprender el proceso.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>aviso</div><div class="admonitionContent_BuS1"><p>No debemos utilizar <code>alt</code>, <code>opt</code> u otros elementos UML simplemente para hacer el diagrama más completo.</p><p>Solo deben aparecer cuando representen una decisión real del proceso.</p></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ejemplo-completo-solicitar-una-reserva">🟥 Ejemplo completo: solicitar una reserva<a href="#-ejemplo-completo-solicitar-una-reserva" class="hash-link" aria-label="Enlace directo al 🟥 Ejemplo completo: solicitar una reserva" title="Enlace directo al 🟥 Ejemplo completo: solicitar una reserva" translate="no">​</a></h3>
+<p>La solicitud de una reserva es uno de los procesos principales de Materialia Joven.</p>
+<p>La regla fundamental que debemos garantizar es:</p>
+<blockquote>
+<p><strong>no aceptar reservas incompatibles para un mismo material y unas fechas determinadas.</strong></p>
+</blockquote>
+<p>El diagrama completo queda así:</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/secuencia-reserva.png" alt="Diagrama de secuencia completo para solicitar una reserva" style="width:100%;max-width:1200px"></div>
+<div class="theme-admonition theme-admonition-explicacion"><div class="admonition-heading explicacion-heading"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="explicacion-icon" aria-hidden="true"><path d="M14 9 9 4 4 9"></path><path d="M20 20C13.925 20 9 15.075 9 9V4"></path></svg><span class="explicacion-title">en este ejemplo</span></div><div class="admonition-content"><p>El proceso comienza cuando el <strong>Socio/a</strong> introduce los datos de la reserva en Angular.</p><p>La interfaz realiza las primeras comprobaciones y envía la solicitud al <strong>ReservaController</strong>, que delega la operación en <strong>ReservaService</strong>.</p><p>El servicio necesita saber si el material está disponible, por lo que consulta a <strong>DisponibilidadService</strong>, que accede a MySQL.</p><p>A partir de ese momento aparece un fragmento <code>alt</code>: si el material está disponible se registra la reserva y se devuelve una confirmación. Si existe un conflicto, el sistema devuelve un error y la interfaz permite al usuario corregir los datos.</p></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ejemplo-completo-devolución-con-incidencia">🟪 Ejemplo completo: devolución con incidencia<a href="#-ejemplo-completo-devolución-con-incidencia" class="hash-link" aria-label="Enlace directo al 🟪 Ejemplo completo: devolución con incidencia" title="Enlace directo al 🟪 Ejemplo completo: devolución con incidencia" translate="no">​</a></h3>
+<p>El segundo proceso elegido representa una situación distinta.</p>
+<p>Al registrar una devolución puede ser necesario actualizar varios elementos del sistema y, además, algunas acciones solo se realizan bajo determinadas condiciones.</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/secuencia-devolucion.png" alt="Diagrama de secuencia completo para registrar una devolución con incidencia" style="width:100%;max-width:1200px"></div>
+<div class="theme-admonition theme-admonition-explicacion"><div class="admonition-heading explicacion-heading"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="explicacion-icon" aria-hidden="true"><path d="M14 9 9 4 4 9"></path><path d="M20 20C13.925 20 9 15.075 9 9V4"></path></svg><span class="explicacion-title">en este ejemplo</span></div><div class="admonition-content"><p>El responsable registra la devolución desde la interfaz y la petición llega al backend.</p><p>El servicio actualiza primero la información del préstamo y registra la incidencia correspondiente.</p><p>Si además se indica que el material debe quedar bloqueado, el fragmento <code>opt</code> representa las acciones adicionales: actualizar su estado y consultar las reservas futuras que podrían verse afectadas.</p><p>Este proceso muestra también por qué algunas operaciones deben mantenerse coherentes entre sí: cerrar el préstamo, registrar la incidencia y bloquear el material forman parte de una misma operación lógica.</p></div></div>
+<p>Los dos diagramas no se han elegido al azar.</p>
+<p>Cada uno permite estudiar un tipo diferente de comportamiento:</p>
+<ul>
+<li class=""><strong>Reserva</strong>, para representar caminos alternativos mediante <code>alt</code>.</li>
+<li class=""><strong>Devolución</strong>, para representar comportamiento opcional mediante <code>opt</code>.</li>
+</ul>
+<p>Así utilizamos el diagrama de secuencia para explicar <strong>procesos relevantes del proyecto</strong>, no para documentar todas las operaciones de la aplicación.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-errores-frecuentes-y-qué-esperamos-4">🟨 Errores frecuentes y qué esperamos<a href="#-errores-frecuentes-y-qué-esperamos-4" class="hash-link" aria-label="Enlace directo al 🟨 Errores frecuentes y qué esperamos" title="Enlace directo al 🟨 Errores frecuentes y qué esperamos" translate="no">​</a></h3>
+<p>Uno de los errores más habituales consiste en intentar representar demasiadas cosas en un mismo diagrama.</p>
+<p>Un diagrama de secuencia debe centrarse en <strong>una operación concreta</strong>.</p>
+<p>También debemos evitar utilizar participantes demasiado genéricos cuando ya conocemos la arquitectura, o el extremo contrario: representar cada clase, método o llamada interna aunque no aporte información.</p>
+<p>Otro error frecuente es dibujar únicamente el camino correcto y olvidar situaciones relevantes de error o alternativas que forman parte de la lógica del proceso.</p>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>En vuestro proyecto</div><div class="admonitionContent_BuS1"><p>Esperamos uno o dos diagramas de secuencia que permitan comprender procesos especialmente relevantes.</p><p>Deberán mostrar:</p><ul>
+<li class="">los participantes principales.</li>
+<li class="">el orden de las interacciones.</li>
+<li class="">las llamadas o mensajes necesarios para comprender el proceso.</li>
+<li class="">las decisiones alternativas u opcionales cuando sean importantes.</li>
+<li class="">coherencia con la arquitectura y los componentes definidos anteriormente.</li>
+</ul><p>No necesitamos un diagrama para cada funcionalidad.</p><p>Buscamos representar aquellos procesos cuya secuencia ayude realmente a <strong>comprender cómo funciona vuestra solución</strong>.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="7️⃣-diagrama-de-gantt">7️⃣ <strong>Diagrama de Gantt</strong><a href="#7️⃣-diagrama-de-gantt" class="hash-link" aria-label="Enlace directo al 7️⃣-diagrama-de-gantt" title="Enlace directo al 7️⃣-diagrama-de-gantt" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-qué-representa-4">🟩 Qué representa<a href="#-qué-representa-4" class="hash-link" aria-label="Enlace directo al 🟩 Qué representa" title="Enlace directo al 🟩 Qué representa" translate="no">​</a></h3>
+<p>El diagrama de Gantt muestra <strong>cómo distribuimos el trabajo del proyecto a lo largo del tiempo</strong>.</p>
+<p>No sirve para describir funcionalidades ni para representar cómo está construida técnicamente la aplicación.</p>
+<p>Su objetivo es responder a preguntas como:</p>
+<blockquote>
+<p><strong>¿Qué tenemos que hacer para llegar al MVP?</strong><br>
+<strong>¿En qué orden debemos hacerlo?</strong><br>
+<strong>¿Qué tareas pueden realizarse en paralelo?</strong><br>
+<strong>¿Qué tareas dependen de otras?</strong></p>
+</blockquote>
+<p>El Gantt representa una <strong>planificación inicial</strong>.</p>
+<p>No pretende predecir con exactitud todo lo que ocurrirá durante el desarrollo. A medida que avancemos aparecerán dificultades, cambios de prioridad o tareas que necesiten más tiempo del previsto.</p>
+<p>Por eso debemos entenderlo como una herramienta para <strong>organizar el trabajo y anticipar dependencias</strong>, no como un calendario inamovible.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>consejo</div><div class="admonitionContent_BuS1"><p>El Gantt tiene sentido cuando ya sabemos qué queremos construir.</p><p>Por eso se prepara después de definir el <strong>MVP</strong> y de haber identificado los principales componentes funcionales del proyecto.</p></div></div>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-cómo-construirlo-3">🟦 Cómo construirlo<a href="#-cómo-construirlo-3" class="hash-link" aria-label="Enlace directo al 🟦 Cómo construirlo" title="Enlace directo al 🟦 Cómo construirlo" translate="no">​</a></h3>
+<p>Tampoco empezamos dibujando semanas y barras.</p>
+<p>El punto de partida es el <strong>MVP</strong>.</p>
+<p>Debemos preguntarnos:</p>
+<blockquote>
+<p><strong>¿Qué trabajo necesitamos completar para que este MVP funcione?</strong></p>
+</blockquote>
+<p>A partir de ahí podemos convertir los componentes y funcionalidades necesarias en <strong>bloques de trabajo</strong>.</p>
+<p>Por ejemplo, en Materialia Joven podríamos necesitar:</p>
+<ul>
+<li class="">preparar la estructura inicial del proyecto.</li>
+<li class="">crear el modelo de datos.</li>
+<li class="">implementar autenticación.</li>
+<li class="">desarrollar el catálogo.</li>
+<li class="">implementar reservas y disponibilidad.</li>
+<li class="">desarrollar préstamos y devoluciones.</li>
+<li class="">integrar las distintas partes.</li>
+<li class="">realizar pruebas y correcciones.</li>
+</ul>
+<p>Estas tareas deben tener un tamaño adecuado.</p>
+<p>Una tarea como:</p>
+<blockquote>
+<p><strong>Desarrollar toda la aplicación</strong></p>
+</blockquote>
+<p>es demasiado grande para ayudarnos a planificar.</p>
+<p>En cambio:</p>
+<blockquote>
+<p><strong>Crear botón Reservar</strong></p>
+</blockquote>
+<p>es demasiado pequeña para aparecer como bloque principal de un Gantt.</p>
+<p>Buscamos un nivel intermedio: tareas que representen <strong>un bloque reconocible de trabajo</strong> y cuya duración podamos estimar razonablemente.</p>
+<p>Una vez identificadas debemos estudiar sus dependencias.</p>
+<p>Por ejemplo, no podremos desarrollar correctamente una funcionalidad que necesita persistencia si todavía no hemos definido la estructura básica de los datos.</p>
+<p>Sin embargo, algunas tareas pueden avanzar en paralelo. Mientras una parte del equipo prepara determinadas vistas del frontend, otra puede estar trabajando en servicios del backend si las interfaces necesarias ya están claras.</p>
+<p>Finalmente asignamos una duración aproximada y situamos las tareas en el tiempo.</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/gantt-basico.png" alt="Ejemplo básico de planificación mediante diagrama de Gantt" style="width:100%;max-width:700px"></div>
+<p>Este primer ejemplo nos permite observar tres ideas fundamentales:</p>
+<ul>
+<li class="">las tareas tienen una duración.</li>
+<li class="">algunas pueden solaparse.</li>
+<li class="">otras necesitan comenzar después de que termine un trabajo previo.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-dependencias-responsables-e-hitos">🟧 Dependencias, responsables e hitos<a href="#-dependencias-responsables-e-hitos" class="hash-link" aria-label="Enlace directo al 🟧 Dependencias, responsables e hitos" title="Enlace directo al 🟧 Dependencias, responsables e hitos" translate="no">​</a></h3>
+<p>Cuando la planificación está más definida podemos incorporar información adicional.</p>
+<p>Una <strong>dependencia</strong> aparece cuando una tarea necesita que otra haya avanzado o terminado antes de poder realizarse.</p>
+<p>Por ejemplo:</p>
+<blockquote>
+<p><strong>Diseñar datos → implementar persistencia</strong></p>
+</blockquote>
+<p>No tendría sentido comenzar la persistencia definitiva si todavía no sabemos qué estructura de datos vamos a utilizar.</p>
+<p>Esto no significa que todo el proyecto deba desarrollarse de forma completamente secuencial.</p>
+<p>Una buena planificación intenta detectar qué trabajos pueden realizarse en paralelo sin generar bloqueos innecesarios.</p>
+<p>También podemos asignar un <strong>responsable</strong> a cada bloque de trabajo.</p>
+<p>El responsable no tiene por qué realizar toda la tarea en solitario. Indica quién debe asegurarse de que esa parte avance y quede integrada con el resto del proyecto.</p>
+<p>Por último podemos incorporar <strong>hitos</strong>.</p>
+<p>Un hito no representa trabajo durante varios días. Marca un momento importante del proyecto.</p>
+<p>En Materialia Joven podemos utilizar, por ejemplo:</p>
+<ul>
+<li class=""><strong>MVP disponible</strong>.</li>
+<li class=""><strong>Revisión y presentación</strong>.</li>
+</ul>
+<p>Estos hitos permiten comprobar si la planificación está realmente orientada hacia los objetivos de la fase.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>aviso</div><div class="admonitionContent_BuS1"><p>No debemos intentar que el Gantt contenga todas las tareas del proyecto.</p><p>Las tareas pequeñas y el seguimiento diario pertenecen al tablero de trabajo.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ejemplo-completo-planificación-hasta-el-mvp">Ejemplo completo: planificación hasta el MVP<a href="#ejemplo-completo-planificación-hasta-el-mvp" class="hash-link" aria-label="Enlace directo al Ejemplo completo: planificación hasta el MVP" title="Enlace directo al Ejemplo completo: planificación hasta el MVP" translate="no">​</a></h4>
+<p>La planificación completa de Materialia Joven queda representada así:</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/gantt.png" alt="Diagrama de Gantt completo de Materialia Joven" style="width:100%;max-width:1200px"></div>
+<div class="theme-admonition theme-admonition-explicacion"><div class="admonition-heading explicacion-heading"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="explicacion-icon" aria-hidden="true"><path d="M14 9 9 4 4 9"></path><path d="M20 20C13.925 20 9 15.075 9 9V4"></path></svg><span class="explicacion-title">en este ejemplo</span></div><div class="admonition-content"><p>El Gantt distribuye el trabajo de Materialia Joven a lo largo de ocho semanas.</p><p>Cada fila representa un bloque de trabajo identificado y muestra quién es su responsable y durante qué periodo está previsto desarrollarlo.</p><p>Podemos observar que algunas tareas comienzan cuando otras ya han avanzado, mientras que diferentes trabajos pueden solaparse cuando no dependen directamente entre sí.</p><p>Los hitos <strong>MVP disponible</strong> y <strong>presentación de revisión</strong> permiten comprobar hacia qué objetivo se dirige la planificación y cuándo debería estar preparada una primera versión funcional del proyecto.</p></div></div>
+<p>La planificación no termina cuando creamos el Gantt.</p>
+<p>Durante el desarrollo tendremos que comparar continuamente <strong>lo previsto</strong> con <strong>lo que está ocurriendo realmente</strong> y realizar ajustes cuando sea necesario.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-gantt-y-tablero-de-tareas">🟥 Gantt y tablero de tareas<a href="#-gantt-y-tablero-de-tareas" class="hash-link" aria-label="Enlace directo al 🟥 Gantt y tablero de tareas" title="Enlace directo al 🟥 Gantt y tablero de tareas" translate="no">​</a></h3>
+<p>El Gantt y el tablero de trabajo se complementan, pero cumplen funciones diferentes.</p>
+<p>El <strong>Gantt</strong> ofrece una visión global de los bloques de trabajo, su duración, dependencias e hitos. El <strong>tablero</strong> muestra el estado real de las tareas concretas necesarias para llevarlos a cabo.</p>
+<p>Por ejemplo, un bloque del Gantt como <strong>Reservas y disponibilidad</strong> puede dividirse después en tareas del tablero relacionadas con la consulta de disponibilidad, el servicio de reservas, el endpoint, la interfaz o las pruebas.</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/tablero.png" alt="Ejemplo de tablero de trabajo de Materialia Joven" style="width:100%;max-width:1200px"></div>
+<div class="theme-admonition theme-admonition-explicacion"><div class="admonition-heading explicacion-heading"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="explicacion-icon" aria-hidden="true"><path d="M14 9 9 4 4 9"></path><path d="M20 20C13.925 20 9 15.075 9 9V4"></path></svg><span class="explicacion-title">en este ejemplo</span></div><div class="admonition-content"><p>El tablero muestra el estado real del desarrollo en un momento concreto.</p><p>Las tareas avanzan entre <strong>Por hacer</strong>, <strong>En curso</strong>, <strong>En revisión</strong> y <strong>Hecho</strong> a medida que progresa el trabajo.</p><p>Así, mientras el Gantt mantiene la visión general de la planificación, el tablero permite gestionar las acciones concretas necesarias para cumplirla.</p></div></div>
+<p>Esta relación puede resumirse así:</p>
+<blockquote>
+<p><strong>MVP → bloques de trabajo  → Gantt → tareas concretas → tablero</strong></p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-errores-frecuentes-y-qué-esperamos-5">🟪 Errores frecuentes y qué esperamos<a href="#-errores-frecuentes-y-qué-esperamos-5" class="hash-link" aria-label="Enlace directo al 🟪 Errores frecuentes y qué esperamos" title="Enlace directo al 🟪 Errores frecuentes y qué esperamos" translate="no">​</a></h3>
+<p>Uno de los errores más habituales consiste en crear un Gantt demasiado detallado, con decenas de pequeñas tareas que hacen difícil comprender la planificación general.</p>
+<p>El problema contrario es utilizar bloques excesivamente grandes que ocupan varias semanas sin permitir identificar qué trabajo contienen.</p>
+<p>También debemos evitar planificaciones completamente secuenciales cuando existen tareas que podrían realizarse en paralelo, o asignar fechas sin haber analizado previamente las dependencias.</p>
+<p>Por último, el Gantt no debe quedar olvidado después de entregarlo. Es una planificación inicial que tendremos que revisar durante el desarrollo.</p>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>En vuestro proyecto</div><div class="admonitionContent_BuS1"><p>La planificación deberá permitir comprender:</p><ul>
+<li class="">qué bloques de trabajo son necesarios para alcanzar el MVP.</li>
+<li class="">en qué orden está previsto realizarlos.</li>
+<li class="">qué tareas pueden desarrollarse en paralelo.</li>
+<li class="">qué dependencias relevantes existen.</li>
+<li class="">quién será responsable de cada bloque cuando sea necesario.</li>
+<li class="">cuáles son los hitos principales.</li>
+</ul><p>El Gantt ofrecerá la visión global de la planificación.</p><p>El tablero se utilizará para gestionar y actualizar <strong>las tareas concretas del trabajo diario</strong>.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="8️⃣-cómo-se-relacionan-todos-los-diagramas">8️⃣ <strong>Cómo se relacionan todos los diagramas</strong><a href="#8️⃣-cómo-se-relacionan-todos-los-diagramas" class="hash-link" aria-label="Enlace directo al 8️⃣-cómo-se-relacionan-todos-los-diagramas" title="Enlace directo al 8️⃣-cómo-se-relacionan-todos-los-diagramas" translate="no">​</a></h2>
+<p>Los diagramas y modelos que hemos utilizado no son documentos independientes.</p>
+<p>Todos describen <strong>la misma solución desde perspectivas diferentes</strong>.</p>
+<p>Los requisitos explican qué debe hacer el sistema. Los casos de uso muestran quién utiliza esas funcionalidades. El diseño de interfaz permite imaginar cómo interactuará el usuario con ellas. La arquitectura explica qué partes técnicas intervienen. El modelo de datos representa la información necesaria. Los componentes agrupan las funcionalidades en áreas de responsabilidad. Los diagramas de secuencia muestran cómo colaboran esas partes en procesos concretos. Finalmente, el MVP y la planificación convierten todo ese diseño en trabajo que tendremos que desarrollar.</p>
+<p>Podemos resumir ese recorrido así:</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/trazabilidad-diseno.png" alt="Relación entre los distintos diagramas y modelos del proyecto" style="width:100%;max-width:700px"></div>
+<blockquote>
+<p><strong>requisitos → casos de uso → pantallas → arquitectura → datos → componentes → secuencias → MVP → planificación → tareas</strong></p>
+</blockquote>
+<p>A esta posibilidad de seguir una misma funcionalidad a través de las distintas decisiones del proyecto la llamamos <strong>trazabilidad</strong>.</p>
+<p>La trazabilidad nos ayuda a comprobar que el diseño es coherente y que una misma funcionalidad puede seguirse desde su definición inicial hasta el trabajo de desarrollo.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ejemplo-con-una-reserva">Ejemplo con una reserva<a href="#ejemplo-con-una-reserva" class="hash-link" aria-label="Enlace directo al Ejemplo con una reserva" title="Enlace directo al Ejemplo con una reserva" translate="no">​</a></h4>
+<p>La siguiente ilustración muestra cómo una misma funcionalidad puede recorrerse desde su definición inicial hasta el trabajo de desarrollo:</p>
+<div style="text-align:center"><img src="/img/pidaw/guias/reserva-desarrollo.png" alt="De una reserva al desarrollo" style="width:100%;max-width:1100px"></div>
+<div class="theme-admonition theme-admonition-explicacion"><div class="admonition-heading explicacion-heading"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="explicacion-icon" aria-hidden="true"><path d="M14 9 9 4 4 9"></path><path d="M20 20C13.925 20 9 15.075 9 9V4"></path></svg><span class="explicacion-title">en este ejemplo</span></div><div class="admonition-content"><p>El punto de partida es una necesidad funcional: permitir que un socio reserve un material.</p><p>Esa necesidad se convierte en un requisito y aparece después como caso de uso. Para hacerla posible tendremos que diseñar una pantalla, utilizar determinados componentes de la arquitectura, almacenar la información necesaria y organizarla dentro del componente de Reservas y disponibilidad.</p><p>Cuando estudiamos cómo funciona internamente podemos representarla mediante un diagrama de secuencia.</p><p>Finalmente, la funcionalidad debe formar parte del MVP y convertirse en trabajo planificado en el Gantt y en tareas concretas del tablero.</p></div></div>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>important</div><div class="admonitionContent_BuS1"><p>Si una funcionalidad aparece en los requisitos pero después desaparece del diseño, o si encontramos elementos del diseño que no podemos relacionar con ninguna necesidad del proyecto, debemos revisar la solución.</p><p>La documentación debe contar <strong>una única historia coherente desde el problema inicial hasta el desarrollo</strong>.</p></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="9️⃣-comprobación-final">9️⃣ <strong>Comprobación final</strong><a href="#9️⃣-comprobación-final" class="hash-link" aria-label="Enlace directo al 9️⃣-comprobación-final" title="Enlace directo al 9️⃣-comprobación-final" translate="no">​</a></h2>
+<p>Antes de cerrar el diseño técnico conviene revisar <strong>el conjunto del proyecto</strong>, no cada diagrama de forma aislada.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-funcionalidad">🟩 Funcionalidad<a href="#-funcionalidad" class="hash-link" aria-label="Enlace directo al 🟩 Funcionalidad" title="Enlace directo al 🟩 Funcionalidad" translate="no">​</a></h3>
+<table><thead><tr><th>Comprobación</th><th></th></tr></thead><tbody><tr><td>¿Los actores coinciden con los tipos de usuario definidos?</td><td>✅</td></tr><tr><td>¿Los casos de uso corresponden con requisitos reales?</td><td>✅</td></tr><tr><td>¿Las funcionalidades principales aparecen representadas?</td><td>✅</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-arquitectura-y-componentes">🟦 Arquitectura y componentes<a href="#-arquitectura-y-componentes" class="hash-link" aria-label="Enlace directo al 🟦 Arquitectura y componentes" title="Enlace directo al 🟦 Arquitectura y componentes" translate="no">​</a></h3>
+<table><thead><tr><th>Comprobación</th><th></th></tr></thead><tbody><tr><td>¿La arquitectura contiene solo las partes técnicas que realmente utilizaremos?</td><td>✅</td></tr><tr><td>¿Sabemos qué responsabilidad tiene cada bloque técnico?</td><td>✅</td></tr><tr><td>¿Los componentes funcionales agrupan requisitos relacionados?</td><td>✅</td></tr><tr><td>¿Las dependencias entre componentes tienen sentido?</td><td>✅</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-datos-y-procesos">🟧 Datos y procesos<a href="#-datos-y-procesos" class="hash-link" aria-label="Enlace directo al 🟧 Datos y procesos" title="Enlace directo al 🟧 Datos y procesos" translate="no">​</a></h3>
+<table><thead><tr><th>Comprobación</th><th></th></tr></thead><tbody><tr><td>¿El modelo de datos permite almacenar toda la información necesaria?</td><td>✅</td></tr><tr><td>¿Las relaciones y cardinalidades representan correctamente las reglas del proyecto?</td><td>✅</td></tr><tr><td>¿El modelo relacional es coherente con el modelo conceptual?</td><td>✅</td></tr><tr><td>¿Los diagramas de secuencia representan procesos realmente importantes?</td><td>✅</td></tr><tr><td>¿Las secuencias son coherentes con la arquitectura definida?</td><td>✅</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-mvp-y-planificación">🟥 MVP y planificación<a href="#-mvp-y-planificación" class="hash-link" aria-label="Enlace directo al 🟥 MVP y planificación" title="Enlace directo al 🟥 MVP y planificación" translate="no">​</a></h3>
+<table><thead><tr><th>Comprobación</th><th></th></tr></thead><tbody><tr><td>¿El MVP contiene las funcionalidades necesarias para demostrar el funcionamiento del proyecto?</td><td>✅</td></tr><tr><td>¿Podemos relacionar el MVP con requisitos y componentes?</td><td>✅</td></tr><tr><td>¿El Gantt contiene el trabajo necesario para alcanzar el MVP?</td><td>✅</td></tr><tr><td>¿Las dependencias y solapamientos de tareas son razonables?</td><td>✅</td></tr><tr><td>¿El tablero permite convertir la planificación en trabajo concreto?</td><td>✅</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-coherencia-global">🟪 Coherencia global<a href="#-coherencia-global" class="hash-link" aria-label="Enlace directo al 🟪 Coherencia global" title="Enlace directo al 🟪 Coherencia global" translate="no">​</a></h3>
+<table><thead><tr><th>Comprobación</th><th></th></tr></thead><tbody><tr><td>¿Podemos seguir una funcionalidad desde el requisito hasta las tareas de desarrollo?</td><td>✅</td></tr><tr><td>¿Los distintos diagramas representan la misma solución sin contradicciones?</td><td>✅</td></tr><tr><td>¿Podemos justificar las principales decisiones tomadas?</td><td>✅</td></tr></tbody></table>
+<p>Si podemos responder afirmativamente a estas preguntas, nuestros diagramas y modelos están cumpliendo su función:</p>
+<blockquote>
+<p><strong>ayudarnos a construir una solución coherente antes de comenzar el desarrollo.</strong></p>
+</blockquote></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/pi_daw/guias/como-redactar-requisitos"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Cómo redactar requisitos</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1️⃣-antes-de-empezar" class="table-of-contents__link toc-highlight">1️⃣ <strong>Antes de empezar</strong></a><ul><li><a href="#-un-diagrama-debe-ayudar-a-entender" class="table-of-contents__link toc-highlight">🟩 Un diagrama debe ayudar a entender</a></li><li><a href="#-qué-herramienta-utilizar" class="table-of-contents__link toc-highlight">🟦 Qué herramienta utilizar</a></li><li><a href="#-mantener-coherencia-entre-diagramas" class="table-of-contents__link toc-highlight">🟧 Mantener coherencia entre diagramas</a></li></ul></li><li><a href="#2️⃣-diagrama-de-casos-de-uso" class="table-of-contents__link toc-highlight">2️⃣ <strong>Diagrama de casos de uso</strong></a><ul><li><a href="#-qué-representa" class="table-of-contents__link toc-highlight">🟩 Qué representa</a></li><li><a href="#-cómo-construirlo" class="table-of-contents__link toc-highlight">🟦 Cómo construirlo</a></li><li><a href="#-cuando-necesitamos-representar-relaciones-entre-casos-de-uso" class="table-of-contents__link toc-highlight">🟧 Cuando necesitamos representar relaciones entre casos de uso</a></li><li><a href="#-errores-frecuentes-y-qué-esperamos" class="table-of-contents__link toc-highlight">🟥 Errores frecuentes y qué esperamos</a></li></ul></li><li><a href="#3️⃣-diagrama-de-arquitectura" class="table-of-contents__link toc-highlight">3️⃣ <strong>Diagrama de arquitectura</strong></a><ul><li><a href="#-qué-representa-1" class="table-of-contents__link toc-highlight">🟩 Qué representa</a></li><li><a href="#-cómo-construirla" class="table-of-contents__link toc-highlight">🟦 Cómo construirla</a></li><li><a href="#-de-la-arquitectura-básica-al-diseño-técnico" class="table-of-contents__link toc-highlight">🟧 De la arquitectura básica al diseño técnico</a></li><li><a href="#-errores-frecuentes-y-qué-esperamos-1" class="table-of-contents__link toc-highlight">🟥 Errores frecuentes y qué esperamos</a></li></ul></li><li><a href="#4️⃣-diseño-de-datos" class="table-of-contents__link toc-highlight">4️⃣ <strong>Diseño de datos</strong></a><ul><li><a href="#-modelo-conceptual-er" class="table-of-contents__link toc-highlight">🟩 Modelo conceptual E/R</a></li><li><a href="#-modelo-relacional-inicial" class="table-of-contents__link toc-highlight">🟦 Modelo relacional inicial</a></li><li><a href="#-errores-frecuentes-y-qué-esperamos-2" class="table-of-contents__link toc-highlight">🟥 Errores frecuentes y qué esperamos</a></li></ul></li><li><a href="#5️⃣-mapa-de-componentes-funcionales" class="table-of-contents__link toc-highlight">5️⃣ <strong>Mapa de componentes funcionales</strong></a><ul><li><a href="#-qué-representa-2" class="table-of-contents__link toc-highlight">🟩 Qué representa</a></li><li><a href="#-cómo-construirlo-1" class="table-of-contents__link toc-highlight">🟦 Cómo construirlo</a></li><li><a href="#-del-mapa-básico-a-la-organización-del-proyecto" class="table-of-contents__link toc-highlight">🟧 Del mapa básico a la organización del proyecto</a></li><li><a href="#-errores-frecuentes-y-qué-esperamos-3" class="table-of-contents__link toc-highlight">🟥 Errores frecuentes y qué esperamos</a></li></ul></li><li><a href="#6️⃣-diagrama-de-secuencia" class="table-of-contents__link toc-highlight">6️⃣ <strong>Diagrama de secuencia</strong></a><ul><li><a href="#-qué-representa-3" class="table-of-contents__link toc-highlight">🟩 Qué representa</a></li><li><a href="#-cómo-construirlo-2" class="table-of-contents__link toc-highlight">🟦 Cómo construirlo</a></li><li><a href="#-cuando-el-proceso-tiene-varios-caminos" class="table-of-contents__link toc-highlight">🟧 Cuando el proceso tiene varios caminos</a></li><li><a href="#-ejemplo-completo-solicitar-una-reserva" class="table-of-contents__link toc-highlight">🟥 Ejemplo completo: solicitar una reserva</a></li><li><a href="#-ejemplo-completo-devolución-con-incidencia" class="table-of-contents__link toc-highlight">🟪 Ejemplo completo: devolución con incidencia</a></li><li><a href="#-errores-frecuentes-y-qué-esperamos-4" class="table-of-contents__link toc-highlight">🟨 Errores frecuentes y qué esperamos</a></li></ul></li><li><a href="#7️⃣-diagrama-de-gantt" class="table-of-contents__link toc-highlight">7️⃣ <strong>Diagrama de Gantt</strong></a><ul><li><a href="#-qué-representa-4" class="table-of-contents__link toc-highlight">🟩 Qué representa</a></li><li><a href="#-cómo-construirlo-3" class="table-of-contents__link toc-highlight">🟦 Cómo construirlo</a></li><li><a href="#-dependencias-responsables-e-hitos" class="table-of-contents__link toc-highlight">🟧 Dependencias, responsables e hitos</a></li><li><a href="#-gantt-y-tablero-de-tareas" class="table-of-contents__link toc-highlight">🟥 Gantt y tablero de tareas</a></li><li><a href="#-errores-frecuentes-y-qué-esperamos-5" class="table-of-contents__link toc-highlight">🟪 Errores frecuentes y qué esperamos</a></li></ul></li><li><a href="#8️⃣-cómo-se-relacionan-todos-los-diagramas" class="table-of-contents__link toc-highlight">8️⃣ <strong>Cómo se relacionan todos los diagramas</strong></a></li><li><a href="#9️⃣-comprobación-final" class="table-of-contents__link toc-highlight">9️⃣ <strong>Comprobación final</strong></a><ul><li><a href="#-funcionalidad" class="table-of-contents__link toc-highlight">🟩 Funcionalidad</a></li><li><a href="#-arquitectura-y-componentes" class="table-of-contents__link toc-highlight">🟦 Arquitectura y componentes</a></li><li><a href="#-datos-y-procesos" class="table-of-contents__link toc-highlight">🟧 Datos y procesos</a></li><li><a href="#-mvp-y-planificación" class="table-of-contents__link toc-highlight">🟥 MVP y planificación</a></li><li><a href="#-coherencia-global" class="table-of-contents__link toc-highlight">🟪 Coherencia global</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://jamfdev.github.io/">Apuntes para Ciclos Formativos de Formación Profesional</a> por <span property="cc:attributionName">Jose A. Martínez</span>  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p> 
+        <p>📧 jamartinezf01@iesalbarregas.es</p></div></div></div></footer></div>
+</body>
+</html>
