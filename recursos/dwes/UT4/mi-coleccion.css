@@ -1,0 +1,178 @@
+/* MiColección | Diseño sencillo para Spring Boot + Thymeleaf.
+   No requiere Bootstrap ni JavaScript adicional. */
+:root {
+    color-scheme: light;
+    --fondo: #f5f7fb;
+    --superficie: #ffffff;
+    --texto: #26354c;
+    --secundario: #66758e;
+    --borde: #dce4ef;
+    --primario: #4268b2;
+    --primario-oscuro: #315394;
+    --violeta-suave: #f1effb;
+    --verde-suave: #e8f7ee;
+    --verde-texto: #226644;
+    --rojo-suave: #fff0f0;
+    --rojo-texto: #ad3434;
+    --radio: 12px;
+    --sombra: 0 6px 22px rgba(33, 51, 87, 0.06);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0 auto;
+    max-width: 1120px;
+    min-height: 100vh;
+    padding: 32px 20px 72px;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+h1 { margin: 0 0 24px; color: #243b69; font-size: clamp(1.7rem, 4vw, 2.2rem); }
+p { margin-top: 0; }
+a { color: var(--primario); }
+a:hover { color: var(--primario-oscuro); }
+
+/* Controles comunes */
+label { font-size: .91rem; font-weight: 650; }
+input, select, textarea, button { font: inherit; }
+input[type="text"], input[type="search"], input[type="number"], select, textarea {
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 12px;
+    border: 1px solid #cbd6e6;
+    border-radius: 9px;
+    background: var(--superficie);
+    color: var(--texto);
+}
+input:focus-visible, select:focus-visible, textarea:focus-visible,
+button:focus-visible, a:focus-visible {
+    outline: 3px solid #a9bff1;
+    outline-offset: 2px;
+    border-color: var(--primario);
+}
+
+/* Formulario de alta/edición: los campos están agrupados en párrafos. */
+.formulario {
+    max-width: 660px;
+    padding: 28px;
+    border: 1px solid var(--borde);
+    border-radius: 16px;
+    background: var(--superficie);
+    box-shadow: var(--sombra);
+}
+.formulario > p { display: grid; gap: 6px; margin-bottom: 18px; }
+.formulario > p label { display: block; }
+.formulario .error-campo {
+    color: var(--rojo-texto);
+    font-size: .86rem;
+    font-weight: 550;
+}
+.formulario > button { margin-top: 4px; }
+.formulario > .boton { margin-left: 8px; }
+
+/* Filtros del listado */
+.filtros {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 18px 0 26px;
+    padding: 20px;
+    border: 1px solid var(--borde);
+    border-radius: 16px;
+    background: var(--superficie);
+    box-shadow: var(--sombra);
+}
+.filtros .campo { flex: 1 1 190px; min-width: 160px; }
+.filtros .campo label { display: block; margin-bottom: 6px; }
+.filtros .acciones { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+/* Botones */
+button, .boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 41px;
+    padding: 9px 16px;
+    border: 1px solid var(--primario);
+    border-radius: 9px;
+    background: var(--primario);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: .93rem;
+    font-weight: 650;
+    cursor: pointer;
+    transition: background .15s ease, border-color .15s ease;
+}
+button:hover, .boton:hover {
+    background: var(--primario-oscuro);
+    border-color: var(--primario-oscuro);
+    color: #ffffff;
+}
+.boton-secundario {
+    background: #f7f9fe;
+    border-color: #cad6ea;
+    color: #35518a;
+}
+.boton-secundario:hover { background: #e8eefb; color: #254577; border-color: #b8c8e4; }
+.boton-pequeno { min-height: 34px; padding: 6px 11px; font-size: .84rem; }
+.boton-peligro, .form-eliminar button {
+    background: #fff5f5;
+    border-color: #efbcbc;
+    color: #a73232;
+}
+.boton-peligro:hover, .form-eliminar button:hover {
+    background: #fbe2e2;
+    border-color: #e49b9b;
+    color: #862626;
+}
+.form-eliminar { display: inline; margin: 0; padding: 0; border: 0; box-shadow: none; }
+.form-eliminar button { min-height: 34px; padding: 6px 11px; font-size: .84rem; }
+
+/* Tabla de resultados */
+.tabla-responsive { width: 100%; overflow-x: auto; margin-top: 14px; border: 1px solid var(--borde); border-radius: 14px; background: var(--superficie); }
+.tabla-videojuegos { width: 100%; border-collapse: collapse; background: var(--superficie); }
+.tabla-videojuegos th, .tabla-videojuegos td { padding: 13px 14px; text-align: left; border-bottom: 1px solid #e9edf5; }
+.tabla-videojuegos th { background: var(--violeta-suave); color: #3c4675; font-size: .86rem; font-weight: 700; }
+.tabla-videojuegos tbody tr:hover { background: #f8fafe; }
+.tabla-videojuegos tbody tr:last-child td { border-bottom: 0; }
+.tabla-videojuegos td:last-child { white-space: nowrap; }
+.tabla-videojuegos td:last-child .boton { margin-right: 5px; }
+
+/* Mensajes y navegación */
+.mensaje, .error, .sin-resultados {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid var(--borde);
+    background: var(--superficie);
+}
+.mensaje { border-color: #bde5cd; background: var(--verde-suave); color: var(--verde-texto); }
+.error { border-color: #efc3c3; background: var(--rojo-suave); color: var(--rojo-texto); }
+.sin-resultados { color: var(--secundario); }
+.paginacion { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 20px; }
+.paginacion p { margin: 0 10px 0 0; }
+.paginacion a {
+    padding: 7px 12px;
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    background: var(--superficie);
+    text-decoration: none;
+    font-weight: 600;
+}
+.paginacion a:hover { background: #edf2fc; }
+
+@media (max-width: 640px) {
+    body { padding: 22px 13px 50px; }
+    .formulario { padding: 18px; }
+    .filtros { padding: 16px; }
+    .filtros .campo { flex-basis: 100%; }
+    .tabla-videojuegos th, .tabla-videojuegos td { padding: 10px 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    button, .boton { transition: none; }
+}
