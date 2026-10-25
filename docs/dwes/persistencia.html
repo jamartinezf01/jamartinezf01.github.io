@@ -8,7 +8,7 @@
 <meta httpequiv="Expires" content="0">
 
 <script src="/version.js"></script><link rel="stylesheet" href="/assets/css/styles.ecfcf92a.css">
-<script src="/assets/js/runtime~main.c9eb3814.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.e35a0abd.js" defer="defer"></script>
 <script src="/assets/js/main.f0a5c899.js" defer="defer"></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
 <p>Para ello utilizaremos <strong>Spring Data JPA</strong>, que facilita el acceso a los datos desde Java. Comprenderemos el papel de JDBC, JPA e Hibernate, construiremos una aplicación web con información persistente y aprenderemos a trabajar con relaciones entre entidades, migraciones, transacciones y pruebas.</p>
 <p>El recorrido se organiza en <strong>cuatro bloques</strong> y avanza desde los conceptos básicos hasta problemas habituales en aplicaciones que ya tienen información almacenada.</p>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Idea principal</div><div class="admonitionContent_BuS1"><p>La persistencia incorpora una nueva parte al recorrido de nuestra aplicación:</p><p><strong>Navegador → controlador → servicio → repositorio JPA → MySQL</strong></p><p>La información recuperada sigue el camino de vuelta para mostrarse en una vista Thymeleaf. Los registros almacenados en MySQL permanecen disponibles aunque detengamos y volvamos a iniciar Spring Boot.</p></div></div>
-<div style="display:flex;justify-content:center"><img src="/img/dwes/UT4/recorrido-persistencia.png" alt="Recorrido de la información entre navegador, controlador MVC, servicio, repositorio JPA y MySQL" title="Persistencia de datos en una aplicación Spring Boot con Thymeleaf" style="width:100%;max-width:900px;height:auto"></div>
+<div style="display:flex;justify-content:center"><img src="/img/dwes/UT4/recorrido-persistencia.png" alt="Recorrido de la información entre navegador, controlador MVC, servicio, repositorio JPA y MySQL" title="Persistencia de datos en una aplicación Spring Boot con Thymeleaf" style="width:100%;max-width:700px;height:auto"></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1️⃣-qué-vamos-a-aprender">1️⃣ <strong>Qué vamos a aprender</strong><a href="#1️⃣-qué-vamos-a-aprender" class="hash-link" aria-label="Enlace directo al 1️⃣-qué-vamos-a-aprender" title="Enlace directo al 1️⃣-qué-vamos-a-aprender" translate="no">​</a></h2>
 <p>Comenzaremos preparando la conexión con MySQL y definiendo entidades JPA. Utilizaremos repositorios para guardar y recuperar registros y aprenderemos a organizar las operaciones en una capa de servicios. Después incorporaremos formularios Thymeleaf para crear, modificar y eliminar videojuegos, junto con consultas que permiten <strong>filtrar, ordenar y paginar</strong> los resultados.</p>
 <p>Con esa base podremos estudiar <strong>cómo se representan las relaciones entre entidades</strong> y cómo modificar una base de datos que ya contiene información. No se trata solamente de crear tablas nuevas: también debemos conservar los registros existentes y mantener funcionando la aplicación.</p>
