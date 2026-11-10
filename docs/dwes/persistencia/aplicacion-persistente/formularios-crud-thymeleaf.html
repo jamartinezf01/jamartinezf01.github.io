@@ -8,8 +8,8 @@
 <meta httpequiv="Expires" content="0">
 
 <script src="/version.js"></script><link rel="stylesheet" href="/assets/css/styles.8e67af2f.css">
-<script src="/assets/js/runtime~main.b2cd0a52.js" defer="defer"></script>
-<script src="/assets/js/main.386f59bd.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.b849dafa.js" defer="defer"></script>
+<script src="/assets/js/main.023cc517.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -81,7 +81,7 @@
 <p>Primero añadimos un videojuego desde <strong>Añadir videojuego</strong>. Cuando se guarde, regresaremos al listado y veremos una nueva fila con el identificador generado. Después abrimos <strong>Editar</strong>, cambiamos su plataforma o su año y comprobamos que el registro conserva el mismo ID. Finalmente, podemos eliminar un videojuego de prueba.</p>
 <p>También debemos comprobar los errores: enviar un título vacío, introducir un año inferior a 1950 e intentar abrir una ruta de edición con un ID inexistente. Los dos primeros casos deben mostrar mensajes en el formulario, sin guardar cambios; el último debe redirigir al listado y mostrar un aviso.</p>
 <!-- -->
-<div style="display:flex;justify-content:center;margin:1.5rem 0"><img src="/img/dwes/UT4/formulario-edicion-videojuego.png" alt="Formulario Thymeleaf de edición con los datos reales de un videojuego y sus acciones de guardado" title="Edición de un videojuego desde el navegador" style="width:100%;max-width:760px;height:auto"></div>
+<div style="display:flex;justify-content:center;margin:1.5rem 0"><img src="/img/dwes/UT4/formulario-edicion-videojuego.png" alt="Formulario Thymeleaf de edición con los datos reales de un videojuego y sus acciones de guardado" title="Edición de un videojuego desde el navegador" style="width:100%;max-width:860px;height:auto"></div>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-comprobamos-los-cambios-en-mysql">🟨 Comprobamos los cambios en MySQL<a href="#-comprobamos-los-cambios-en-mysql" class="hash-link" aria-label="Enlace directo al 🟨 Comprobamos los cambios en MySQL" title="Enlace directo al 🟨 Comprobamos los cambios en MySQL" translate="no">​</a></h3>
 <p>No basta con ver los datos en la página. Queremos comprobar que las operaciones han afectado a los registros persistentes. Abrimos PowerShell y entramos en el cliente MySQL, como hicimos al configurar la conexión:</p>
 <div class="language-powershell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-powershell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">mysql -u coleccion_app -p mi_coleccion</span><br></div></code></pre></div></div>
